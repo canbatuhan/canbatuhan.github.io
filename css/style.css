@@ -1,0 +1,70 @@
+/* DEFAULTS */
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 22px; }
+  @media screen and (max-width: 1536px) {
+    html {
+      font-size: 20px; } }
+  @media screen and (max-width: 1366px) {
+    html {
+      font-size: 18px; } }
+  @media screen and (max-width: 1080px) {
+    html {
+      font-size: 16px; } }
+  @media screen and (max-width: 900px) {
+    html {
+      font-size: 14px; } }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 12px; } }
+  @media screen and (max-width: 667px) {
+    html {
+      font-size: 10px; } }
+
+/* HEADER SECTION */
+#header {
+  position: relative;
+  height: 100vh;
+  background: url(../img/Desert.jpg) no-repeat center center fixed;
+  background-size: cover;
+  /* NAVBAR */
+  /* MOTTO */ }
+  #header .navbar {
+    background-color: rgba(0, 0, 0, 0); }
+    #header .navbar a {
+      text-align: center;
+      text-transform: uppercase;
+      color: #dadada;
+      font-size: 1rem;
+      margin: 0rem 1rem;
+      transition: color, 0.35;
+      border-bottom: 1px rgba(0, 0, 0, 0) solid; }
+      #header .navbar a:hover {
+        color: white; }
+    #header .navbar .nav-item {
+      align-self: flex-end; }
+    #header .navbar .navbar-brand {
+      font-size: 2rem;
+      transition: scale, 0.35s; }
+      #header .navbar .navbar-brand:hover {
+        transform: scale(1.25); }
+    #header .navbar .nav-link:hover {
+      border-bottom: 1px white solid; }
+  #header #motto {
+    width: 100%;
+    position: absolute;
+    right: 10%;
+    bottom: 40%;
+    padding: 0rem; }
+    #header #motto span {
+      align-self: center;
+      display: block; }
+    #header #motto .display-1 {
+      font-size: 5rem; }
+    #header #motto .display-4 {
+      font-size: 2.5rem; }
+
+/*# sourceMappingURL=style.css.map */
