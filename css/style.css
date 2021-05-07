@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 20px; }
+  font-size: 20px;
+  scroll-behavior: smooth; }
   @media screen and (max-width: 1536px) {
     html {
       font-size: 18px; } }
@@ -31,8 +32,8 @@ h1, h2, h3, h4, h5, h6 {
 /* HEADER SECTION */
 #header {
   position: relative;
-  height: 100vh;
-  background: url(../img/Desert.jpg) no-repeat center center;
+  height: 60vh;
+  background: url(../img/project.jpg) no-repeat center center;
   background-size: cover;
   /* NAVBAR */
   /* MOTTO */ }
@@ -88,23 +89,70 @@ h1, h2, h3, h4, h5, h6 {
     width: 75%;
     padding: 1rem;
     margin: auto; }
-  #about .funding-box {
+  #about .funding-icon {
+    display: flex;
+    justify-content: center;
     background-color: #365599;
+    border: 0.15rem #365599 solid;
     height: 5rem;
     width: 5rem;
     margin: auto;
     border-radius: 50%;
-    transition: background-color, 0.25s; }
-    #about .funding-box:hover {
-      background-color: #6685c9; }
+    transition: background-color, border-color, 0.5s; }
+    #about .funding-icon:hover {
+      background-color: #cab666;
+      border-color: #365599; }
+      #about .funding-icon:hover .fa {
+        color: #365599; }
+    #about .funding-icon .fa {
+      text-indent: 0;
+      transform: scale(2);
+      align-self: center;
+      color: #cab666;
+      transition: background-color, 1s; }
+  #about .nav-item {
+    width: 25%; }
   #about .nav-link {
-    margin: 0 1rem;
-    color: #cab666;
-    font-size: 2rem;
-    transition: scale, 0.25s; }
+    transition: scale, 0.25s;
+    text-align: center; }
     #about .nav-link:hover {
       transform: scale(1.25); }
+    #about .nav-link img {
+      height: 5rem;
+      display: inline-block; }
 
 /* TEAM MEMBERS SECTION */
+#team {
+  background-color: #b4b4b4; }
+  #team .team-head {
+    color: #365599;
+    letter-spacing: 0.05rem; }
+  #team .team-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+    padding: 1rem;
+    margin: auto; }
+    #team .team-box .card {
+      display: inline-block;
+      margin: 1rem;
+      background-color: #353535;
+      border-radius: 0;
+      border: none;
+      width: 20%;
+      transition: background-color, 0.1s; }
+      #team .team-box .card .card-body {
+        padding: 1rem 0; }
+        #team .team-box .card .card-body .card-title {
+          color: #f3f3f3;
+          margin: 0; }
+        #team .team-box .card .card-body .btn {
+          position: absolute;
+          top: 15%;
+          left: 0;
+          border-radius: 0; }
+      #team .team-box .card:hover {
+        background-color: #6685c9; }
 
 /*# sourceMappingURL=style.css.map */
