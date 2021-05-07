@@ -13,6 +13,14 @@ html {
     
     @media screen and (max-width: 1366px) {
         font-size: 16px;
+        
+        #about .about-box .nav .nav-item {
+            width: 50%;
+        }
+        
+        #team .team-box .card {
+            width: 30%;
+        }
     }
     
     @media screen and (max-width: 1080px) {
@@ -21,6 +29,14 @@ html {
     
     @media screen and (max-width: 900px) {
         font-size: 12px;
+        
+        #about .about-box .nav .nav-item {
+            width: 100%;
+        }
+        
+        #team .team-box .card {
+            width: 45%;
+        }
     }
     
     @media screen and (max-width: 768px) {
@@ -29,6 +45,10 @@ html {
     
     @media screen and (max-width: 667px) {
         font-size: 9px;
+        
+        #team .team-box .card {
+            width: 50%;
+        }
     }
 }
 

@@ -54,22 +54,28 @@
         }
     }
     
-    .nav-item {
-        width: 25%;
-    }
-    
-    .nav-link {
-        text-align: center;
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         
-        transition: scale, 0.25s;
-        
-        &:hover {
-            transform: scale(1.25);
+        .nav-item {
+            width: 25%;
         }
-        
-        img {
-            display: inline-block;
-            height: 5rem;
+
+        .nav-link {
+            text-align: center;
+
+            transition: scale, 0.25s;
+
+            &:hover {
+                transform: scale(1.25);
+            }
+
+            img {
+                display: inline-block;
+                height: 5rem;
+            }
         }
     }
 }

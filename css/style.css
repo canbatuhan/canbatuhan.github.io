@@ -11,19 +11,29 @@ html {
       font-size: 18px; } }
   @media screen and (max-width: 1366px) {
     html {
-      font-size: 16px; } }
+      font-size: 16px; }
+      html #about .about-box .nav .nav-item {
+        width: 50%; }
+      html #team .team-box .card {
+        width: 30%; } }
   @media screen and (max-width: 1080px) {
     html {
       font-size: 14px; } }
   @media screen and (max-width: 900px) {
     html {
-      font-size: 12px; } }
+      font-size: 12px; }
+      html #about .about-box .nav .nav-item {
+        width: 100%; }
+      html #team .team-box .card {
+        width: 45%; } }
   @media screen and (max-width: 768px) {
     html {
       font-size: 10px; } }
   @media screen and (max-width: 667px) {
     html {
-      font-size: 9px; } }
+      font-size: 9px; }
+      html #team .team-box .card {
+        width: 50%; } }
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
@@ -109,16 +119,20 @@ h1, h2, h3, h4, h5, h6 {
       text-indent: 0;
       color: #dabd56;
       transition: background-color, 1s; }
-  #about .nav-item {
-    width: 25%; }
-  #about .nav-link {
-    text-align: center;
-    transition: scale, 0.25s; }
-    #about .nav-link:hover {
-      transform: scale(1.25); }
-    #about .nav-link img {
-      display: inline-block;
-      height: 5rem; }
+  #about .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #about .nav .nav-item {
+      width: 25%; }
+    #about .nav .nav-link {
+      text-align: center;
+      transition: scale, 0.25s; }
+      #about .nav .nav-link:hover {
+        transform: scale(1.25); }
+      #about .nav .nav-link img {
+        display: inline-block;
+        height: 5rem; }
 
 /* TEAM MEMBERS SECTION */
 #team {
