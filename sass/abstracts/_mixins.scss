@@ -3,3 +3,8 @@
     padding: 1rem;
     margin: auto;
 }
+
+@mixin section-head($color) {
+    color: $color;
+    letter-spacing: 0.05rem;
+}

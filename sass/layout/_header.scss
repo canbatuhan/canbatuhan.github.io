@@ -9,48 +9,52 @@
     .navbar {
         background-color: rgba(0,0,0,0);
         
-        a {
-            text-align: center;
-            text-transform: uppercase;
-            color: $color-white;
-            font-size: 1rem;
-            margin: 0rem 1rem;
-            transition: color, 0.35;
-            border-bottom: 1px rgba(0,0,0,0) solid;
-            
-            &:hover {
-                color: lighten($color-white, 25);
-            }
-        }
-        
         .nav-item {
             align-self: flex-end;
-        }
-        
-        .navbar-brand {
-            font-size: 2rem;
-            transition: scale, 0.35s;
             
-            &:hover {
-                transform: scale(1.25);
+            .nav-link {
+                margin: 0rem 1rem;
+                border-bottom: 1px rgba(0,0,0,0) solid;
+
+                text-align: center;
+                text-transform: uppercase;
+                color: $color-black;
+                font-size: 1rem;
+
+                transition: color, 0.35;
+
+                &:hover {
+                    color: lighten($color-black, 10);
+                    border-bottom: 1px lighten($color-black, 10) solid;
+                }
+            }
+            
+            .navbar-brand {
+                transition: scale, 0.35s;
+
+                &:hover {
+                    transform: scale(1.25);
+                }
+                
+                .logo {
+                    text-align: center;
+                    height: 4rem;
+                }
             }
         }
         
-        .nav-link:hover {
-            border-bottom: 1px lighten($color-white, 25) solid;
-        }
     }
     
     /* MOTTO */
     #motto {
-        width: 100%;
         position: absolute;
         right: 10%;
         bottom: 30%;
+        
+        width: 100%;       
         padding: 0rem;
         
         span {
-            align-self: center;
             display: block;
         }
         

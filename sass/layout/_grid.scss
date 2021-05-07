@@ -3,34 +3,35 @@
 
 /* ABOUT SECTION */
 #about {
-    background-color: $color-white;
     text-indent: 0.5rem;
     
     .about-head {
-        color: $color-darkblue;    
-        letter-spacing: 0.05rem;
+        @include section-head($color-darkblue);
     }
     
     .about-subhead {
-        font-weight: normal;
         color: $color-black;
+        font-weight: normal;
     }
     
     .about-box {
+        @include box(75%);
+        
         line-height: 1.5rem;
         text-align: justify;
-        @include box(75%);
     }
     
     .funding-icon {
         display: flex;
+        margin: auto;
         justify-content: center;
-        background-color: $color-darkblue;
-        border: 0.15rem $color-darkblue solid;
+        
         height: 5rem;
         width: 5rem;
-        margin: auto;
+        background-color: $color-darkblue;
+        border: 0.15rem $color-darkblue solid;
         border-radius: 50%;
+        
         transition: background-color, border-color, 0.5s;
         
         &:hover {
@@ -43,10 +44,12 @@
         }
         
         .fa {
-            text-indent: 0;
-            transform: scale(2);
             align-self: center;
+            transform: scale(2);
+            
+            text-indent: 0;
             color: $color-yellow;
+
             transition: background-color, 1s;
         }
     }
@@ -56,50 +59,54 @@
     }
     
     .nav-link {
-        transition: scale, 0.25s;
         text-align: center;
+        
+        transition: scale, 0.25s;
         
         &:hover {
             transform: scale(1.25);
         }
         
         img {
-            height: 5rem;
             display: inline-block;
+            height: 5rem;
         }
     }
 }
 
 /* TEAM MEMBERS SECTION */
 #team {
-    background-color: $color-grey;
+    background: url(../img/software.jpg) no-repeat center center;
+    background-size: cover;
 
     .team-head {
-        color: $color-darkblue;    
-        letter-spacing: 0.05rem;
+        @include section-head($color-white);
     }
     
     .team-box {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
         @include box(75%);
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         
         .card {
             display: inline-block;
-            margin: 1rem;
-            background-color: $color-black;
+            margin: 1.25rem 0.75rem;
+            width: 20%;
+            
             border-radius: 0;
             border: none;
-            width: 20%;
+            background-color: $color-black;
+            
             transition: background-color, 0.1s;
             
             .card-body {
                 padding: 1rem 0;
                 
                 .card-title {
-                    color: $color-white;
                     margin: 0;
+                    color: $color-white;
                 }
                 
                 .btn {
@@ -117,17 +124,18 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* PUBLICATIONS SECTION */
+#publications {
+    
+    .publications-head {
+        @include section-head($color-darkblue);
+    }
+    
+    .publications-box {
+        @include box(90%);
+        
+        .pub-list {
+            list-style: square;
+        }
+    }
+}
