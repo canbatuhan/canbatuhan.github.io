@@ -1,0 +1,5 @@
+@mixin box($width) {
+    width: $width;
+    padding: 1rem;
+    margin: auto;
+}

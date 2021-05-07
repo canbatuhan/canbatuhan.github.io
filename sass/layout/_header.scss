@@ -2,7 +2,7 @@
 #header {
     position: relative;
     height: 100vh;
-    background: url(../img/Desert.jpg) no-repeat center center fixed;
+    background: url(../img/Desert.jpg) no-repeat center center;
     background-size: cover;
 
     /* NAVBAR */
@@ -46,7 +46,7 @@
         width: 100%;
         position: absolute;
         right: 10%;
-        bottom: 40%;
+        bottom: 30%;
         padding: 0rem;
         
         span {

@@ -1,0 +1,50 @@
+/* GRID DEFAULTS */
+
+
+/* ABOUT SECTION */
+#about {
+    background-color: $color-white;
+    text-indent: 0.5rem;
+    
+    .about-head {
+        color: $color-darkblue;    
+        letter-spacing: 0.05rem;
+    }
+    
+    .about-subhead {
+        font-weight: normal;
+        color: $color-black;
+    }
+    
+    .about-box {
+        line-height: 1.5rem;
+        text-align: justify;
+        @include box(75%);
+    }
+    
+    .funding-box {
+        background-color: $color-darkblue;
+        height: 5rem;
+        width: 5rem;
+        margin: auto;
+        border-radius: 50%;
+        transition: background-color, 0.25s;
+        
+        &:hover {
+            background-color: $color-lightblue;
+        }
+    }
+    
+    .nav-link {
+        margin: 0 1rem;
+        color: $color-yellow;
+        font-size: 2rem;
+        transition: scale, 0.25s;
+        
+        &:hover {
+            transform: scale(1.25);
+        }
+    }
+}
+
+/* TEAM MEMBERS SECTION */

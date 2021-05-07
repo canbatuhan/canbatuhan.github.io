@@ -4,31 +4,35 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 22px; }
+  font-size: 20px; }
   @media screen and (max-width: 1536px) {
     html {
-      font-size: 20px; } }
+      font-size: 18px; } }
   @media screen and (max-width: 1366px) {
     html {
-      font-size: 18px; } }
+      font-size: 16px; } }
   @media screen and (max-width: 1080px) {
     html {
-      font-size: 16px; } }
+      font-size: 14px; } }
   @media screen and (max-width: 900px) {
     html {
-      font-size: 14px; } }
+      font-size: 12px; } }
   @media screen and (max-width: 768px) {
     html {
-      font-size: 12px; } }
+      font-size: 10px; } }
   @media screen and (max-width: 667px) {
     html {
-      font-size: 10px; } }
+      font-size: 9px; } }
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-weight: 600; }
 
 /* HEADER SECTION */
 #header {
   position: relative;
   height: 100vh;
-  background: url(../img/Desert.jpg) no-repeat center center fixed;
+  background: url(../img/Desert.jpg) no-repeat center center;
   background-size: cover;
   /* NAVBAR */
   /* MOTTO */ }
@@ -37,7 +41,7 @@ html {
     #header .navbar a {
       text-align: center;
       text-transform: uppercase;
-      color: #dadada;
+      color: #f3f3f3;
       font-size: 1rem;
       margin: 0rem 1rem;
       transition: color, 0.35;
@@ -57,7 +61,7 @@ html {
     width: 100%;
     position: absolute;
     right: 10%;
-    bottom: 40%;
+    bottom: 30%;
     padding: 0rem; }
     #header #motto span {
       align-self: center;
@@ -66,5 +70,41 @@ html {
       font-size: 5rem; }
     #header #motto .display-4 {
       font-size: 2.5rem; }
+
+/* GRID DEFAULTS */
+/* ABOUT SECTION */
+#about {
+  background-color: #f3f3f3;
+  text-indent: 0.5rem; }
+  #about .about-head {
+    color: #365599;
+    letter-spacing: 0.05rem; }
+  #about .about-subhead {
+    font-weight: normal;
+    color: #353535; }
+  #about .about-box {
+    line-height: 1.5rem;
+    text-align: justify;
+    width: 75%;
+    padding: 1rem;
+    margin: auto; }
+  #about .funding-box {
+    background-color: #365599;
+    height: 5rem;
+    width: 5rem;
+    margin: auto;
+    border-radius: 50%;
+    transition: background-color, 0.25s; }
+    #about .funding-box:hover {
+      background-color: #6685c9; }
+  #about .nav-link {
+    margin: 0 1rem;
+    color: #cab666;
+    font-size: 2rem;
+    transition: scale, 0.25s; }
+    #about .nav-link:hover {
+      transform: scale(1.25); }
+
+/* TEAM MEMBERS SECTION */
 
 /*# sourceMappingURL=style.css.map */
