@@ -29,13 +29,13 @@
         height: 5rem;
         width: 5rem;
         background-color: $color-darkblue;
-        border: 0.15rem $color-darkblue solid;
+        border: 0.15rem $color-lightgreen solid;
         border-radius: 50%;
         
-        transition: background-color, border-color, 0.5s;
+        transition: background-color, 1s;
         
         &:hover {
-            background-color: $color-yellow;
+            background-color: $color-lightgreen;
             border-color: $color-darkblue;
             
             .fa {
@@ -48,7 +48,7 @@
             transform: scale(2);
             
             text-indent: 0;
-            color: $color-yellow;
+            color: $color-lightgreen;
 
             transition: background-color, 1s;
         }
