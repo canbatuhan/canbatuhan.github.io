@@ -38,13 +38,13 @@
             transform: scale(2);
             
             text-indent: 0;
-            color: $color-grey;
+            color: $color-lightgrey;
 
             transition: background-color, 0.5s;
         }
         
         &:hover {
-            background-color: $color-grey;
+            background-color: $color-lightgrey;
             
             .fa {
                 color: $color-darkblue; 

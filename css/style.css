@@ -54,9 +54,10 @@ section:first-child {
   /* NAVBAR */
   /* MOTTO */ }
   #header .navbar {
+    padding: 1rem;
     background-color: rgba(0, 0, 0, 0); }
     #header .navbar .nav-item {
-      align-self: flex-end; }
+      align-self: center; }
       #header .navbar .nav-item .nav-link {
         margin: 0rem 1rem;
         border-bottom: 1px rgba(0, 0, 0, 0) solid;
@@ -120,10 +121,10 @@ section:first-child {
       align-self: center;
       transform: scale(2);
       text-indent: 0;
-      color: #b4b4b4;
+      color: #dddddd;
       transition: background-color, 0.5s; }
     #about .funding-icon:hover {
-      background-color: #b4b4b4; }
+      background-color: #dddddd; }
       #about .funding-icon:hover .fa {
         color: #365599; }
   #about .nav {
