@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
 
 section {
-  padding: 6rem 0; }
+  padding: 5rem 0; }
 
 section:first-child {
   padding: 0; }
@@ -102,7 +102,7 @@ section:first-child {
     font-weight: normal; }
   #about .about-box {
     width: 75%;
-    padding: 1rem;
+    padding: 2rem;
     margin: auto;
     line-height: 1.5rem;
     text-align: justify; }
@@ -113,20 +113,19 @@ section:first-child {
     height: 5rem;
     width: 5rem;
     background-color: #365599;
-    border: 0.15rem #83c986 solid;
+    border: 0.15rem #353535 solid;
     border-radius: 50%;
-    transition: background-color, 1s; }
-    #about .funding-icon:hover {
-      background-color: #83c986;
-      border-color: #365599; }
-      #about .funding-icon:hover .fa {
-        color: #365599; }
+    transition: background-color, 0.5s; }
     #about .funding-icon .fa {
       align-self: center;
       transform: scale(2);
       text-indent: 0;
-      color: #83c986;
-      transition: background-color, 1s; }
+      color: #b4b4b4;
+      transition: background-color, 0.5s; }
+    #about .funding-icon:hover {
+      background-color: #b4b4b4; }
+      #about .funding-icon:hover .fa {
+        color: #365599; }
   #about .nav {
     display: flex;
     flex-wrap: wrap;
@@ -145,13 +144,14 @@ section:first-child {
 /* TEAM MEMBERS SECTION */
 #team {
   background: url(../img/software.jpg) no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+  background-blend-mode: hard-light; }
   #team .team-head {
     color: #f3f3f3;
     letter-spacing: 0.05rem; }
   #team .team-box {
-    width: 75%;
-    padding: 1rem;
+    width: 85%;
+    padding: 2rem;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -175,17 +175,52 @@ section:first-child {
           left: 0;
           border-radius: 0; }
       #team .team-box .card:hover {
-        background-color: #6685c9; }
+        background-color: #b4b4b4; }
+        #team .team-box .card:hover .card-title {
+          color: #353535; }
 
 /* PUBLICATIONS SECTION */
 #publications .publications-head {
   color: #365599;
   letter-spacing: 0.05rem; }
 #publications .publications-box {
-  width: 90%;
-  padding: 1rem;
+  width: 95%;
+  padding: 2rem;
   margin: auto; }
   #publications .publications-box .pub-list {
     list-style: square; }
+
+/* ACTIVITIES SECTION */
+#activities {
+  background: url(../img/software.jpg) no-repeat center center;
+  background-size: cover;
+  background-blend-mode: soft-light; }
+  #activities .activities-head {
+    color: #f3f3f3;
+    letter-spacing: 0.05rem; }
+  #activities .activities-grid {
+    width: 90%;
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.2rem; }
+    #activities .activities-grid .activities-card {
+      margin: 1rem;
+      width: calc(50% - 4rem);
+      transition: opacity, 0.1s; }
+      #activities .activities-grid .activities-card .activities-blog {
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 0rem;
+        padding: 2rem;
+        border-radius: 0.1rem; }
+      #activities .activities-grid .activities-card .activities-img {
+        height: 7.5rem;
+        border-radius: 50%; }
+      #activities .activities-grid .activities-card:hover {
+        opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */
