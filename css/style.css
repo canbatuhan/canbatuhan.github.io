@@ -63,9 +63,8 @@ section:first-child {
         border-bottom: 1px rgba(0, 0, 0, 0) solid;
         text-align: center;
         text-transform: uppercase;
-        font-weight: 600;
         color: #f3f3f3;
-        font-size: 1rem;
+        font-size: 0.9rem;
         transition: color, 0.35; }
         #header .navbar .nav-item .nav-link:hover {
           color: white;
