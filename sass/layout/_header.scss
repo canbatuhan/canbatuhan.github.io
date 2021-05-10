@@ -15,18 +15,20 @@
             
             .nav-link {
                 margin: 0rem 1rem;
+                border-top: 1px rgba(0,0,0,0) solid;
                 border-bottom: 1px rgba(0,0,0,0) solid;
 
                 text-align: center;
                 text-transform: uppercase;
-                color: $color-white;
+                color: $color-lightgrey;
                 font-size: 0.9rem;
 
-                transition: color, 0.35;
+                transition: color, border-bottom-color, border-top-color, 0.25s;
 
                 &:hover {
-                    color: lighten($color-white, 10);
-                    border-bottom: 1px lighten($color-white, 10) solid;
+                    color: lighten($color-white, 100);
+                    border-top-color: lighten($color-white, 100);
+                    border-bottom-color: lighten($color-white, 100);
                 }
             }
             
