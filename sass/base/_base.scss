@@ -56,9 +56,8 @@ html {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    font-weight: 600;
+body {
+    overflow-x: hidden;
 }
 
 section {
@@ -67,4 +66,9 @@ section {
 
 section:first-child {
     padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-weight: 600;
 }
