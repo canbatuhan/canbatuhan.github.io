@@ -1,0 +1,24 @@
+.flip-box {
+    background-color: transparent;
+    perspective: 1000px; /* 3D effect */
+}
+
+.flip-box-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-box-back {
+    transform: rotateY(180deg);
+}
