@@ -1,0 +1,15 @@
+/* PUBLICATIONS SECTION */
+#publications {
+    
+    .publications-head {
+        @include section-head($color-darkblue);
+    }
+    
+    .publications-box {
+        @include box(95%);
+        
+        .pub-list {
+            list-style: square;
+        }
+    }
+}

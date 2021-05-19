@@ -1,0 +1,89 @@
+/* ABOUT SECTION */
+#about {
+    text-indent: 0.5rem;
+    
+    .about-head {
+        @include section-head($color-darkblue);
+    }
+    
+    .about-subhead {
+        text-transform: capitalize;
+        text-align: left;
+        text-indent: 0rem;
+        color: $color-darkblue;
+        font-weight: normal;
+    }
+    
+    .about-box {
+        @include box(75%);
+    }
+    
+    /* ABOUT */
+    .about-blog {
+        font-weight: 300;
+        line-height: 1.5rem;
+    }
+    
+    .about-img {
+        padding: 2rem;
+        text-align: center;
+        
+        img {
+            width: 75%;
+            border-radius: 0.2rem;
+            border: 0.1rem solid $color-black;
+            box-shadow: 0.25rem 0.5rem 0.75rem rgba(0,0,0,0.3);
+        }
+    }
+    
+    /* PARTICIPANTS */
+    #participants-box {
+        display: flex;
+        justify-content: center;
+        
+        .participants-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 60%;
+        }
+        
+        .participants-chart {
+            width: 40%;
+            text-align: center;
+            
+            img {
+                width: 100%;
+                border-radius: 0.2rem;
+                border: 0.1rem solid $color-black;
+                box-shadow: 0.25rem 0.5rem 0.75rem rgba(0,0,0,0.3);
+            }
+        }
+    }
+    
+    /* FUNDERS */
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .nav-item {
+            width: 20%;
+        }
+
+        .nav-link {
+            text-align: center;
+
+            transition: scale, 0.25s;
+
+            &:hover {
+                transform: scale(1.25);
+            }
+
+            img {
+                display: inline-block;
+                // height: 5rem; determined one by one
+            }
+        }
+    }
+}

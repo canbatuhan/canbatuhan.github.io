@@ -3,8 +3,15 @@
 
 @import 'base/base';
 
+@import 'layout/temporary';
 @import 'layout/header';
-@import 'layout/grid';
+@import 'layout/about';
+@import 'layout/publications';
+@import 'layout/deliverables';
+@import 'layout/news';
+@import 'layout/projects';
+@import 'layout/inmedia';
+@import 'layout/tools';
 @import 'layout/footer';
 
 @import 'components/slider';

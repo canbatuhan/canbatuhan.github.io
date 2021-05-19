@@ -41,7 +41,7 @@ body {
   overflow-x: hidden; }
 
 section {
-  padding: 5rem 0; }
+  padding: 3rem 0; }
 
 section:first-child {
   padding: 0; }
@@ -50,12 +50,122 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-weight: 600; }
 
+/* TEAM MEMBERS SECTION */
+/* #team {
+    background: url(../img/software.jpg) no-repeat center center;
+    background-size: cover;
+    background-blend-mode: hard-light;
+
+    .team-head {
+        @include section-head($color-white);
+    }
+    
+    .team-box {
+        @include box(85%);
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .card {
+            display: inline-block;
+            margin: 1.25rem 0.75rem;
+            padding-bottom: 0.1rem;
+            width: 20%;
+            
+            border-radius: 0;
+            border: none;
+            background-color: $color-black;
+            
+            transition: background-color, 0.1s;
+            
+            .card-body {
+                padding: 1rem 0;
+                
+                .card-title {
+                    margin: 0;
+                    color: $color-white;
+                }
+                
+                .btn {
+                    position: absolute;
+                    top: 15%;
+                    left: 0;
+                    border-radius: 0;
+                }
+            }
+            
+            &:hover {
+                background-color: $color-grey;
+                
+                .card-title {
+                    color: $color-black;
+                }
+            }
+        }
+    }
+} */
+/* ACTIVITIES SECTION */
+/* #activities {
+    background: url(../img/software.jpg) no-repeat center center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    
+    .activities-head {
+        @include section-head($color-white);
+    }
+    
+    .activities-grid {
+        @include box(90%);
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        text-align: center;
+        line-height: 2rem;
+        font-size: 1.2rem;
+        
+        .activities-card {
+            margin: 1rem;
+            width: calc(50% - 4rem);
+            
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: opacity, 0.1s;
+        
+            .activities-blog {
+                margin: 0rem;
+                padding: 1rem;
+                border-radius: 0.1rem;
+            }
+
+            .activities-img {
+                margin-bottom: 1rem;
+                height: 5rem;
+                border-radius: 50%;
+            }
+            
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    
+}
+
+/* IN MEDIA SECTION */
+/* #inmedia {
+    .inmedia-head {
+        @include section-head($color-white);
+    }
+} */
 /* HEADER SECTION */
 #header {
   position: relative;
-  height: 60vh;
-  background: url(../img/project.png) no-repeat center center;
+  height: 65vh;
+  background: url(../img/header.jpg) no-repeat center center, linear-gradient(to top, #151515 0%, #656565 100%);
   background-size: cover;
+  background-blend-mode: soft-light;
   /* NAVBAR */
   /* MOTTO */ }
   #header .navbar {
@@ -70,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
         text-transform: uppercase;
         color: #dddddd;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         transition: color, border-bottom-color, border-top-color, 0.25s; }
         #header .navbar .nav-item .nav-link:hover {
           color: white;
@@ -82,112 +192,82 @@ h1, h2, h3, h4, h5, h6 {
           transform: scale(1.25); }
         #header .navbar .nav-item .navbar-brand .logo {
           text-align: center;
-          height: 5rem; }
+          height: 4rem; }
   #header #motto {
     position: absolute;
-    left: 10%;
+    right: 10%;
     bottom: 20%;
     width: 100%;
     padding: 0rem;
     color: #fafafa; }
     #header #motto span {
+      text-align: right;
       display: block; }
     #header #motto .display-1 {
       font-size: 5rem; }
     #header #motto .display-4 {
       font-size: 2.5rem; }
 
-/* GRID DEFAULTS */
 /* ABOUT SECTION */
 #about {
-  text-indent: 0.5rem; }
+  text-indent: 0.5rem;
+  /* ABOUT */
+  /* PARTICIPANTS */
+  /* FUNDERS */ }
   #about .about-head {
     text-transform: uppercase;
     color: #365599;
     letter-spacing: 0.05rem; }
   #about .about-subhead {
-    color: #252525;
+    text-transform: capitalize;
+    text-align: left;
+    text-indent: 0rem;
+    color: #365599;
     font-weight: normal; }
   #about .about-box {
     width: 75%;
     padding: 2rem;
-    margin: auto;
-    line-height: 1.5rem;
-    text-align: justify; }
-  #about .funding-icon {
+    margin: auto; }
+  #about .about-blog {
+    font-weight: 300;
+    line-height: 1.5rem; }
+  #about .about-img {
+    padding: 2rem;
+    text-align: center; }
+    #about .about-img img {
+      width: 75%;
+      border-radius: 0.2rem;
+      border: 0.1rem solid #252525;
+      box-shadow: 0.25rem 0.5rem 0.75rem rgba(0, 0, 0, 0.3); }
+  #about #participants-box {
     display: flex;
-    margin: auto;
-    justify-content: center;
-    height: 5rem;
-    width: 5rem;
-    background-color: #365599;
-    border: 0.15rem #252525 solid;
-    border-radius: 50%;
-    transition: background-color, 0.5s; }
-    #about .funding-icon .fa {
-      align-self: center;
-      transform: scale(2);
-      text-indent: 0;
-      color: #dddddd;
-      transition: background-color, 0.5s; }
-    #about .funding-icon:hover {
-      background-color: #dddddd; }
-      #about .funding-icon:hover .fa {
-        color: #365599; }
+    justify-content: center; }
+    #about #participants-box .participants-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 60%; }
+    #about #participants-box .participants-chart {
+      width: 40%;
+      text-align: center; }
+      #about #participants-box .participants-chart img {
+        width: 100%;
+        border-radius: 0.2rem;
+        border: 0.1rem solid #252525;
+        box-shadow: 0.25rem 0.5rem 0.75rem rgba(0, 0, 0, 0.3); }
   #about .nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
     #about .nav .nav-item {
-      width: 25%; }
+      width: 20%; }
     #about .nav .nav-link {
       text-align: center;
       transition: scale, 0.25s; }
       #about .nav .nav-link:hover {
         transform: scale(1.25); }
       #about .nav .nav-link img {
-        display: inline-block;
-        height: 5rem; }
-
-/* TEAM MEMBERS SECTION */
-#team {
-  background: url(../img/software.jpg) no-repeat center center;
-  background-size: cover;
-  background-blend-mode: hard-light; }
-  #team .team-head {
-    text-transform: uppercase;
-    color: #fafafa;
-    letter-spacing: 0.05rem; }
-  #team .team-box {
-    width: 85%;
-    padding: 2rem;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    #team .team-box .card {
-      display: inline-block;
-      margin: 1.25rem 0.75rem;
-      padding-bottom: 0.1rem;
-      width: 20%;
-      border-radius: 0;
-      border: none;
-      background-color: #252525;
-      transition: background-color, 0.1s; }
-      #team .team-box .card .card-body {
-        padding: 1rem 0; }
-        #team .team-box .card .card-body .card-title {
-          margin: 0;
-          color: #fafafa; }
-        #team .team-box .card .card-body .btn {
-          position: absolute;
-          top: 15%;
-          left: 0;
-          border-radius: 0; }
-      #team .team-box .card:hover {
-        background-color: #a4a4a4; }
-        #team .team-box .card:hover .card-title {
-          color: #252525; }
+        display: inline-block; }
 
 /* PUBLICATIONS SECTION */
 #publications .publications-head {
@@ -200,41 +280,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto; }
   #publications .publications-box .pub-list {
     list-style: square; }
-
-/* ACTIVITIES SECTION */
-#activities {
-  background: url(../img/software.jpg) no-repeat center center;
-  background-size: cover;
-  background-blend-mode: soft-light; }
-  #activities .activities-head {
-    text-transform: uppercase;
-    color: #fafafa;
-    letter-spacing: 0.05rem; }
-  #activities .activities-grid {
-    width: 90%;
-    padding: 2rem;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    line-height: 2rem;
-    font-size: 1.2rem; }
-    #activities .activities-grid .activities-card {
-      margin: 1rem;
-      width: calc(50% - 4rem);
-      background-color: rgba(255, 255, 255, 0.1);
-      transition: opacity, 0.1s; }
-      #activities .activities-grid .activities-card .activities-blog {
-        margin: 0rem;
-        padding: 1rem;
-        border-radius: 0.1rem; }
-      #activities .activities-grid .activities-card .activities-img {
-        margin-bottom: 1rem;
-        height: 5rem;
-        border-radius: 50%; }
-      #activities .activities-grid .activities-card:hover {
-        opacity: 0.8; }
 
 /* PROJECTS SECTION */
 #projects .projects-head {
@@ -259,12 +304,6 @@ h1, h2, h3, h4, h5, h6 {
     #projects .projects-grid .project-card .project-description {
       background-color: #fafafa;
       color: #252525; }
-
-/* IN MEDIA SECTION */
-#inmedia .inmedia-head {
-  text-transform: uppercase;
-  color: #fafafa;
-  letter-spacing: 0.05rem; }
 
 .flip-box {
   background-color: transparent;

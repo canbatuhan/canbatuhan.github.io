@@ -1,0 +1,33 @@
+/* PROJECTS SECTION */
+#projects{
+    
+    .projects-head {
+        @include section-head($color-darkblue);
+    }
+    
+    .projects-grid {
+        @include box(95%);
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        overflow-y: visible;
+        
+        .project-card {
+            @include box(17.5%);
+            
+            margin-bottom: 5rem;
+            
+            .project-img img{
+                width: 100%;
+            }
+            
+            .project-description {
+                background-color: $color-white;
+                color: $color-black;
+            }
+        }
+        
+    }
+}

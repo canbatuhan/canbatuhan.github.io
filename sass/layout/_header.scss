@@ -1,9 +1,10 @@
 /* HEADER SECTION */
 #header {
     position: relative;
-    height: 60vh;
-    background: url(../img/project.png) no-repeat center center;
+    height: 65vh;
+    background: url(../img/header.jpg) no-repeat center center, linear-gradient(to top, #151515 0%, #656565 100%);
     background-size: cover;
+    background-blend-mode: soft-light;
 
     /* NAVBAR */
     .navbar {
@@ -21,7 +22,7 @@
                 text-align: center;
                 text-transform: uppercase;
                 color: $color-lightgrey;
-                font-size: 0.9rem;
+                font-size: 0.8rem;
 
                 transition: color, border-bottom-color, border-top-color, 0.25s;
 
@@ -41,7 +42,7 @@
                 
                 .logo {
                     text-align: center;
-                    height: 5rem;
+                    height: 4rem;
                 }
             }
         }
@@ -51,7 +52,7 @@
     /* MOTTO */
     #motto {
         position: absolute;
-        left: 10%;
+        right: 10%;
         bottom: 20%;
         
         width: 100%;       
@@ -60,6 +61,7 @@
         color: $color-white;
         
         span {
+            text-align: right;
             display: block;
         }
         
