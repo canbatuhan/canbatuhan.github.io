@@ -1,5 +1,6 @@
 /* ABOUT SECTION */
 #about {
+    background-color: $color-white;
     text-indent: 0.5rem;
     
     .about-head {
@@ -7,6 +8,7 @@
     }
     
     .about-subhead {
+        margin-bottom: 1rem;
         text-transform: capitalize;
         text-align: left;
         text-indent: 0rem;
@@ -15,75 +17,41 @@
     }
     
     .about-box {
-        @include box(75%);
+        @include box(90%);
     }
     
     /* ABOUT */
     .about-blog {
+        @include box(80%);
+        
+        padding-top: 0rem;
+        text-align: justify;
         font-weight: 300;
         line-height: 1.5rem;
     }
     
-    .about-img {
-        padding: 2rem;
-        text-align: center;
-        
-        img {
-            width: 75%;
-            border-radius: 0.2rem;
-            border: 0.1rem solid $color-black;
-            box-shadow: 0.25rem 0.5rem 0.75rem rgba(0,0,0,0.3);
-        }
-    }
-    
-    /* PARTICIPANTS */
-    #participants-box {
+    .about-media {
         display: flex;
-        justify-content: center;
-        
-        .participants-grid {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            width: 60%;
-        }
-        
-        .participants-chart {
-            width: 40%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        .about-img {
+            flex: 55%;
             text-align: center;
             
             img {
-                width: 100%;
-                border-radius: 0.2rem;
-                border: 0.1rem solid $color-black;
-                box-shadow: 0.25rem 0.5rem 0.75rem rgba(0,0,0,0.3);
+                width: 90%;
+                border: 0.05rem solid $color-black;
+                box-shadow: 0.125rem 0.25rem 0.75rem rgba(0,0,0,0.3);
             }
         }
-    }
-    
-    /* FUNDERS */
-    .nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         
-        .nav-item {
-            width: 20%;
+        iframe {
+            flex: 45%;
+            width: 90%;
+            
+            border: 0.05rem solid $color-black;
+            box-shadow: 0.125rem 0.25rem 0.75rem rgba(0,0,0,0.3);
         }
-
-        .nav-link {
-            text-align: center;
-
-            transition: scale, 0.25s;
-
-            &:hover {
-                transform: scale(1.25);
-            }
-
-            img {
-                display: inline-block;
-                // height: 5rem; determined one by one
-            }
-        }
-    }
+    } 
 }

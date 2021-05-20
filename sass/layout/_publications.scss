@@ -1,5 +1,6 @@
 /* PUBLICATIONS SECTION */
 #publications {
+    background-color: $color-lightgrey;
     
     .publications-head {
         @include section-head($color-darkblue);

@@ -14,57 +14,54 @@ html {
     @media screen and (max-width: 1366px) {
         font-size: 16px;
         
-        #about .about-box .nav .nav-item {
-            width: 50%;
-        }
-        
-        #team .team-box .card {
-            width: 30%;
-        }
-        
-        #activities .activities-grid .activities-card {
-            width: 100%;
+        #funding .funding-box .nav .nav-item {
+            width: 33%;
         }
     }
     
     @media screen and (max-width: 1080px) {
         font-size: 14px;
+        
+        #funding .funding-box .nav .nav-item {
+            width: 50%;
+        }
     }
     
     @media screen and (max-width: 900px) {
         font-size: 12px;
         
-        #about .about-box .nav .nav-item {
-            width: 100%;
-        }
-        
-        #team .team-box .card {
-            width: 45%;
+        #about .about-box .about-media iframe {
+            display: none;
         }
     }
     
     @media screen and (max-width: 768px) {
         font-size: 10px;
+        
+        #funding .funding-box .nav .nav-item {
+            width: 100%;
+        }
     }
     
     @media screen and (max-width: 667px) {
         font-size: 9px;
         
-        #team .team-box .card {
-            width: 50%;
-        }
     }
 }
 
 body {
+    background-color: $color-white;
     overflow-x: hidden;
 }
 
 section {
+    width: 98%;
+    margin: auto;
     padding: 3rem 0;
 }
 
 section:first-child {
+    width: 100%;
     padding: 0;
 }
 

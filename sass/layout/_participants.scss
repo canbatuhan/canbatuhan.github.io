@@ -1,0 +1,58 @@
+/* PARTICIPANTS */
+#participants {
+    background-color: $color-lightgrey;
+    
+    .participants-head {
+        @include section-head($color-darkblue);
+    }
+    
+    .participants-box {
+        @include box(80%);
+        
+        /* Participant List */
+        .participant-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            list-style: none;
+            
+            .participant-item {
+                flex: 30%;
+                align-self: center;
+                
+                margin: 1rem;
+                text-align: center;
+                
+                .participant-link {
+                    
+                    img {
+                        // height: 4rem; determined one by one
+                    }
+                }
+                
+                .participant-overlay {
+                    width: 100%;
+                    padding: 1rem 0rem;
+                    margin: auto;
+                    
+                    color: $color-lightgrey;
+                    
+                    transition: width, color, 0.75s;
+                    
+                    .researcher-list {
+                        list-style: none;
+                        text-align: left;
+                    }
+                }
+                
+                &:hover {
+                    
+                    .participant-overlay {
+                        width: 90%;
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+    }
+}

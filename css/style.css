@@ -12,153 +12,44 @@ html {
   @media screen and (max-width: 1366px) {
     html {
       font-size: 16px; }
-      html #about .about-box .nav .nav-item {
-        width: 50%; }
-      html #team .team-box .card {
-        width: 30%; }
-      html #activities .activities-grid .activities-card {
-        width: 100%; } }
+      html #funding .funding-box .nav .nav-item {
+        width: 33%; } }
   @media screen and (max-width: 1080px) {
     html {
-      font-size: 14px; } }
+      font-size: 14px; }
+      html #funding .funding-box .nav .nav-item {
+        width: 50%; } }
   @media screen and (max-width: 900px) {
     html {
       font-size: 12px; }
-      html #about .about-box .nav .nav-item {
-        width: 100%; }
-      html #team .team-box .card {
-        width: 45%; } }
+      html #about .about-box .about-media iframe {
+        display: none; } }
   @media screen and (max-width: 768px) {
     html {
-      font-size: 10px; } }
+      font-size: 10px; }
+      html #funding .funding-box .nav .nav-item {
+        width: 100%; } }
   @media screen and (max-width: 667px) {
     html {
-      font-size: 9px; }
-      html #team .team-box .card {
-        width: 50%; } }
+      font-size: 9px; } }
 
 body {
+  background-color: #fdfdfd;
   overflow-x: hidden; }
 
 section {
+  width: 98%;
+  margin: auto;
   padding: 3rem 0; }
 
 section:first-child {
+  width: 100%;
   padding: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-weight: 600; }
 
-/* TEAM MEMBERS SECTION */
-/* #team {
-    background: url(../img/software.jpg) no-repeat center center;
-    background-size: cover;
-    background-blend-mode: hard-light;
-
-    .team-head {
-        @include section-head($color-white);
-    }
-    
-    .team-box {
-        @include box(85%);
-        
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-        .card {
-            display: inline-block;
-            margin: 1.25rem 0.75rem;
-            padding-bottom: 0.1rem;
-            width: 20%;
-            
-            border-radius: 0;
-            border: none;
-            background-color: $color-black;
-            
-            transition: background-color, 0.1s;
-            
-            .card-body {
-                padding: 1rem 0;
-                
-                .card-title {
-                    margin: 0;
-                    color: $color-white;
-                }
-                
-                .btn {
-                    position: absolute;
-                    top: 15%;
-                    left: 0;
-                    border-radius: 0;
-                }
-            }
-            
-            &:hover {
-                background-color: $color-grey;
-                
-                .card-title {
-                    color: $color-black;
-                }
-            }
-        }
-    }
-} */
-/* ACTIVITIES SECTION */
-/* #activities {
-    background: url(../img/software.jpg) no-repeat center center;
-    background-size: cover;
-    background-blend-mode: soft-light;
-    
-    .activities-head {
-        @include section-head($color-white);
-    }
-    
-    .activities-grid {
-        @include box(90%);
-        
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        
-        text-align: center;
-        line-height: 2rem;
-        font-size: 1.2rem;
-        
-        .activities-card {
-            margin: 1rem;
-            width: calc(50% - 4rem);
-            
-            background-color: rgba(255, 255, 255, 0.1);
-            transition: opacity, 0.1s;
-        
-            .activities-blog {
-                margin: 0rem;
-                padding: 1rem;
-                border-radius: 0.1rem;
-            }
-
-            .activities-img {
-                margin-bottom: 1rem;
-                height: 5rem;
-                border-radius: 50%;
-            }
-            
-            &:hover {
-                opacity: 0.8;
-            }
-        }
-    }
-    
-}
-
-/* IN MEDIA SECTION */
-/* #inmedia {
-    .inmedia-head {
-        @include section-head($color-white);
-    }
-} */
 /* HEADER SECTION */
 #header {
   position: relative;
@@ -179,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
         border-bottom: 1px rgba(0, 0, 0, 0) solid;
         text-align: center;
         text-transform: uppercase;
-        color: #dddddd;
+        color: #f1f1f1;
         font-size: 0.8rem;
         transition: color, border-bottom-color, border-top-color, 0.25s; }
         #header .navbar .nav-item .nav-link:hover {
@@ -199,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 20%;
     width: 100%;
     padding: 0rem;
-    color: #fafafa; }
+    color: #fdfdfd; }
     #header #motto span {
       text-align: right;
       display: block; }
@@ -210,100 +101,167 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ABOUT SECTION */
 #about {
+  background-color: #fdfdfd;
   text-indent: 0.5rem;
-  /* ABOUT */
-  /* PARTICIPANTS */
-  /* FUNDERS */ }
+  /* ABOUT */ }
   #about .about-head {
     text-transform: uppercase;
-    color: #365599;
+    color: #163589;
     letter-spacing: 0.05rem; }
   #about .about-subhead {
+    margin-bottom: 1rem;
     text-transform: capitalize;
     text-align: left;
     text-indent: 0rem;
-    color: #365599;
+    color: #163589;
     font-weight: normal; }
   #about .about-box {
-    width: 75%;
+    width: 90%;
     padding: 2rem;
     margin: auto; }
   #about .about-blog {
-    font-weight: 300;
-    line-height: 1.5rem; }
-  #about .about-img {
-    padding: 2rem;
-    text-align: center; }
-    #about .about-img img {
-      width: 75%;
-      border-radius: 0.2rem;
-      border: 0.1rem solid #252525;
-      box-shadow: 0.25rem 0.5rem 0.75rem rgba(0, 0, 0, 0.3); }
-  #about #participants-box {
-    display: flex;
-    justify-content: center; }
-    #about #participants-box .participants-grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      width: 60%; }
-    #about #participants-box .participants-chart {
-      width: 40%;
-      text-align: center; }
-      #about #participants-box .participants-chart img {
-        width: 100%;
-        border-radius: 0.2rem;
-        border: 0.1rem solid #252525;
-        box-shadow: 0.25rem 0.5rem 0.75rem rgba(0, 0, 0, 0.3); }
-  #about .nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    #about .nav .nav-item {
-      width: 20%; }
-    #about .nav .nav-link {
-      text-align: center;
-      transition: scale, 0.25s; }
-      #about .nav .nav-link:hover {
-        transform: scale(1.25); }
-      #about .nav .nav-link img {
-        display: inline-block; }
-
-/* PUBLICATIONS SECTION */
-#publications .publications-head {
-  text-transform: uppercase;
-  color: #365599;
-  letter-spacing: 0.05rem; }
-#publications .publications-box {
-  width: 95%;
-  padding: 2rem;
-  margin: auto; }
-  #publications .publications-box .pub-list {
-    list-style: square; }
-
-/* PROJECTS SECTION */
-#projects .projects-head {
-  text-transform: uppercase;
-  color: #365599;
-  letter-spacing: 0.05rem; }
-#projects .projects-grid {
-  width: 95%;
-  padding: 2rem;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  overflow-y: visible; }
-  #projects .projects-grid .project-card {
-    width: 17.5%;
+    width: 80%;
     padding: 2rem;
     margin: auto;
-    margin-bottom: 5rem; }
-    #projects .projects-grid .project-card .project-img img {
-      width: 100%; }
-    #projects .projects-grid .project-card .project-description {
-      background-color: #fafafa;
-      color: #252525; }
+    padding-top: 0rem;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 1.5rem; }
+  #about .about-media {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #about .about-media .about-img {
+      flex: 55%;
+      text-align: center; }
+      #about .about-media .about-img img {
+        width: 90%;
+        border: 0.05rem solid #202020;
+        box-shadow: 0.125rem 0.25rem 0.75rem rgba(0, 0, 0, 0.3); }
+    #about .about-media iframe {
+      flex: 45%;
+      width: 90%;
+      border: 0.05rem solid #202020;
+      box-shadow: 0.125rem 0.25rem 0.75rem rgba(0, 0, 0, 0.3); }
+
+/* PARTICIPANTS */
+#participants {
+  background-color: #f1f1f1; }
+  #participants .participants-head {
+    text-transform: uppercase;
+    color: #163589;
+    letter-spacing: 0.05rem; }
+  #participants .participants-box {
+    width: 80%;
+    padding: 2rem;
+    margin: auto;
+    /* Participant List */ }
+    #participants .participants-box .participant-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      list-style: none; }
+      #participants .participants-box .participant-list .participant-item {
+        flex: 30%;
+        align-self: center;
+        margin: 1rem;
+        text-align: center; }
+        #participants .participants-box .participant-list .participant-item .participant-overlay {
+          width: 100%;
+          padding: 1rem 0rem;
+          margin: auto;
+          color: #f1f1f1;
+          transition: width, color, 0.75s; }
+          #participants .participants-box .participant-list .participant-item .participant-overlay .researcher-list {
+            list-style: none;
+            text-align: left; }
+        #participants .participants-box .participant-list .participant-item:hover .participant-overlay {
+          width: 90%;
+          color: #202020; }
+
+/* FUNDING */
+#funding {
+  background-color: #fdfdfd; }
+  #funding .funding-head {
+    text-transform: uppercase;
+    color: #163589;
+    letter-spacing: 0.05rem; }
+  #funding .funding-box {
+    width: 90%;
+    padding: 2rem;
+    margin: auto;
+    /* INFO */
+    /* FUNDERS */ }
+    #funding .funding-box .funding-info {
+      width: 80%;
+      padding: 2rem;
+      margin: auto;
+      background-color: rgba(241, 241, 241, 0.3);
+      border-radius: 0.1rem;
+      box-shadow: 0.05rem 0.1rem 0.75rem rgba(0, 0, 0, 0.3); }
+      #funding .funding-box .funding-info p {
+        margin-bottom: 0;
+        font-weight: 300; }
+        #funding .funding-box .funding-info p span {
+          color: #163589;
+          font-weight: normal; }
+        #funding .funding-box .funding-info p i {
+          width: 2rem;
+          margin-right: 0.5rem; }
+    #funding .funding-box .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      #funding .funding-box .nav .nav-item {
+        padding: 1rem;
+        width: 20%; }
+      #funding .funding-box .nav .nav-link {
+        text-align: center;
+        transition: scale, 0.25s; }
+        #funding .funding-box .nav .nav-link:hover {
+          transform: scale(1.25); }
+        #funding .funding-box .nav .nav-link img {
+          display: inline-block; }
+
+/* PUBLICATIONS SECTION */
+#publications {
+  background-color: #f1f1f1; }
+  #publications .publications-head {
+    text-transform: uppercase;
+    color: #163589;
+    letter-spacing: 0.05rem; }
+  #publications .publications-box {
+    width: 95%;
+    padding: 2rem;
+    margin: auto; }
+    #publications .publications-box .pub-list {
+      list-style: square; }
+
+/* PROJECTS SECTION */
+#projects {
+  background-color: #a4a4a4; }
+  #projects .projects-head {
+    text-transform: uppercase;
+    color: #fdfdfd;
+    letter-spacing: 0.05rem; }
+  #projects .projects-grid {
+    width: 95%;
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: visible; }
+    #projects .projects-grid .project-card {
+      width: 17.5%;
+      padding: 2rem;
+      margin: auto;
+      margin-bottom: 5rem; }
+      #projects .projects-grid .project-card .project-img img {
+        width: 100%; }
+      #projects .projects-grid .project-card .project-description {
+        background-color: transparent;
+        color: #fdfdfd; }
 
 .flip-box {
   background-color: transparent;

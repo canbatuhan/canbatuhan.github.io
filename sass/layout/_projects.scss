@@ -1,8 +1,9 @@
 /* PROJECTS SECTION */
 #projects{
+    background-color: $color-grey;
     
     .projects-head {
-        @include section-head($color-darkblue);
+        @include section-head($color-white);
     }
     
     .projects-grid {
@@ -24,8 +25,8 @@
             }
             
             .project-description {
-                background-color: $color-white;
-                color: $color-black;
+                background-color: transparent;
+                color: $color-white;
             }
         }
         

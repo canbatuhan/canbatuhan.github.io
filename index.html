@@ -24,9 +24,11 @@
         <navbar class="navbar navbar-expand-sm">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
+                <li class="nav-item"><a href="#participants" class="nav-link">participants</a></li>
+                <li class="nav-item"><a href="#funding" class="nav-link">funding</a></li>
                 <li class="nav-item"><a href="#publications" class="nav-link">publications</a></li>
-                <li class="nav-item"><a href="#deliverables" class="nav-link">deliverables</a></li>
                 <li class="nav-item mx-5"><a href="#" class="navbar-brand mx-auto"><img class="logo" src="img/logo.png" alt="Logo"></a></li>
+                <li class="nav-item"><a href="#deliverables" class="nav-link">deliverables</a></li>
                 <li class="nav-item"><a href="#news" class="nav-link">news</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">related projects</a></li>
                 <li class="nav-item"><a href="#inmedia" class="nav-link">in media</a></li>
@@ -41,15 +43,14 @@
     
     </section>
     
-    <!-- About (includes about, partners and funders) -->
-    <section id="about" class="bg-light">
-        
-        <!-- About Part -->
+    <!-- About -->
+    <section id="about">
         <h2 class="about-head">about</h2>
-        <div class="about-box">
-            <h5 class="about-subhead">Sustainable Watershed Management Through IoT-Driven Artificial Intelligence</h5>
-           
+        
+        <div class="about-box">     
             <div class="about-blog">
+                <h5 class="about-subhead">Sustainable Watershed Management Through IoT-Driven Artificial Intelligence</h5>
+                
                 <p>Water resource contamination substantially threatens the environment. Rapid identification of chemicals and their emission sources in watersheds is crucial for sustainable water resources management. Despite studies on the measurement of micropollutants in the water resources around Europe, efficient utilization of the data in decision-making to protect water resources from detrimental chemical pollution is currently not available. Novel Internet of Things (IoT) technologies, coupled with advanced Artificial Intelligence (AI) strategies, may provide faster and more efficient responses to these challenges in real-time reactions as well as long-term planning.</p>
 
                 <p>The proposed solution aims at providing: better understanding and near real-time response to pollution incidents; better prediction of pollution spread and improved response for mitigation of effects in the long run; data-driven AI life-long learning and evolution of the algorithm. The primary outcome would be an integrated decision support system utilizing micropollutant measurements along with real-time collected hydrodynamic and meteorological data of a watershed for sustainable water quality management. Since micropollutants are related to emission sources and are resistant to degradation, they are good indicators of pollution and fingerprints of the pollution sources.</p>
@@ -57,237 +58,129 @@
                 <p>Our approach is based on introducing and combining novel technologies in improving water pollution management in several critical phases. First of all, we rely on an advanced, scalable IoT technology that adapts to the considered problem's specific needs through a novel mechanism called viscoelasticity. Therefore, we obtain desirable data from the locations and at the time that is optimized for further data analysis. Then, we introduce a novel methodology for creating a more accurate hybrid model integrating the expert-based physical environment model and data-driven, evidence-based techniques. To that end, we introduce a novel graph-based functional representation of data that captures affinities and dependencies among data streams more efficiently.</p>
             </div>
             
-            <div class="about-img"><img src="img/concept.png" alt="concept"></div>
-        </div>
-        
-        <!-- Participants -->
-        <h4 class="about-head">participants</h4>
-        <div id="participants-box" class="about-box">
-            <div class="participants-grid"></div>
+            <div class="about-media">
+                <iframe src="https://www.youtube.com/embed/cRY3X2FUQrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
-            <div class="participants-chart">
-                <img src="img/participants.png" alt="Map Chart">
+                <div class="about-img"><img class="media-item" src="img/concept.png" alt="concept"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Participants -->
+    <section id="participants">
+        <h2 class="participants-head">participants</h2>
+        
+        <div class="participants-box">
+            <ul class="participant-list">
+                <li class="participant-item">
+                    <a href="#" class="participant-link"><img src="img/wien.jpg" alt="Wien" style="height: 3rem;"></a>
+                    <div class="participant-overlay">
+                        <ul class="researcher-list">
+                            <li class="researcher">PI: Atakan Aral</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="participant-item">
+                    <a href="#" class="participant-link"><img src="img/tuwien.png" alt="TU Wien" style="height: 3.5rem;"></a>
+                    <div class="participant-overlay">
+                        <ul class="researcher-list">
+                            <li class="researcher">PI: Ivona Brandic</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="participant-item">
+                    <a href="#" class="participant-link"><img src="img/svizzera_italiana.png" alt="Svizerra Italiana" style="height: 3.5rem;"></a>
+                    <div class="participant-overlay">
+                        <ul class="researcher-list">
+                            <li class="researcher">PI: Cesare Alippi</li>
+                            <li class="researcher">Co-PI: Slobodan Lukovic</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="participant-item">
+                    <a href="#" class="participant-link"><img src="img/itu.png" alt="ITU" style="height: 4.5rem;"></a>
+                    <div class="participant-overlay">
+                        <ul class="researcher-list">
+                            <li class="researcher">PI: Mehmet Tahir Sandikkaya</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="participant-item">
+                    <a href="#" class="participant-link"><img src="img/boun.png" alt="BOUN" style="height: 5rem;"></a>
+                    <div class="participant-overlay">
+                        <ul class="researcher-list">
+                            <li class="researcher">PI: Ulas Tezel</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="participant-item">
+                    <a href="#" class="participant-link"><img src="img/syke.png" alt="SYKE" style="height: 5rem;"></a>
+                    <div class="participant-overlay">
+                        <ul class="researcher-list">
+                            <li class="researcher">PI: Janne Juntunen</li>
+                            <li class="researcher">Co-PI: Heidi Ahkola</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Funding -->
+    <section id="funding">
+        <h2 class="funding-head">funding</h2>
+        
+        <div class="funding-box">
+            <div class="funding-info">
+                <p><i class="fa fa-bell-o" aria-hidden="true"></i>Call Topic: Novel Computational Approaches for <span>Environmental Sustainability</span> (CES), Call 2019</p>
+                <p><i class="fa fa-clock-o" aria-hidden="true"></i>Start date: <span>March 2021</span> (36 months)</p>
+                <p><i class="fa fa-money" aria-hidden="true"></i>Funding support: 1,157,341 &euro;</p>
             </div>
         </div>
         
-        <!-- Funders Part -->
-        <h4 class="about-head">funders</h4>
-        <div class="about-box">
-            <div>
+        <div class="funding-box">
+            <div class="funding-grid">
                 <ul class="nav">
                     <li class="nav-item"><a href="#" class="nav-link"><img src="img/christera.svg" alt="Christ-Era" style="height: 3rem;"></a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><img src="img/fwf.png" alt="FWF" style="height: 3rem;"></a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><img src="img/aka.png" alt="AKA" style="height: 3rem;"></a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><img src="img/snsf.png" alt="SNSF" style="height: 3rem;"></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/tubitak.png" alt="TUBITAK" style="height: 5rem;"></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/tubitak.png" alt="TUBITAK" style="height: 4rem;"></a></li>
                 </ul>
             </div>
         </div>
-        
     </section>
-    
-    <!-- Team Members -->
-    <!-- may be used later -->
-    <!-- <section id="team" class="bg-dark">
-       
-        <h2 class="team-head">team members</h2>
-        
-        <div class="team-box">
-            <div class="card">
-                <img class="card-img-top" src="img/lenna.png" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">Lorem</h6>
-                    <h5 class="card-title">Name Surname</h5>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/lenna.png" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">Lorem</h6>
-                    <h5 class="card-title">Name Surname</h5>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/lenna.png" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">Lorem</h6>
-                    <h5 class="card-title">Name Surname</h5>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/lenna.png" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">Lorem</h6>
-                    <h5 class="card-title">Name Surname</h5>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/lenna.png" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">Lorem</h6>
-                    <h5 class="card-title">Name Surname</h5>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/lenna.png" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">Lorem</h6>
-                    <h5 class="card-title">Name Surname</h5>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/lenna.png" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">Lorem</h6>
-                    <h5 class="card-title">Name Surname</h5>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/lenna.png" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">Lorem</h6>
-                    <h5 class="card-title">Name Surname</h5>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/lenna.png" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">Lorem</h6>
-                    <h5 class="card-title">Name Surname</h5>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/lenna.png" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">Lorem</h6>
-                    <h5 class="card-title">Name Surname</h5>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/lenna.png" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">Lorem</h6>
-                    <h5 class="card-title">Name Surname</h5>
-                    <a href="#" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-        
-    </section> -->
-    <!-- may be used later -->
     
     <!-- Publications -->
     <!-- will be filled... -->
-    <section id="publications" class="bg-light">
+    <section id="publications">
        
         <h2 class="publications-head">publications</h2>
         
         <div class="publications-box">
             <ol class="pub-list">
                <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odio excepturi qui nulla officiis voluptates omnis ducimus alias voluptate libero.</p>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio at expedita fugiat aspernatur magnam temporibus voluptas modi in ea et.</p>
                </li>
                <li>
-                   <p>Est, optio odio quidem rerum! Excepturi praesentium porro est sed assumenda tenetur libero voluptatem nulla et quae! Rem, consectetur, sunt!</p>
+                   <p>Modi hic debitis optio quas, repellat mollitia voluptatibus rem. Dignissimos laborum, iure amet perferendis recusandae quisquam porro adipisci repudiandae non.</p>
                </li>
                <li>
-                   <p>Deleniti quas asperiores cumque itaque vitae amet facere, voluptatum rerum iure repellat aliquid, magni quos iusto, aliquam accusamus aut provident.</p>
+                   <p>In quo voluptate, animi nobis soluta accusantium, nesciunt atque nulla optio iure accusamus. Eum assumenda eius veniam, repellat ea sapiente!</p>
                </li>
                <li>
-                   <p>Fugit inventore velit adipisci quod, vel labore nostrum quis, iure, dolor ipsam illo totam libero sunt veniam iste omnis? Facere.</p>
+                   <p>Fugiat sunt rem soluta a. Omnis debitis natus perspiciatis, sapiente fuga possimus quasi molestiae animi excepturi quibusdam, porro, aperiam. Saepe?</p>
                </li>
                <li>
-                   <p>Consequatur sint perferendis officiis porro nostrum asperiores est earum distinctio impedit, tempore possimus ex fugiat culpa alias dolorem ullam praesentium.</p>
-               </li>
-               <li>
-                   <p>Qui, voluptates, ex. Illum sit reiciendis reprehenderit minus eum voluptates commodi voluptatibus rem. Vitae placeat nesciunt, est iusto facere similique.</p>
-               </li>
-               <li>
-                   <p>Perspiciatis iusto quos deleniti eaque temporibus ipsam corporis quam fugiat architecto exercitationem, blanditiis, eius culpa voluptas vero odio laborum reprehenderit?</p>
-               </li>
-               <li>
-                   <p>Modi velit debitis dignissimos inventore vitae. Omnis quibusdam facere minus consequatur nisi similique quo, esse soluta saepe temporibus necessitatibus nam!</p>
-               </li>
-               <li>
-                   <p>Qui fugiat quasi placeat nisi aliquid cum earum, adipisci deleniti voluptatum ab molestias necessitatibus voluptatem ipsum ipsa, quas, facilis culpa.</p>
-               </li>
-               <li>
-                   <p>Nisi ad accusantium recusandae molestiae, aliquam ab vel dicta at doloremque unde molestias architecto blanditiis et est assumenda esse eius?</p>
-               </li>
-               <li>
-                   <p>Dicta veniam asperiores ea quaerat molestias, voluptate ipsum laborum animi autem recusandae eius, temporibus doloremque. Facere cupiditate dignissimos, amet sed.</p>
-               </li>
-               <li>
-                   <p>Quo, voluptatibus maiores autem libero nulla esse quae, ducimus molestiae illo ipsa unde quaerat, tempora odio modi, veritatis nesciunt provident.</p>
-               </li>
-               <li>
-                   <p>Earum tenetur ipsa perspiciatis, saepe dolorem! Labore adipisci odio iusto vero. Ipsum rerum nemo quis, perspiciatis incidunt quam aperiam voluptas.</p>
-               </li>
-               <li>
-                   <p>Sunt quae reprehenderit modi ratione tempore, facilis repellat tenetur, blanditiis, quaerat quisquam explicabo pariatur voluptas molestiae nostrum, neque doloribus eius!</p>
-               </li>
-               <li>
-                   <p>Aliquid nemo a quos, repellendus iure vero saepe unde perferendis, provident autem velit! Nobis debitis illum, voluptas sed ea, mollitia.</p>
-               </li>
-               <li>
-                   <p>Repellat voluptates consequatur excepturi beatae doloremque, rerum distinctio, esse quaerat dolor minima ut eos incidunt mollitia fugiat, temporibus harum facere.</p>
-               </li>
-               <li>
-                   <p>Corporis nihil molestiae voluptates explicabo illum, laborum eius, veniam doloribus earum, veritatis commodi! Iste eligendi vero sequi fuga voluptatibus laboriosam.</p>
-               </li>
-               <li>
-                   <p>Sunt voluptates, quod voluptas excepturi accusamus esse dolor quasi odit voluptatem. Unde placeat, quod dignissimos ut deleniti nemo quidem modi.</p>
-               </li>
-               <li>
-                   <p>Inventore praesentium nesciunt tempore fugiat vero aperiam quia dolorum consequatur, quo porro ad error quos sed repellendus iste harum, odit.</p>
-               </li>
-               <li>
-                   <p>Modi voluptatum optio dolorem aperiam, aut, deserunt fugiat unde qui, voluptatem suscipit recusandae neque fuga beatae deleniti culpa, eius fugit.</p>
+                   <p>Rerum dolore id nemo earum numquam, modi architecto. Officiis consectetur delectus ut nulla magni illo, maiores, harum deserunt et repudiandae?</p>
                </li>
             </ol>
         </div>
         
     </section>
     
-    <!-- Activities -->
-    <!-- may be used later -->
-    <!-- <section id="activities" class="bg-dark">
-        
-        <h2 class="activities-head">activities</h2>
-        
-        <div class="activities-grid">
-            <div class="activities-card">
-                <p class="activities-blog text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, iste.</p>
-            </div>
-            <div class="activities-card">
-                <p class="activities-blog text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, iste.</p>
-            </div>
-            <div class="activities-card">
-                <p class="activities-blog text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, iste.</p>
-            </div>
-            <div class="activities-card">
-                <p class="activities-blog text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, iste.</p>
-            </div>
-            <div class="activities-card">
-                <p class="activities-blog text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, iste.</p>
-            </div>
-        </div>
-        
-    </section> -->
-    <!-- may be used later -->
-    
     <!-- Projects -->
-    <section id="projects" class="bg-light">
+    <section id="projects">
         
         <h2 class="projects-head">related projects</h2>
         
