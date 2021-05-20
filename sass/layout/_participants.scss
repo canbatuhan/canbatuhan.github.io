@@ -2,7 +2,7 @@
 #participants {
     
     .participants-head {
-        @include section-head($color-darkblue);
+        @include section-head($color-white);
     }
     
     .participants-box {
@@ -35,7 +35,7 @@
                     
                     font-weight: 500;
                     text-transform: uppercase;
-                    color: $color-darkgrey;
+                    color: $color-grey;
                     
                     transition: color, 0.25s;
                 }
@@ -59,12 +59,12 @@
                 &:hover {
                     
                     .participant-title {
-                        color: $color-black;
+                        color: $color-white;
                     }
                     
                     .participant-overlay {
                         width: 90%;
-                        color: darken($color-darkgrey, 100);
+                        color: $color-white;
                     }
                 }
             }

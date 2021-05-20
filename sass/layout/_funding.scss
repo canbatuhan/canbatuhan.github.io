@@ -2,7 +2,7 @@
 #funding {
     
     .funding-head {
-        @include section-head($color-darkblue);
+        @include section-head($color-white);
     }
     
     .funding-box {
@@ -29,7 +29,6 @@
                 
                 i {
                     width: 2rem;
-                    margin-right: 0.5rem;
                 }
             }
         }
