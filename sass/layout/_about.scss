@@ -1,10 +1,10 @@
 /* ABOUT SECTION */
 #about {
-    background-color: $color-black;
+    background-color: $color-white;
     text-indent: 0.5rem;
     
     .about-head {
-        @include section-head($color-white);
+        @include section-head($color-darkgrey);
     }
     
     .about-subhead {
@@ -12,7 +12,7 @@
         text-transform: capitalize;
         text-align: left;
         text-indent: 0rem;
-        color: $color-white;
+        color: $color-darkblue;
         font-weight: normal;
     }
     
@@ -39,7 +39,7 @@
         flex-wrap: wrap;
     
         .about-img {
-            flex: 55%;
+            flex: 50%;
             text-align: center;
             
             img {
@@ -49,7 +49,7 @@
         }
         
         iframe {
-            flex: 45%;
+            flex: 50%;
             width: 90%;
             
             box-shadow: 0.125rem 0.25rem 0.75rem rgba(80,80,80,0.5);

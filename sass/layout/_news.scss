@@ -1,9 +1,9 @@
 /* DELIVERABLES */
 #news {
-    background-color: $color-darkgrey;
+    background-color: $color-white;
     
     .news-head {
-        @include section-head($color-white);
+        @include section-head($color-darkgrey);
     }
     
     .news-box {

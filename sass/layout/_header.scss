@@ -2,7 +2,7 @@
 #header {
     position: relative;
     height: 65vh;
-    background: url(../img/header.jpg) no-repeat center center, linear-gradient(to top, #151515 0%, #656565 100%);
+    background: url(../img/header.jpg) no-repeat center center, linear-gradient(to top, #151515 0%, #757575 100%);
     background-size: cover;
     background-blend-mode: soft-light;
 
@@ -49,8 +49,8 @@
         
     }
     
-    /* MOTTO */
-    #motto {
+    /* TITLE */
+    .title {
         position: absolute;
         right: 10%;
         bottom: 20%;
@@ -58,26 +58,77 @@
         width: 100%;       
         padding: 0rem;
         
-        color: $color-lightgrey;
-        transition: color, 0.5s;
-        
-        span {
+        /* Title */
+        p {
+            margin-bottom: 0rem;
             text-align: right;
-            display: block;
+            color: $color-lightgrey;
+            
+            /* Point out */
+            span {
+                color: lighten($color-lightblue, 15);
+                transition: color, 0.5s;
+            }
         }
         
-        .display-1 {
-            font-size: 5rem;
+        .title-first {
+            font-size: 4rem;
         }
         
-        .display-4 {
-            font-size: 2.5rem;
+        .title-second {
+            font-size: 3rem;
         }
     }
     
+    /* Modify the title when Header is hovered*/
     &:hover {
-        #motto {
-            color: lighten($color-lightgrey, 100);
+        .title p span {
+            color: $color-lightblue;
         }
     }
+    
+    /* GO-UP BUTTON */
+    .turnback {
+        display: flex;
+        justify-content: center;
+        
+        position: fixed;
+        right: 2.5%;
+        bottom: 2.5%;
+        
+        transition: scale, 0.25s;
+        
+        .turnback-btn {
+            position: relative;
+            align-self: baseline;
+            background-color: $color-blue;
+            
+            text-align: center;
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 50%;
+            
+            transition: background-color, 0.1s;
+            
+            i {
+                position: absolute;
+                top: 25%;
+                bottom: 25%;
+                right: 25%;
+                left: 25%;
+                color: $color-white;
+            }
+        }
+        
+        &:active {
+            transform: scale(0.9);
+        }
+        
+        &:hover {
+            .turnback-btn {
+                background-color: $color-lightblue;
+            }
+        }
+    }
+    
 }

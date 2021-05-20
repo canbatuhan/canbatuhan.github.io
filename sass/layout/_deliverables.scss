@@ -1,9 +1,9 @@
 /* DELIVERABLES SECTION */
 #deliverables {
-    background: url(../img/software.jpg) no-repeat center center, rgba($color-grey, 0.5);
+    background: url(../img/deliverables-bg.jpg) no-repeat center center, linear-gradient(to top, rgba($color-darkgrey, 0.5) 0%, rgba($color-lightgrey, 0.2) 100%);
     background-size: cover;
     background-blend-mode: soft-light;
-    
+
     .deliverables-head {
         @include section-head($color-white);
     }

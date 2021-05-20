@@ -31,13 +31,13 @@
                 
                 .participant-title {
                     display: block;
-                    margin-top: 1rem;
+                    padding-top: 1rem;
                     
                     font-weight: 500;
                     text-transform: uppercase;
-                    color: $color-grey;
+                    color: lighten($color-grey, 20);
                     
-                    transition: color, 0.25s;
+                    transition: color, 0.75s;
                 }
                 
                 .participant-overlay {
@@ -60,6 +60,7 @@
                     
                     .participant-title {
                         color: $color-white;
+                        text-decoration: none;
                     }
                     
                     .participant-overlay {

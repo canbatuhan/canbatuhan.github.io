@@ -1,9 +1,9 @@
 /* PROJECTS SECTION */
 #projects {
-    background-color: $color-lightgrey;
+    background-color: $color-white;
     
     .projects-head {
-        @include section-head($color-darkblue);
+        @include section-head($color-darkgrey);
     }
     
     .projects-grid {
@@ -33,6 +33,7 @@
                 }
                 
                 span {
+                    cursor: default;
                     font-family: $font-fency;
                     color: $color-fency;
                     font-size: 3rem;
@@ -43,11 +44,11 @@
                 padding: 1rem;
                 
                 background-color: transparent;
-                color: $color-darkgrey;
+                color: $color-grey;
                 text-align: center;
                 
                 .project-title {
-                    @include section-head($color-darkblue);
+                    @include section-head($color-black);
                 }
                 
                 p {
@@ -59,12 +60,12 @@
                     border-radius: 0.2rem;
                     
                     text-decoration: none;
-                    color: $color-darkblue;
+                    color: $color-darkgrey;
                     
                     transition: color, 0.25s;
                     
                     &:hover {
-                        color: lighten($color-darkblue, 25);
+                        color: $color-darkblue;
                     }
                 }
             }

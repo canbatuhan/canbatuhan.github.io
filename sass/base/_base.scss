@@ -14,6 +14,17 @@ html {
     @media screen and (max-width: 1366px) {
         font-size: 16px;
         
+        #header .title {
+            
+            .title-first {
+                font-size: 3.5rem;
+            }
+            
+            .title-second {
+                font-size: 2.5rem;
+            }
+        }
+        
         #funding .funding-box .nav .nav-item {
             width: 33%;
         }
@@ -33,6 +44,17 @@ html {
     
     @media screen and (max-width: 900px) {
         font-size: 12px;
+        
+        #header .title {
+            
+            .title-first {
+                font-size: 3rem;
+            }
+            
+            .title-second {
+                font-size: 2rem;
+            }
+        }
         
         #about .about-box .about-media iframe {
             display: none;
@@ -68,7 +90,7 @@ section:first-child {
 }
 
 #common-bg {
-    background: url(../img/common-bg.jpg) no-repeat center center, linear-gradient(to bottom, $color-darkgrey 0%, darken($color-lightgrey, 20) 100%);
+    background: url(../img/common-bg.jpg) no-repeat center center, linear-gradient(to bottom, lighten($color-darkgrey, 10) 0%, darken($color-lightgrey, 20) 100%);
     background-size: cover;
     background-blend-mode: soft-light;
 }

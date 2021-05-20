@@ -3,6 +3,6 @@
     background-color: $color-white;
     
     .inmedia-head {
-        @include section-head($color-darkblue);
+        @include section-head($color-darkgrey);
     }
 }
