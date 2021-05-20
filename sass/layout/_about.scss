@@ -1,10 +1,10 @@
 /* ABOUT SECTION */
 #about {
-    background-color: $color-black;
+    background-color: $color-white;
     text-indent: 0.5rem;
     
     .about-head {
-        @include section-head($color-white);
+        @include section-head($color-darkblue);
     }
     
     .about-subhead {
@@ -12,7 +12,7 @@
         text-transform: capitalize;
         text-align: left;
         text-indent: 0rem;
-        color: $color-white;
+        color: $color-darkblue;
         font-weight: normal;
     }
     
@@ -27,7 +27,7 @@
         padding-top: 0rem;
         margin-bottom: 1rem;
         
-        color: $color-grey;
+        color: $color-darkgrey;
         text-align: justify;
         font-weight: 300;
         line-height: 1.5rem;

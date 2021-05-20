@@ -1,6 +1,6 @@
 /* PROJECTS SECTION */
-#projects{
-    background-color: $color-darkgrey;
+#projects {
+    background-color: $color-grey;
     
     .projects-head {
         @include section-head($color-white);

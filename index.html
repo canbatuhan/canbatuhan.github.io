@@ -66,89 +66,98 @@
         </div>
     </section>
     
-    <!-- Participants -->
-    <section id="participants">
-        <h2 class="participants-head">participants</h2>
-        
-        <div class="participants-box">
-            <ul class="participant-list">
-                <li class="participant-item">
-                    <a href="#" class="participant-link"><img src="img/wien.jpg" alt="Wien" style="height: 3rem;"></a>
-                    <div class="participant-overlay">
-                        <ul class="researcher-list">
-                            <li class="researcher">PI: Atakan Aral</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="participant-item">
-                    <a href="#" class="participant-link"><img src="img/tuwien.png" alt="TU Wien" style="height: 3.5rem;"></a>
-                    <div class="participant-overlay">
-                        <ul class="researcher-list">
-                            <li class="researcher">PI: Ivona Brandic</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="participant-item">
-                    <a href="#" class="participant-link"><img src="img/svizzera_italiana.png" alt="Svizerra Italiana" style="height: 3.5rem;"></a>
-                    <div class="participant-overlay">
-                        <ul class="researcher-list">
-                            <li class="researcher">PI: Cesare Alippi</li>
-                            <li class="researcher">Co-PI: Slobodan Lukovic</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="participant-item">
-                    <a href="#" class="participant-link"><img src="img/itu.png" alt="ITU" style="height: 4.5rem;"></a>
-                    <div class="participant-overlay">
-                        <ul class="researcher-list">
-                            <li class="researcher">PI: Mehmet Tahir Sandikkaya</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="participant-item">
-                    <a href="#" class="participant-link"><img src="img/boun.png" alt="BOUN" style="height: 5rem;"></a>
-                    <div class="participant-overlay">
-                        <ul class="researcher-list">
-                            <li class="researcher">PI: Ulas Tezel</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="participant-item">
-                    <a href="#" class="participant-link"><img src="img/syke.png" alt="SYKE" style="height: 5rem;"></a>
-                    <div class="participant-overlay">
-                        <ul class="researcher-list">
-                            <li class="researcher">PI: Janne Juntunen</li>
-                            <li class="researcher">Co-PI: Heidi Ahkola</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    
-    <!-- Funding -->
-    <section id="funding">
-        <h2 class="funding-head">funding</h2>
-        
-        <div class="funding-box">
-            <div class="funding-info">
-                <p><i class="fa fa-bell-o" aria-hidden="true"></i>Call Topic: Novel Computational Approaches for <span>Environmental Sustainability</span> (CES), Call 2019</p>
-                <p><i class="fa fa-clock-o" aria-hidden="true"></i>Start date: <span>March 2021</span> (36 months)</p>
-                <p><i class="fa fa-money" aria-hidden="true"></i>Funding support: 1,157,341 &euro;</p>
-            </div>
-        </div>
-        
-        <div class="funding-box">
-            <div class="funding-grid">
-                <ul class="nav">
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/christera.svg" alt="Christ-Era" style="height: 3rem;"></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/fwf.png" alt="FWF" style="height: 3rem;"></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/aka.png" alt="AKA" style="height: 3rem;"></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/snsf.png" alt="SNSF" style="height: 3rem;"></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/tubitak.png" alt="TUBITAK" style="height: 4rem;"></a></li>
+    <!-- Commong Background (style code is in the _base.scss)-->
+    <section id="common-bg">
+        <!-- Participants -->
+        <section id="participants">
+            <h2 class="participants-head">participants</h2>
+
+            <div class="participants-box">
+                <ul class="participant-list">
+                    <li class="participant-item">
+                        <a href="#" class="participant-link"><img src="img/wien.jpg" alt="Wien" style="height: 3rem;"></a>
+                        <span class="participant-title">University of Vienna</span>
+                        <div class="participant-overlay">
+                            <ul class="researcher-list">
+                                <li class="researcher">PI: Atakan Aral (Coordinator)</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="participant-item">
+                        <a href="#" class="participant-link"><img src="img/tuwien.png" alt="TU Wien" style="height: 3.5rem;"></a>
+                        <span class="participant-title">Vienna University of Technology</span>
+                        <div class="participant-overlay">
+                            <ul class="researcher-list">
+                                <li class="researcher">PI: Ivona Brandic</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="participant-item">
+                        <a href="#" class="participant-link"><img src="img/svizzera_italiana.png" alt="Svizerra Italiana" style="height: 3.5rem;"></a>
+                        <span class="participant-title">Università della Svizzera italiana</span>
+                        <div class="participant-overlay">
+                            <ul class="researcher-list">
+                                <li class="researcher">PI: Cesare Alippi</li>
+                                <li class="researcher">Co-PI: Slobodan Lukovic</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="participant-item">
+                        <a href="#" class="participant-link"><img src="img/itu.png" alt="ITU" style="height: 4.5rem;"></a>
+                        <span class="participant-title">Istanbul Technical University</span>
+                        <div class="participant-overlay">
+                            <ul class="researcher-list">
+                                <li class="researcher">PI: Mehmet Tahir Sandikkaya</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="participant-item">
+                        <a href="#" class="participant-link"><img src="img/boun.png" alt="BOUN" style="height: 5rem;"></a>
+                        <span class="participant-title">Bogazici University</span>
+                        <div class="participant-overlay">
+                            <ul class="researcher-list">
+                                <li class="researcher">PI: Ulas Tezel</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="participant-item">
+                        <a href="#" class="participant-link"><img src="img/syke.png" alt="SYKE" style="height: 5rem;"></a>
+                        <span class="participant-title">Finnish Environment Institute</span>
+                        <div class="participant-overlay">
+                            <ul class="researcher-list">
+                                <li class="researcher">PI: Janne Juntunen</li>
+                                <li class="researcher">Co-PI: Heidi Ahkola</li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
-        </div>
+</section>
+
+        <!-- Funding -->
+        <section id="funding">
+            <h2 class="funding-head">funding</h2>
+
+            <div class="funding-box">
+                <div class="funding-info">
+                    <p><i class="fa fa-bell-o" aria-hidden="true"></i>Call Topic: Novel Computational Approaches for <span>Environmental Sustainability</span> (CES), Call 2019</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>Start date: <span>March 2021</span> (36 months)</p>
+                    <p><i class="fa fa-money" aria-hidden="true"></i>Funding support: 1,157,341 &euro;</p>
+                </div>
+            </div>
+
+            <div class="funding-box">
+                <div class="funding-grid">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/christera.svg" alt="Christ-Era" style="height: 3rem;"></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/fwf.png" alt="FWF" style="height: 3rem;"></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/aka.png" alt="AKA" style="height: 3rem;"></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/snsf.png" alt="SNSF" style="height: 3rem;"></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/tubitak.png" alt="TUBITAK" style="height: 4rem;"></a></li>
+                    </ul>
+                </div>
+            </div>
+</section>
     </section>
     
     <!-- Publications -->
@@ -177,6 +186,20 @@
             </ol>
         </div>
         
+    </section>
+    
+    <!-- Deliverables -->
+    <section id="deliverables">
+        <h2 class="deliverables-head">deliverables</h2>
+        
+        <div class="deliverables-box"></div>
+    </section>
+    
+    <!-- News -->
+    <section id="news">
+        <h2 class="news-head">news</h2>
+        
+        <div class="news-box"></div>
     </section>
     
     <!-- Projects -->
@@ -228,6 +251,13 @@
             </div>
         </div>
         
+    </section>
+    
+    <!-- In Media -->
+    <section id="inmedia">
+        <h2 class="inmedia-head">in media</h2>
+        
+        <div class="inmedia-box"></div>
     </section>
     
     <!-- JS file: jQuery, Popper.j, Bootstrap JS -->

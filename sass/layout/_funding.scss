@@ -1,6 +1,5 @@
-/* FUNDING */
+/* FUNDING SECTION */
 #funding {
-    background-color: $color-white;
     
     .funding-head {
         @include section-head($color-darkblue);
@@ -20,6 +19,8 @@
             p {
                 margin-bottom: 0;
                 font-weight: 300;
+                
+                color: $color-black;
                 
                 span {
                     color: $color-darkblue;

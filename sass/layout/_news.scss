@@ -1,0 +1,12 @@
+/* DELIVERABLES */
+#news {
+    background-color: $color-darkgrey;
+    
+    .news-head {
+        @include section-head($color-white);
+    }
+    
+    .news-box {
+        @include box(80%);
+    }
+}

@@ -1,0 +1,14 @@
+/* DELIVERABLES SECTION */
+#deliverables {
+    background: url(../img/software.jpg) no-repeat center center, rgba($color-grey, 0.5);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    
+    .deliverables-head {
+        @include section-head($color-white);
+    }
+    
+    .deliverables-box {
+        @include box(80%);
+    }
+}
