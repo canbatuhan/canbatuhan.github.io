@@ -1,10 +1,10 @@
 /* ABOUT SECTION */
 #about {
-    background-color: $color-white;
+    background-color: $color-black;
     text-indent: 0.5rem;
     
     .about-head {
-        @include section-head($color-darkblue);
+        @include section-head($color-white);
     }
     
     .about-subhead {
@@ -12,7 +12,7 @@
         text-transform: capitalize;
         text-align: left;
         text-indent: 0rem;
-        color: $color-darkblue;
+        color: $color-white;
         font-weight: normal;
     }
     
@@ -25,6 +25,9 @@
         @include box(80%);
         
         padding-top: 0rem;
+        margin-bottom: 1rem;
+        
+        color: $color-grey;
         text-align: justify;
         font-weight: 300;
         line-height: 1.5rem;
@@ -41,8 +44,7 @@
             
             img {
                 width: 90%;
-                border: 0.05rem solid $color-black;
-                box-shadow: 0.125rem 0.25rem 0.75rem rgba(0,0,0,0.3);
+                box-shadow: 0.125rem 0.25rem 0.75rem rgba(80,80,80,0.5);
             }
         }
         
@@ -50,8 +52,7 @@
             flex: 45%;
             width: 90%;
             
-            border: 0.05rem solid $color-black;
-            box-shadow: 0.125rem 0.25rem 0.75rem rgba(0,0,0,0.3);
+            box-shadow: 0.125rem 0.25rem 0.75rem rgba(80,80,80,0.5);
         }
     } 
 }

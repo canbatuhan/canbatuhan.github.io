@@ -38,8 +38,6 @@ body {
   overflow-x: hidden; }
 
 section {
-  width: 98%;
-  margin: auto;
   padding: 3rem 0; }
 
 section:first-child {
@@ -70,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
         border-bottom: 1px rgba(0, 0, 0, 0) solid;
         text-align: center;
         text-transform: uppercase;
-        color: #f1f1f1;
+        color: #dddddd;
         font-size: 0.8rem;
         transition: color, border-bottom-color, border-top-color, 0.25s; }
         #header .navbar .nav-item .nav-link:hover {
@@ -90,7 +88,8 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 20%;
     width: 100%;
     padding: 0rem;
-    color: #fdfdfd; }
+    color: #dddddd;
+    transition: color, 0.5s; }
     #header #motto span {
       text-align: right;
       display: block; }
@@ -98,22 +97,24 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 5rem; }
     #header #motto .display-4 {
       font-size: 2.5rem; }
+  #header:hover #motto {
+    color: white; }
 
 /* ABOUT SECTION */
 #about {
-  background-color: #fdfdfd;
+  background-color: #202020;
   text-indent: 0.5rem;
   /* ABOUT */ }
   #about .about-head {
     text-transform: uppercase;
-    color: #163589;
+    color: #fdfdfd;
     letter-spacing: 0.05rem; }
   #about .about-subhead {
     margin-bottom: 1rem;
     text-transform: capitalize;
     text-align: left;
     text-indent: 0rem;
-    color: #163589;
+    color: #fdfdfd;
     font-weight: normal; }
   #about .about-box {
     width: 90%;
@@ -124,6 +125,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem;
     margin: auto;
     padding-top: 0rem;
+    margin-bottom: 1rem;
+    color: #a4a4a4;
     text-align: justify;
     font-weight: 300;
     line-height: 1.5rem; }
@@ -136,17 +139,15 @@ h1, h2, h3, h4, h5, h6 {
       text-align: center; }
       #about .about-media .about-img img {
         width: 90%;
-        border: 0.05rem solid #202020;
-        box-shadow: 0.125rem 0.25rem 0.75rem rgba(0, 0, 0, 0.3); }
+        box-shadow: 0.125rem 0.25rem 0.75rem rgba(80, 80, 80, 0.5); }
     #about .about-media iframe {
       flex: 45%;
       width: 90%;
-      border: 0.05rem solid #202020;
-      box-shadow: 0.125rem 0.25rem 0.75rem rgba(0, 0, 0, 0.3); }
+      box-shadow: 0.125rem 0.25rem 0.75rem rgba(80, 80, 80, 0.5); }
 
 /* PARTICIPANTS */
 #participants {
-  background-color: #f1f1f1; }
+  background-color: #dddddd; }
   #participants .participants-head {
     text-transform: uppercase;
     color: #163589;
@@ -170,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
           width: 100%;
           padding: 1rem 0rem;
           margin: auto;
-          color: #f1f1f1;
+          color: #dddddd;
           transition: width, color, 0.75s; }
           #participants .participants-box .participant-list .participant-item .participant-overlay .researcher-list {
             list-style: none;
@@ -196,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
       width: 80%;
       padding: 2rem;
       margin: auto;
-      background-color: rgba(241, 241, 241, 0.3);
+      background-color: rgba(221, 221, 221, 0.3);
       border-radius: 0.1rem;
       box-shadow: 0.05rem 0.1rem 0.75rem rgba(0, 0, 0, 0.3); }
       #funding .funding-box .funding-info p {
@@ -225,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* PUBLICATIONS SECTION */
 #publications {
-  background-color: #f1f1f1; }
+  background-color: #dddddd; }
   #publications .publications-head {
     text-transform: uppercase;
     color: #163589;
@@ -239,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* PROJECTS SECTION */
 #projects {
-  background-color: #a4a4a4; }
+  background-color: #595959; }
   #projects .projects-head {
     text-transform: uppercase;
     color: #fdfdfd;

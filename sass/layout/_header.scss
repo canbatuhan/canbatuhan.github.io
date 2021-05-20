@@ -58,7 +58,8 @@
         width: 100%;       
         padding: 0rem;
         
-        color: $color-white;
+        color: $color-lightgrey;
+        transition: color, 0.5s;
         
         span {
             text-align: right;
@@ -71,6 +72,12 @@
         
         .display-4 {
             font-size: 2.5rem;
+        }
+    }
+    
+    &:hover {
+        #motto {
+            color: lighten($color-lightgrey, 100);
         }
     }
 }
