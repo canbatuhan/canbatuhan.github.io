@@ -1,9 +1,9 @@
 /* PROJECTS SECTION */
 #projects {
-    background-color: $color-white;
+    background-color: $color-black;
     
     .projects-head {
-        @include section-head($color-darkgrey);
+        @include section-head($color-white);
     }
     
     .projects-grid {
@@ -48,7 +48,7 @@
                 text-align: center;
                 
                 .project-title {
-                    @include section-head($color-black);
+                    @include section-head($color-lightgrey);
                 }
                 
                 p {
@@ -60,12 +60,12 @@
                     border-radius: 0.2rem;
                     
                     text-decoration: none;
-                    color: $color-darkgrey;
+                    color: $color-lightgrey;
                     
                     transition: color, 0.25s;
                     
                     &:hover {
-                        color: $color-darkblue;
+                        color: $color-lightblue;
                     }
                 }
             }

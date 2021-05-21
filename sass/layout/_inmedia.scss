@@ -1,8 +1,58 @@
 /* IN MEDIA SECTION */
 #inmedia {
-    background-color: $color-white;
+    background-color: $color-lightgrey;
     
     .inmedia-head {
         @include section-head($color-darkgrey);
+    }
+    
+    .inmedia-box {
+        @include box(75%);
+        
+        .inmedia-articles {
+            
+            .article-list {
+                list-style: square;
+                color: $color-darkgrey;
+                
+                .article-item {
+                    margin-bottom: 1rem;
+                    
+                    .article-link {
+                        text-decoration: none;
+                        color: $color-darkblue;
+                        transition: color, 0.1s;
+                        
+                        &:hover {
+                            color: $color-lightblue;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .inmedia-socialmedia {
+            display: flex;
+            flex-wrap: wrap;
+            
+            .socialmedia-item {
+                flex: 50%;
+                padding: 1rem;
+                text-align: center;
+                
+                .socialmedia-object {
+                    height: 13.5rem;
+                    width: 24rem;
+                    
+                    box-shadow: 0.125rem 0.25rem 0.75rem rgba(80,80,80,0.5);
+                }
+                
+                .socialmedia-title {
+                    display: block;
+                    margin-top: 0.5rem;
+                    color: $color-darkblue;
+                }
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 /* DELIVERABLES */
 #news {
-    background-color: $color-white;
+    background-color: $color-lightgrey;
     
     .news-head {
         @include section-head($color-darkgrey);
@@ -8,5 +8,9 @@
     
     .news-box {
         @include box(80%);
+        
+        .twitter-account {
+            text-align: center;
+        }
     }
 }

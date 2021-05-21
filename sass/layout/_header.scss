@@ -87,8 +87,8 @@
         }
     }
     
-    /* GO-UP BUTTON */
-    .turnback {
+    /* TO-TOP BUTTON */
+    .toTop {
         display: flex;
         justify-content: center;
         
@@ -98,7 +98,7 @@
         
         transition: scale, 0.25s;
         
-        .turnback-btn {
+        .toTop-btn {
             position: relative;
             align-self: baseline;
             background-color: $color-blue;
@@ -125,7 +125,7 @@
         }
         
         &:hover {
-            .turnback-btn {
+            .toTop-btn {
                 background-color: $color-lightblue;
             }
         }
