@@ -412,6 +412,90 @@ h1, h2, h3, h4, h5, h6 {
           margin-top: 0.5rem;
           color: #265599; }
 
+/* FOOTER SECTION */
+#footer {
+  padding: 2rem;
+  padding-bottom: 1rem;
+  background-color: #202020;
+  /* Top Part */
+  /* Bottom Part */ }
+  #footer .footer-head {
+    text-transform: uppercase;
+    color: #fdfdfd;
+    letter-spacing: 0.2rem; }
+  #footer .footer-box {
+    width: 80%;
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0rem;
+    margin-bottom: 1rem; }
+    #footer .footer-box:last-of-type {
+      margin-bottom: 0rem; }
+    #footer .footer-box ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      list-style: none; }
+  #footer .top-part {
+    /* Copyright */
+    /* Locations */ }
+    #footer .top-part .copyright-box {
+      flex: 15%;
+      text-align: center;
+      color: #f2f2f2; }
+    #footer .top-part .location-multilist {
+      flex: 85%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap; }
+      #footer .top-part .location-multilist .location-list {
+        display: block; }
+        #footer .top-part .location-multilist .location-list .location-item {
+          margin-bottom: 0.25rem; }
+          #footer .top-part .location-multilist .location-list .location-item .location-head {
+            display: block; }
+          #footer .top-part .location-multilist .location-list .location-item .location-link {
+            color: #cccccc;
+            transition: color, 0.2s; }
+            #footer .top-part .location-multilist .location-list .location-item .location-link:hover {
+              color: #f2f2f2;
+              text-decoration: none; }
+  #footer .bottom-part {
+    justify-content: space-between;
+    /* Quicklinks */ }
+    #footer .bottom-part .quicklinks-box {
+      flex: 50%; }
+      #footer .bottom-part .quicklinks-box .quicklinks-list .quicklinks-item {
+        margin-right: 2rem; }
+        #footer .bottom-part .quicklinks-box .quicklinks-list .quicklinks-item:last-of-type {
+          margin-right: 0rem; }
+        #footer .bottom-part .quicklinks-box .quicklinks-list .quicklinks-item .quicklinks-link {
+          color: #2a80b9;
+          transition: color, 0.2s; }
+          #footer .bottom-part .quicklinks-box .quicklinks-list .quicklinks-item .quicklinks-link:hover {
+            color: #56a5d9;
+            text-decoration: none; }
+    #footer .bottom-part .contacts-box {
+      flex: 50%; }
+      #footer .bottom-part .contacts-box .contacts-list .contacts-item {
+        text-align: center;
+        color: #2a80b9;
+        margin-right: 2rem; }
+        #footer .bottom-part .contacts-box .contacts-list .contacts-item:last-of-type {
+          margin-right: 0rem; }
+        #footer .bottom-part .contacts-box .contacts-list .contacts-item .contacts-link {
+          display: block;
+          color: #2a80b9;
+          transition: color, 0.2s; }
+          #footer .bottom-part .contacts-box .contacts-list .contacts-item .contacts-link i {
+            transform: scale(1.5); }
+          #footer .bottom-part .contacts-box .contacts-list .contacts-item .contacts-link:hover {
+            color: #56a5d9;
+            text-decoration: none; }
+
 .flip-box {
   background-color: transparent;
   perspective: 1000px;

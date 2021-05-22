@@ -1,0 +1,141 @@
+/* FOOTER SECTION */
+#footer {
+    padding: 2rem;
+    padding-bottom: 1rem;
+    background-color: $color-black;
+    
+    .footer-head {
+        @include section-head($color-white);
+    }
+    
+    .footer-box {
+        @include box(80%);
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        
+        padding: 0rem;
+        margin-bottom: 1rem;
+        
+        &:last-of-type {
+            margin-bottom: 0rem;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            
+            list-style: none;
+        }
+    }
+    
+    /* Top Part */
+    .top-part {
+        
+        /* Copyright */
+        .copyright-box {
+            flex: 15%;
+            
+            text-align: center;
+            color: $color-lightgrey;
+        }
+        
+        /* Locations */
+        .location-multilist {
+            flex: 85%;
+            
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            
+            .location-list {
+                display: block;
+                
+                .location-item {
+                    margin-bottom: 0.25rem;
+                    
+                    .location-head {
+                        display: block;
+                    }
+
+                    .location-link {
+                        color: darken($color-lightgrey, 15);
+                        transition: color, 0.2s;
+
+                        &:hover{
+                            color: $color-lightgrey;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /* Bottom Part */
+    .bottom-part {
+        justify-content: space-between;
+        
+        /* Quicklinks */
+        .quicklinks-box {
+            flex: 50%;
+
+            .quicklinks-list {
+                
+                .quicklinks-item {
+                    margin-right: 2rem;
+                    
+                    &:last-of-type {
+                        margin-right: 0rem;
+                    }
+                    
+                    .quicklinks-link {
+                        color: darken($color-lightblue, 15);
+                        transition: color, 0.2s;
+
+                        &:hover{
+                            color: $color-lightblue;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .contacts-box {
+            flex: 50%;
+            
+            .contacts-list {
+                
+                .contacts-item {
+                    text-align: center;
+                    color: darken($color-lightblue, 15);
+                    
+                    margin-right: 2rem;
+                    
+                    &:last-of-type {
+                        margin-right: 0rem;
+                    }
+                    
+                    .contacts-link {
+                        display: block;
+                        
+                        color: darken($color-lightblue, 15);
+                        transition: color, 0.2s;
+                        
+                        i {
+                            transform: scale(1.5);
+                        }
+                        
+                        &:hover{
+                            color: $color-lightblue;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
