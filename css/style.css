@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     padding-top: 0rem;
     margin-bottom: 1rem;
-    color: silver;
+    color: #aaaaaa;
     text-align: justify;
     font-weight: 300;
     line-height: 1.5rem; }
@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 1rem;
         font-weight: 500;
         text-transform: uppercase;
-        color: #cdcdcd;
+        color: #aaaaaa;
         transition: color, 0.75s; }
       #participants .participants-box .participant-list .participant-item .participant-overlay {
         width: 100%;
@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5, h6 {
       #projects .projects-grid .project-card .project-description {
         padding: 1rem;
         background-color: transparent;
-        color: #9a9a9a;
+        color: #aaaaaa;
         text-align: center; }
         #projects .projects-grid .project-card .project-description .project-title {
           text-transform: uppercase;
@@ -366,10 +366,10 @@ h1, h2, h3, h4, h5, h6 {
         #projects .projects-grid .project-card .project-description p {
           text-align: left; }
         #projects .projects-grid .project-card .project-description .project-link {
+          color: #f2f2f2;
+          text-decoration: none;
           padding: 0.25rem;
           border-radius: 0.2rem;
-          text-decoration: none;
-          color: #f2f2f2;
           transition: color, 0.25s; }
           #projects .projects-grid .project-card .project-description .project-link:hover {
             color: #56a5d9; }
@@ -391,8 +391,8 @@ h1, h2, h3, h4, h5, h6 {
       #inmedia .inmedia-box .inmedia-articles .article-list .article-item {
         margin-bottom: 1rem; }
         #inmedia .inmedia-box .inmedia-articles .article-list .article-item .article-link {
-          text-decoration: none;
           color: #56a5d9;
+          text-decoration: none;
           transition: color, 0.1s; }
           #inmedia .inmedia-box .inmedia-articles .article-list .article-item .article-link:hover {
             color: #3268a5; }
@@ -459,10 +459,10 @@ h1, h2, h3, h4, h5, h6 {
             display: block; }
           #footer .top-part .location-multilist .location-list .location-item .location-link {
             color: #cccccc;
+            text-decoration: none;
             transition: color, 0.2s; }
             #footer .top-part .location-multilist .location-list .location-item .location-link:hover {
-              color: #f2f2f2;
-              text-decoration: none; }
+              color: #f2f2f2; }
   #footer .bottom-part {
     justify-content: space-between;
     /* Quicklinks */ }
@@ -473,28 +473,27 @@ h1, h2, h3, h4, h5, h6 {
         #footer .bottom-part .quicklinks-box .quicklinks-list .quicklinks-item:last-of-type {
           margin-right: 0rem; }
         #footer .bottom-part .quicklinks-box .quicklinks-list .quicklinks-item .quicklinks-link {
-          color: #2a80b9;
+          color: #3268a5;
+          text-decoration: none;
           transition: color, 0.2s; }
           #footer .bottom-part .quicklinks-box .quicklinks-list .quicklinks-item .quicklinks-link:hover {
-            color: #56a5d9;
-            text-decoration: none; }
+            color: #56a5d9; }
     #footer .bottom-part .contacts-box {
       flex: 50%; }
       #footer .bottom-part .contacts-box .contacts-list .contacts-item {
-        text-align: center;
         color: #2a80b9;
         margin-right: 2rem; }
         #footer .bottom-part .contacts-box .contacts-list .contacts-item:last-of-type {
           margin-right: 0rem; }
         #footer .bottom-part .contacts-box .contacts-list .contacts-item .contacts-link {
+          color: #3268a5;
+          text-decoration: none;
           display: block;
-          color: #2a80b9;
           transition: color, 0.2s; }
+          #footer .bottom-part .contacts-box .contacts-list .contacts-item .contacts-link:hover {
+            color: #56a5d9; }
           #footer .bottom-part .contacts-box .contacts-list .contacts-item .contacts-link i {
             transform: scale(1.5); }
-          #footer .bottom-part .contacts-box .contacts-list .contacts-item .contacts-link:hover {
-            color: #56a5d9;
-            text-decoration: none; }
 
 .flip-box {
   background-color: transparent;

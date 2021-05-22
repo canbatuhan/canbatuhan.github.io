@@ -56,17 +56,12 @@
                 }
                 
                 .project-link {
+                    @include link($color-lightgrey, $color-lightblue);
+                    
                     padding: 0.25rem;
                     border-radius: 0.2rem;
                     
-                    text-decoration: none;
-                    color: $color-lightgrey;
-                    
                     transition: color, 0.25s;
-                    
-                    &:hover {
-                        color: $color-lightblue;
-                    }
                 }
             }
         }

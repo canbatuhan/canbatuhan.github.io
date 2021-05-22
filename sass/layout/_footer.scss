@@ -61,13 +61,8 @@
                     }
 
                     .location-link {
-                        color: darken($color-lightgrey, 15);
+                        @include link(darken($color-lightgrey, 15), $color-lightgrey);
                         transition: color, 0.2s;
-
-                        &:hover{
-                            color: $color-lightgrey;
-                            text-decoration: none;
-                        }
                     }
                 }
             }
@@ -92,13 +87,8 @@
                     }
                     
                     .quicklinks-link {
-                        color: darken($color-lightblue, 15);
+                        @include link($color-blue, $color-lightblue);
                         transition: color, 0.2s;
-
-                        &:hover{
-                            color: $color-lightblue;
-                            text-decoration: none;
-                        }
                     }
                 }
             }
@@ -110,7 +100,6 @@
             .contacts-list {
                 
                 .contacts-item {
-                    text-align: center;
                     color: darken($color-lightblue, 15);
                     
                     margin-right: 2rem;
@@ -120,18 +109,13 @@
                     }
                     
                     .contacts-link {
+                        @include link($color-blue, $color-lightblue);
                         display: block;
                         
-                        color: darken($color-lightblue, 15);
                         transition: color, 0.2s;
                         
                         i {
                             transform: scale(1.5);
-                        }
-                        
-                        &:hover{
-                            color: $color-lightblue;
-                            text-decoration: none;
                         }
                     }
                 }

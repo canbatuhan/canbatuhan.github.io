@@ -19,13 +19,9 @@
                     margin-bottom: 1rem;
                     
                     .article-link {
-                        text-decoration: none;
-                        color: $color-lightblue;
-                        transition: color, 0.1s;
+                        @include link($color-lightblue, $color-blue);
                         
-                        &:hover {
-                            color: $color-blue;
-                        }
+                        transition: color, 0.1s;
                     }
                 }
             }
