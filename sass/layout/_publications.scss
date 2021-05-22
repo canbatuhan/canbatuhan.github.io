@@ -1,9 +1,9 @@
 /* PUBLICATIONS SECTION */
 #publications {
-    background-color: $color-lightgrey;
+    background-color: $color-black;
     
     .publications-head {
-        @include section-head($color-darkgrey);
+        @include section-head($color-white);
     }
     
     .publications-box {
@@ -12,7 +12,7 @@
         .pub-list {
             list-style: square;
             
-            color: $color-darkgrey;
+            color: $color-lightgrey;
         }
     }
 }

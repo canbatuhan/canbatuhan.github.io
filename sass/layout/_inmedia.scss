@@ -1,9 +1,9 @@
 /* IN MEDIA SECTION */
 #inmedia {
-    background-color: $color-lightgrey;
+    background-color: $color-darkgrey;
     
     .inmedia-head {
-        @include section-head($color-darkgrey);
+        @include section-head($color-white);
     }
     
     .inmedia-box {
@@ -13,18 +13,18 @@
             
             .article-list {
                 list-style: square;
-                color: $color-darkgrey;
+                color: $color-lightgrey;
                 
                 .article-item {
                     margin-bottom: 1rem;
                     
                     .article-link {
                         text-decoration: none;
-                        color: $color-darkblue;
+                        color: $color-lightblue;
                         transition: color, 0.1s;
                         
                         &:hover {
-                            color: $color-lightblue;
+                            color: $color-blue;
                         }
                     }
                 }
@@ -50,7 +50,7 @@
                 .socialmedia-title {
                     display: block;
                     margin-top: 0.5rem;
-                    color: $color-darkblue;
+                    color: $color-lightblue;
                 }
             }
         }

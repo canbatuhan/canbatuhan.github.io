@@ -1,10 +1,10 @@
 /* ABOUT SECTION */
 #about {
-    background-color: $color-white;
+    background-color: $color-black;
     text-indent: 0.5rem;
     
     .about-head {
-        @include section-head($color-darkgrey);
+        @include section-head($color-white);
     }
     
     .about-subhead {
@@ -12,7 +12,7 @@
         text-transform: capitalize;
         text-align: left;
         text-indent: 0rem;
-        color: $color-darkblue;
+        color: $color-lightblue;
         font-weight: normal;
     }
     
@@ -27,7 +27,7 @@
         padding-top: 0rem;
         margin-bottom: 1rem;
         
-        color: $color-darkgrey;
+        color: lighten($color-grey, 15);
         text-align: justify;
         font-weight: 300;
         line-height: 1.5rem;
@@ -52,7 +52,7 @@
         iframe {
             flex: 50%;
             padding: 1rem;
-            background-color: $color-white;
+            background-color: $color-black;
         }
     } 
 }
