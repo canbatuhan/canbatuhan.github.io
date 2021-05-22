@@ -53,6 +53,13 @@
                     .researcher-list {
                         list-style: none;
                         text-align: left;
+                            
+                        .researcher-link {
+                            margin-left: 0.25rem;
+                            color: transparent;
+                            
+                            transition: color, 0.75s;
+                        }
                     }
                 }
                 
@@ -66,6 +73,12 @@
                     .participant-overlay {
                         width: 90%;
                         color: $color-white;
+                        
+                        .researcher-link {
+                            @include link($color-lightblue, $color-blue);
+                            
+                            transition: color, 0.25s;
+                        }
                     }
                 }
             }

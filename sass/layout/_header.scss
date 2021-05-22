@@ -96,7 +96,7 @@
         right: 2.5%;
         bottom: 2.5%;
         
-        transition: scale, 0.25s;
+        transition: scale, 0.5s;
         
         .toTop-btn {
             position: relative;
@@ -108,7 +108,7 @@
             width: 2.5rem;
             border-radius: 50%;
             
-            transition: background-color, 0.1s;
+            transition: background-color, 0.5s;
             
             i {
                 position: absolute;
@@ -121,7 +121,7 @@
         }
         
         &:active {
-            transform: scale(0.9);
+            transform: scale(0.75);
         }
         
         &:hover {

@@ -55,7 +55,7 @@ section:first-child {
   padding: 0; }
 
 #common-bg {
-  background: url(../img/common-bg.jpg) no-repeat center center, linear-gradient(to bottom, #535353 0%, #bfbfbf 100%);
+  background: url(../img/common-bg.jpg) no-repeat center center, linear-gradient(to bottom, #535353 0%, darkgray 100%);
   background-size: cover;
   background-blend-mode: soft-light; }
 
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
         border-bottom: 1px rgba(0, 0, 0, 0) solid;
         text-align: center;
         text-transform: uppercase;
-        color: #f2f2f2;
+        color: #dcdcdc;
         font-size: 0.8rem;
         transition: color, border-bottom-color, border-top-color, 0.25s; }
         #header .navbar .nav-item .nav-link:hover {
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
     #header .title p {
       margin-bottom: 0rem;
       text-align: right;
-      color: #f2f2f2;
+      color: #dcdcdc;
       /* Point out */ }
       #header .title p span {
         color: #94c6e7;
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     right: 2.5%;
     bottom: 2.5%;
-    transition: scale, 0.25s; }
+    transition: scale, 0.5s; }
     #header .toTop .toTop-btn {
       position: relative;
       align-self: baseline;
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
       height: 2.5rem;
       width: 2.5rem;
       border-radius: 50%;
-      transition: background-color, 0.1s; }
+      transition: background-color, 0.5s; }
       #header .toTop .toTop-btn i {
         position: absolute;
         top: 25%;
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
         left: 25%;
         color: #fdfdfd; }
     #header .toTop:active {
-      transform: scale(0.9); }
+      transform: scale(0.75); }
     #header .toTop:hover .toTop-btn {
       background-color: #56a5d9; }
 
@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     padding-top: 0rem;
     margin-bottom: 1rem;
-    color: #aaaaaa;
+    color: #bababa;
     text-align: justify;
     font-weight: 300;
     line-height: 1.5rem; }
@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 1rem;
         font-weight: 500;
         text-transform: uppercase;
-        color: #aaaaaa;
+        color: #bababa;
         transition: color, 0.75s; }
       #participants .participants-box .participant-list .participant-item .participant-overlay {
         width: 100%;
@@ -231,12 +231,22 @@ h1, h2, h3, h4, h5, h6 {
         #participants .participants-box .participant-list .participant-item .participant-overlay .researcher-list {
           list-style: none;
           text-align: left; }
+          #participants .participants-box .participant-list .participant-item .participant-overlay .researcher-list .researcher-link {
+            margin-left: 0.25rem;
+            color: transparent;
+            transition: color, 0.75s; }
       #participants .participants-box .participant-list .participant-item:hover .participant-title {
         color: #fdfdfd;
         text-decoration: none; }
       #participants .participants-box .participant-list .participant-item:hover .participant-overlay {
         width: 90%;
         color: #fdfdfd; }
+        #participants .participants-box .participant-list .participant-item:hover .participant-overlay .researcher-link {
+          color: #56a5d9;
+          text-decoration: none;
+          transition: color, 0.25s; }
+          #participants .participants-box .participant-list .participant-item:hover .participant-overlay .researcher-link:hover {
+            color: #3268a5; }
 
 /* FUNDING SECTION */
 #funding .funding-head {
@@ -253,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 80%;
     padding: 2rem;
     margin: auto;
-    background-color: rgba(242, 242, 242, 0.3);
+    background-color: rgba(220, 220, 220, 0.3);
     border-radius: 0.1rem;
     box-shadow: 0.05rem 0.1rem 0.75rem rgba(0, 0, 0, 0.3); }
     #funding .funding-box .funding-info p {
@@ -293,11 +303,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto; }
     #publications .publications-box .pub-list {
       list-style: square;
-      color: #f2f2f2; }
+      color: #dcdcdc; }
 
 /* DELIVERABLES SECTION */
 #deliverables {
-  background: url(../img/deliverables-bg.jpg) no-repeat center center, linear-gradient(to top, rgba(57, 57, 57, 0.5) 0%, rgba(242, 242, 242, 0.2) 100%);
+  background: url(../img/deliverables-bg.jpg) no-repeat center center, linear-gradient(to top, rgba(57, 57, 57, 0.5) 0%, rgba(220, 220, 220, 0.2) 100%);
   background-size: cover;
   background-blend-mode: soft-light; }
   #deliverables .deliverables-head {
@@ -357,16 +367,16 @@ h1, h2, h3, h4, h5, h6 {
       #projects .projects-grid .project-card .project-description {
         padding: 1rem;
         background-color: transparent;
-        color: #aaaaaa;
+        color: #bababa;
         text-align: center; }
         #projects .projects-grid .project-card .project-description .project-title {
           text-transform: uppercase;
-          color: #f2f2f2;
+          color: #dcdcdc;
           letter-spacing: 0.2rem; }
         #projects .projects-grid .project-card .project-description p {
           text-align: left; }
         #projects .projects-grid .project-card .project-description .project-link {
-          color: #f2f2f2;
+          color: #dcdcdc;
           text-decoration: none;
           padding: 0.25rem;
           border-radius: 0.2rem;
@@ -387,7 +397,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto; }
     #inmedia .inmedia-box .inmedia-articles .article-list {
       list-style: square;
-      color: #f2f2f2; }
+      color: #dcdcdc; }
       #inmedia .inmedia-box .inmedia-articles .article-list .article-item {
         margin-bottom: 1rem; }
         #inmedia .inmedia-box .inmedia-articles .article-list .article-item .article-link {
@@ -395,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
           text-decoration: none;
           transition: color, 0.1s; }
           #inmedia .inmedia-box .inmedia-articles .article-list .article-item .article-link:hover {
-            color: #3268a5; }
+            color: #94c6e7; }
     #inmedia .inmedia-box .inmedia-socialmedia {
       display: flex;
       flex-wrap: wrap; }
@@ -431,7 +441,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     flex-wrap: nowrap;
     padding: 0rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1.5rem; }
     #footer .footer-box:last-of-type {
       margin-bottom: 0rem; }
     #footer .footer-box ul {
@@ -445,7 +455,13 @@ h1, h2, h3, h4, h5, h6 {
     #footer .top-part .copyright-box {
       flex: 15%;
       text-align: center;
-      color: #f2f2f2; }
+      color: #dcdcdc; }
+      #footer .top-part .copyright-box .copyright-head {
+        color: #56a5d9; }
+        #footer .top-part .copyright-box .copyright-head .copyright-logo {
+          display: inline-block;
+          height: 2rem;
+          margin-right: 0.5rem; }
     #footer .top-part .location-multilist {
       flex: 85%;
       display: flex;
@@ -458,16 +474,16 @@ h1, h2, h3, h4, h5, h6 {
           #footer .top-part .location-multilist .location-list .location-item .location-head {
             display: block; }
           #footer .top-part .location-multilist .location-list .location-item .location-link {
-            color: #cccccc;
+            color: #bababa;
             text-decoration: none;
             transition: color, 0.2s; }
             #footer .top-part .location-multilist .location-list .location-item .location-link:hover {
-              color: #f2f2f2; }
+              color: #fdfdfd; }
   #footer .bottom-part {
     justify-content: space-between;
     /* Quicklinks */ }
     #footer .bottom-part .quicklinks-box {
-      flex: 50%; }
+      align-self: center; }
       #footer .bottom-part .quicklinks-box .quicklinks-list .quicklinks-item {
         margin-right: 2rem; }
         #footer .bottom-part .quicklinks-box .quicklinks-list .quicklinks-item:last-of-type {
@@ -479,9 +495,8 @@ h1, h2, h3, h4, h5, h6 {
           #footer .bottom-part .quicklinks-box .quicklinks-list .quicklinks-item .quicklinks-link:hover {
             color: #56a5d9; }
     #footer .bottom-part .contacts-box {
-      flex: 50%; }
+      align-self: baseline; }
       #footer .bottom-part .contacts-box .contacts-list .contacts-item {
-        color: #2a80b9;
         margin-right: 2rem; }
         #footer .bottom-part .contacts-box .contacts-list .contacts-item:last-of-type {
           margin-right: 0rem; }
@@ -493,7 +508,7 @@ h1, h2, h3, h4, h5, h6 {
           #footer .bottom-part .contacts-box .contacts-list .contacts-item .contacts-link:hover {
             color: #56a5d9; }
           #footer .bottom-part .contacts-box .contacts-list .contacts-item .contacts-link i {
-            transform: scale(1.5); }
+            font-size: 1.5rem; }
 
 .flip-box {
   background-color: transparent;

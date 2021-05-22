@@ -16,7 +16,7 @@
         flex-wrap: nowrap;
         
         padding: 0rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         
         &:last-of-type {
             margin-bottom: 0rem;
@@ -40,6 +40,16 @@
             
             text-align: center;
             color: $color-lightgrey;
+            
+            .copyright-head {
+                color: $color-lightblue;
+                
+                .copyright-logo {
+                    display: inline-block;
+                    height: 2rem;
+                    margin-right: 0.5rem;
+                }
+            }
         }
         
         /* Locations */
@@ -61,7 +71,7 @@
                     }
 
                     .location-link {
-                        @include link(darken($color-lightgrey, 15), $color-lightgrey);
+                        @include link($color-grey, $color-white);
                         transition: color, 0.2s;
                     }
                 }
@@ -75,7 +85,8 @@
         
         /* Quicklinks */
         .quicklinks-box {
-            flex: 50%;
+            // flex: 50%;
+            align-self: center;
 
             .quicklinks-list {
                 
@@ -95,14 +106,18 @@
         }
         
         .contacts-box {
-            flex: 50%;
+            // flex: 50%;
+            align-self: baseline;
+
             
             .contacts-list {
                 
                 .contacts-item {
-                    color: darken($color-lightblue, 15);
-                    
                     margin-right: 2rem;
+                    
+                    // font-size: 0.75rem;
+                    // text-align: center;
+                    // color: $color-blue;
                     
                     &:last-of-type {
                         margin-right: 0rem;
@@ -115,7 +130,7 @@
                         transition: color, 0.2s;
                         
                         i {
-                            transform: scale(1.5);
+                            font-size: 1.5rem;
                         }
                     }
                 }

@@ -19,7 +19,7 @@
                     margin-bottom: 1rem;
                     
                     .article-link {
-                        @include link($color-lightblue, $color-blue);
+                        @include link($color-lightblue, lighten($color-lightblue, 15));
                         
                         transition: color, 0.1s;
                     }
