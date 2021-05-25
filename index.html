@@ -64,10 +64,18 @@
             </div>
             
             <div class="about-media">
-                <iframe src="https://www.youtube.com/embed/cRY3X2FUQrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-                <div class="about-img"><img class="media-item" src="img/concept.png" alt="concept"></div>
+                <div class="about-img"><img id="concept-img" class="media-item" onclick="modalFunc()" src="img/concept.png" alt="concept"></div>
+                
+                <!-- Modal for image -->
+                <!-- Bootstrap built-in modal structure might be used -->
+                <!-- Corresponding script is at the bottom of the file -->
+                <div id="media-modal" class="myModal">
+                    <span class="myClose" onclick="closeClick()">&times;</span>
+                    <h5 class="myModal-title">Concept of the project</h5>
+                    <img id="media-modal-img" class="myModal-content" src="img/concept.png" alt="concept">
+                </div>
             </div>
+            
         </div>
     </section>
     
@@ -137,7 +145,7 @@
                     </li>
                 </ul>
             </div>
-</section>
+        </section>
 
         <!-- Funding -->
         <section id="funding">
@@ -337,6 +345,13 @@
         </div>
         
     </section>
+    
+    <!-- Script for Modal -->
+    <script>
+        var modal = document.getElementById("media-modal");
+        function modalFunc() {modal.style.display = "flex";}
+        function closeClick() {modal.style.display = "none";}
+    </script>
     
     <!-- JS file: jQuery, Popper.j, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

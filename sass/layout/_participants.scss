@@ -1,8 +1,9 @@
 /* PARTICIPANTS SECTION */
 #participants {
+    position: relative;
     
     .participants-head {
-        @include section-head($color-white);
+        @include section-head($color-black);
     }
     
     .participants-box {
@@ -35,7 +36,7 @@
                     
                     font-weight: 500;
                     text-transform: uppercase;
-                    color: $color-grey;
+                    color: $color-darkgrey;
                     
                     transition: color, 0.75s;
                 }
@@ -66,16 +67,16 @@
                 &:hover {
                     
                     .participant-title {
-                        color: $color-white;
+                        color: $color-black;
                         text-decoration: none;
                     }
                     
                     .participant-overlay {
                         width: 90%;
-                        color: $color-white;
+                        color: $color-black;
                         
                         .researcher-link {
-                            @include link($color-lightblue, $color-blue);
+                            @include link($color-blue, lighten($color-blue, 10));
                             
                             transition: color, 0.25s;
                         }

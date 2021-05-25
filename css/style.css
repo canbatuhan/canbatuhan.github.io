@@ -17,7 +17,9 @@ html {
       html #header .title .title-second {
         font-size: 2.5rem; }
       html #funding .funding-box .nav .nav-item {
-        width: 33%; } }
+        width: 33%; }
+      html .myModal .myModal-title {
+        display: none; } }
   @media screen and (max-width: 1080px) {
     html {
       font-size: 14px; }
@@ -55,9 +57,9 @@ section:first-child {
   padding: 0; }
 
 #common-bg {
-  background: url(../img/common-bg.jpg) no-repeat center center, linear-gradient(to bottom, #535353 0%, darkgray 100%);
+  background: url(../img/common-bg.jpg) no-repeat center center, linear-gradient(to bottom, #cacaca 0%, #f7f7f7 85%);
   background-size: cover;
-  background-blend-mode: soft-light; }
+  background-blend-mode: overlay; }
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
@@ -151,7 +153,6 @@ h1, h2, h3, h4, h5, h6 {
 /* ABOUT SECTION */
 #about {
   background-color: #202020;
-  text-indent: 0.5rem;
   /* ABOUT */ }
   #about .about-head {
     text-transform: uppercase;
@@ -174,121 +175,122 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     padding-top: 0rem;
     margin-bottom: 1rem;
-    color: #bababa;
+    line-height: 1.5rem;
+    text-indent: 0.5rem;
     text-align: justify;
-    font-weight: 300;
-    line-height: 1.5rem; }
+    color: #bababa;
+    font-weight: 300; }
   #about .about-media {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
+    width: 50%;
+    margin: auto; }
     #about .about-media .about-img {
-      flex: 50%;
-      padding: 1rem;
-      text-align: center; }
+      transition: opacity, 0.25s; }
       #about .about-media .about-img img {
         width: 100%;
         box-shadow: 0.125rem 0.25rem 0.75rem rgba(80, 80, 80, 0.5); }
-    #about .about-media iframe {
-      flex: 50%;
-      padding: 1rem;
-      background-color: #202020; }
+      #about .about-media .about-img:hover {
+        cursor: pointer;
+        opacity: 0.9; }
 
 /* PARTICIPANTS SECTION */
-#participants .participants-head {
-  text-transform: uppercase;
-  color: #fdfdfd;
-  letter-spacing: 0.2rem; }
-#participants .participants-box {
-  width: 80%;
-  padding: 2rem;
-  margin: auto;
-  /* Participant List */ }
-  #participants .participants-box .participant-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none; }
-    #participants .participants-box .participant-list .participant-item {
-      flex: 30%;
-      align-self: baseline;
-      margin: 1rem;
-      text-align: center; }
-      #participants .participants-box .participant-list .participant-item .participant-title {
-        display: block;
-        padding-top: 1rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #bababa;
-        transition: color, 0.75s; }
-      #participants .participants-box .participant-list .participant-item .participant-overlay {
-        width: 100%;
-        padding-top: 0.5rem;
-        padding-bottom: 1rem;
-        margin: auto;
-        color: transparent;
-        transition: width, color, 0.75s; }
-        #participants .participants-box .participant-list .participant-item .participant-overlay .researcher-list {
-          list-style: none;
-          text-align: left; }
-          #participants .participants-box .participant-list .participant-item .participant-overlay .researcher-list .researcher-link {
-            margin-left: 0.25rem;
-            color: transparent;
-            transition: color, 0.75s; }
-      #participants .participants-box .participant-list .participant-item:hover .participant-title {
-        color: #fdfdfd;
-        text-decoration: none; }
-      #participants .participants-box .participant-list .participant-item:hover .participant-overlay {
-        width: 90%;
-        color: #fdfdfd; }
-        #participants .participants-box .participant-list .participant-item:hover .participant-overlay .researcher-link {
-          color: #56a5d9;
-          text-decoration: none;
-          transition: color, 0.25s; }
-          #participants .participants-box .participant-list .participant-item:hover .participant-overlay .researcher-link:hover {
-            color: #3268a5; }
-
-/* FUNDING SECTION */
-#funding .funding-head {
-  text-transform: uppercase;
-  color: #fdfdfd;
-  letter-spacing: 0.2rem; }
-#funding .funding-box {
-  width: 90%;
-  padding: 2rem;
-  margin: auto;
-  /* INFO */
-  /* FUNDERS */ }
-  #funding .funding-box .funding-info {
+#participants {
+  position: relative; }
+  #participants .participants-head {
+    text-transform: uppercase;
+    color: #202020;
+    letter-spacing: 0.2rem; }
+  #participants .participants-box {
     width: 80%;
     padding: 2rem;
     margin: auto;
-    background-color: rgba(220, 220, 220, 0.3);
-    border-radius: 0.1rem;
-    box-shadow: 0.05rem 0.1rem 0.75rem rgba(0, 0, 0, 0.3); }
-    #funding .funding-box .funding-info p {
-      margin-bottom: 0;
-      font-weight: 300;
-      color: #202020; }
-      #funding .funding-box .funding-info p span {
-        color: #265599;
-        font-weight: normal; }
-      #funding .funding-box .funding-info p i {
-        width: 2rem; }
-  #funding .funding-box .nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    #funding .funding-box .nav .nav-item {
-      padding: 1rem;
-      width: 20%; }
-    #funding .funding-box .nav .nav-link {
-      text-align: center;
-      transition: scale, 0.25s; }
-      #funding .funding-box .nav .nav-link:hover {
-        transform: scale(1.25); }
-      #funding .funding-box .nav .nav-link img {
-        display: inline-block; }
+    /* Participant List */ }
+    #participants .participants-box .participant-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      list-style: none; }
+      #participants .participants-box .participant-list .participant-item {
+        flex: 30%;
+        align-self: baseline;
+        margin: 1rem;
+        text-align: center; }
+        #participants .participants-box .participant-list .participant-item .participant-title {
+          display: block;
+          padding-top: 1rem;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: #393939;
+          transition: color, 0.75s; }
+        #participants .participants-box .participant-list .participant-item .participant-overlay {
+          width: 100%;
+          padding-top: 0.5rem;
+          padding-bottom: 1rem;
+          margin: auto;
+          color: transparent;
+          transition: width, color, 0.75s; }
+          #participants .participants-box .participant-list .participant-item .participant-overlay .researcher-list {
+            list-style: none;
+            text-align: left; }
+            #participants .participants-box .participant-list .participant-item .participant-overlay .researcher-list .researcher-link {
+              margin-left: 0.25rem;
+              color: transparent;
+              transition: color, 0.75s; }
+        #participants .participants-box .participant-list .participant-item:hover .participant-title {
+          color: #202020;
+          text-decoration: none; }
+        #participants .participants-box .participant-list .participant-item:hover .participant-overlay {
+          width: 90%;
+          color: #202020; }
+          #participants .participants-box .participant-list .participant-item:hover .participant-overlay .researcher-link {
+            color: #3268a5;
+            text-decoration: none;
+            transition: color, 0.25s; }
+            #participants .participants-box .participant-list .participant-item:hover .participant-overlay .researcher-link:hover {
+              color: #4481c6; }
+
+/* FUNDING SECTION */
+#funding {
+  position: relative; }
+  #funding .funding-head {
+    text-transform: uppercase;
+    color: #202020;
+    letter-spacing: 0.2rem; }
+  #funding .funding-box {
+    width: 90%;
+    padding: 2rem;
+    margin: auto;
+    /* INFO */
+    /* FUNDERS */ }
+    #funding .funding-box .funding-info {
+      width: 80%;
+      padding: 2rem;
+      margin: auto;
+      background-color: rgba(220, 220, 220, 0.3);
+      border-radius: 0.1rem;
+      box-shadow: 0.05rem 0.1rem 0.75rem rgba(0, 0, 0, 0.3); }
+      #funding .funding-box .funding-info p {
+        margin-bottom: 0;
+        font-weight: 300;
+        color: #202020; }
+        #funding .funding-box .funding-info p span {
+          color: #265599;
+          font-weight: normal; }
+        #funding .funding-box .funding-info p i {
+          width: 2rem; }
+    #funding .funding-box .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      #funding .funding-box .nav .nav-item {
+        padding: 1rem;
+        width: 20%; }
+      #funding .funding-box .nav .nav-link {
+        text-align: center;
+        transition: scale, 0.25s; }
+        #funding .funding-box .nav .nav-link:hover {
+          transform: scale(1.25); }
+        #funding .funding-box .nav .nav-link img {
+          display: inline-block; }
 
 /* PUBLICATIONS SECTION */
 #publications {
@@ -510,6 +512,7 @@ h1, h2, h3, h4, h5, h6 {
           #footer .bottom-part .contacts-box .contacts-list .contacts-item .contacts-link i {
             font-size: 1.5rem; }
 
+/* FLIPPER STRUCTURE */
 .flip-box {
   background-color: transparent;
   perspective: 1000px;
@@ -530,5 +533,41 @@ h1, h2, h3, h4, h5, h6 {
 
 .flip-box-back {
   transform: rotateY(180deg); }
+
+/* MODAL STRUCTURE */
+.myModal {
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
+  .myModal .myModal-title {
+    text-transform: uppercase;
+    color: #dcdcdc;
+    letter-spacing: 0.2rem;
+    display: block;
+    margin: 1rem auto; }
+  .myModal .myModal-content {
+    margin: auto;
+    align-self: center;
+    display: block;
+    width: 80%; }
+  .myModal .myClose {
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #bababa;
+    transition: 0.25s; }
+    .myModal .myClose:hover {
+      color: #fdfdfd; }
 
 /*# sourceMappingURL=style.css.map */

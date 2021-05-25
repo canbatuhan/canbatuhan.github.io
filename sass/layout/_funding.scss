@@ -1,8 +1,9 @@
 /* FUNDING SECTION */
 #funding {
+    position: relative;
     
     .funding-head {
-        @include section-head($color-white);
+        @include section-head($color-black);
     }
     
     .funding-box {
