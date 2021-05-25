@@ -41,7 +41,7 @@
         margin: auto;
     
         .about-img {
-            transition: opacity, 0.25s;
+            transition: opacity, 0.75s;
 
             img {
                 width: 100%;
@@ -50,7 +50,7 @@
             
             &:hover {
                 cursor: pointer;
-                opacity: 0.9;
+                opacity: 0.8;
             }
         }
     }

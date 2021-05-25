@@ -184,13 +184,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
     margin: auto; }
     #about .about-media .about-img {
-      transition: opacity, 0.25s; }
+      transition: opacity, 0.75s; }
       #about .about-media .about-img img {
         width: 100%;
         box-shadow: 0.125rem 0.25rem 0.75rem rgba(80, 80, 80, 0.5); }
       #about .about-media .about-img:hover {
         cursor: pointer;
-        opacity: 0.9; }
+        opacity: 0.8; }
 
 /* PARTICIPANTS SECTION */
 #participants {
@@ -334,6 +334,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto; }
     #news .news-box .twitter-account {
       text-align: center; }
+      #news .news-box .twitter-account .twitter-link {
+        margin-top: 1rem; }
 
 /* PROJECTS SECTION */
 #projects {
@@ -394,20 +396,22 @@ h1, h2, h3, h4, h5, h6 {
     color: #fdfdfd;
     letter-spacing: 0.2rem; }
   #inmedia .inmedia-box {
-    width: 75%;
+    width: 80%;
     padding: 2rem;
     margin: auto; }
-    #inmedia .inmedia-box .inmedia-articles .article-list {
-      list-style: square;
-      color: #dcdcdc; }
-      #inmedia .inmedia-box .inmedia-articles .article-list .article-item {
-        margin-bottom: 1rem; }
-        #inmedia .inmedia-box .inmedia-articles .article-list .article-item .article-link {
-          color: #56a5d9;
-          text-decoration: none;
-          transition: color, 0.1s; }
-          #inmedia .inmedia-box .inmedia-articles .article-list .article-item .article-link:hover {
-            color: #94c6e7; }
+    #inmedia .inmedia-box .inmedia-articles {
+      margin-bottom: 2rem; }
+      #inmedia .inmedia-box .inmedia-articles .article-list {
+        list-style: square;
+        color: #dcdcdc; }
+        #inmedia .inmedia-box .inmedia-articles .article-list .article-item {
+          margin-bottom: 1rem; }
+          #inmedia .inmedia-box .inmedia-articles .article-list .article-item .article-link {
+            color: #56a5d9;
+            text-decoration: none;
+            transition: color, 0.1s; }
+            #inmedia .inmedia-box .inmedia-articles .article-list .article-item .article-link:hover {
+              color: #94c6e7; }
     #inmedia .inmedia-box .inmedia-socialmedia {
       display: flex;
       flex-wrap: wrap; }
@@ -416,8 +420,8 @@ h1, h2, h3, h4, h5, h6 {
         padding: 1rem;
         text-align: center; }
         #inmedia .inmedia-box .inmedia-socialmedia .socialmedia-item .socialmedia-object {
-          height: 13.5rem;
-          width: 24rem;
+          height: 18rem;
+          width: 32rem;
           box-shadow: 0.125rem 0.25rem 0.75rem rgba(80, 80, 80, 0.5); }
         #inmedia .inmedia-box .inmedia-socialmedia .socialmedia-item .socialmedia-title {
           display: block;

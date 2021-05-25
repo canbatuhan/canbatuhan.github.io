@@ -7,9 +7,10 @@
     }
     
     .inmedia-box {
-        @include box(75%);
+        @include box(80%);
         
         .inmedia-articles {
+            margin-bottom: 2rem;
             
             .article-list {
                 list-style: square;
@@ -37,8 +38,8 @@
                 text-align: center;
                 
                 .socialmedia-object {
-                    height: 13.5rem;
-                    width: 24rem;
+                    height: 18rem;
+                    width: 32rem;
                     
                     box-shadow: 0.125rem 0.25rem 0.75rem rgba(80,80,80,0.5);
                 }
