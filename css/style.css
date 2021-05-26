@@ -56,8 +56,18 @@ section:first-child {
   width: 100%;
   padding: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-weight: 600; }
+
+/* COMMON BACKGROUND IMAGE FOR PARTICIPANT AND FUNDING SECTION */
+#common-bg {
+  background: url(../img/common-bg.jpg) no-repeat center center, linear-gradient(to bottom, #cacaca 0%, #f7f7f7 85%);
+  background-size: cover;
+  background-blend-mode: overlay; }
+
 /* TO-TOP BUTTON */
-.toTop {
+#toTop {
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -65,7 +75,7 @@ section:first-child {
   right: 2rem;
   bottom: 1rem;
   transition: scale, 0.5s; }
-  .toTop .toTop-btn {
+  #toTop .toTop-btn {
     position: relative;
     align-self: baseline;
     background-color: #3268a5;
@@ -74,26 +84,17 @@ section:first-child {
     width: 2.5rem;
     border-radius: 50%;
     transition: background-color, 0.5s; }
-    .toTop .toTop-btn i {
+    #toTop .toTop-btn i {
       position: absolute;
       top: 25%;
       bottom: 25%;
       right: 25%;
       left: 25%;
       color: #fdfdfd; }
-  .toTop:active {
+  #toTop:active {
     transform: scale(0.75); }
-  .toTop:hover .toTop-btn {
+  #toTop:hover .toTop-btn {
     background-color: #56a5d9; }
-
-#common-bg {
-  background: url(../img/common-bg.jpg) no-repeat center center, linear-gradient(to bottom, #cacaca 0%, #f7f7f7 85%);
-  background-size: cover;
-  background-blend-mode: overlay; }
-
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-  font-weight: 600; }
 
 /* HEADER SECTION */
 #header {

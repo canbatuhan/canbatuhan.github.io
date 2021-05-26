@@ -40,11 +40,6 @@
             <p class="title-first display-1"><span>Sustainable</span> Watershed Management</p>
             <p class="title-second display-4">Through <span>IoT-Driven</span> Artificial Intelligence</p>
         </div>
-        
-        <!-- Go-Up Button -->
-        <div class="toTop">
-            <a href="#" class="toTop-btn"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-        </div>
     
     </section>
     
@@ -202,6 +197,7 @@
     </section>
     
     <!-- Deliverables -->
+    <!-- has a similar content structure to Publications section -->
     <section id="deliverables">
         <h2 class="deliverables-head">deliverables</h2>
         
@@ -351,11 +347,17 @@
         
     </section>
     
-    <!-- Script for Modal -->
+    <!-- To-Up Button -->
+    <div id="toTop">
+        <a href="#" class="toTop-btn"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    </div>
+    
+    <!-- Script to create a modal for the image in the About section -->
     <script>
         var modal = document.getElementById("media-modal");
-        function modalFunc() {modal.style.display = "flex";}
-        function closeClick() {modal.style.display = "none";}
+        var toUp = document.getElementById("toTop");
+        function modalFunc() {modal.style.display = "flex"; toTop.style.display = "none";}
+        function closeClick() {modal.style.display = "none"; toTop.style.display = "flex";}
     </script>
     
     <!-- JS file: jQuery, Popper.j, Bootstrap JS -->
