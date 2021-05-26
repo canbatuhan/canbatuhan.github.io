@@ -93,6 +93,51 @@ section:first-child {
     padding: 0;
 }
 
+/* TO-TOP BUTTON */
+.toTop {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+        
+    position: fixed;
+    right: 2rem;
+    bottom: 1rem;
+        
+    transition: scale, 0.5s;
+        
+    .toTop-btn {
+        position: relative;
+        align-self: baseline;
+        background-color: $color-blue;
+            
+        text-align: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        
+        transition: background-color, 0.5s;
+        
+        i {
+            position: absolute;
+            top: 25%;
+            bottom: 25%;
+            right: 25%;
+            left: 25%;
+            color: $color-white;
+        }
+    }
+        
+    &:active {
+        transform: scale(0.75);
+    }
+        
+    &:hover {
+        .toTop-btn {
+            background-color: $color-lightblue;
+        }
+    }
+}
+
 #common-bg {
     background: url(../img/common-bg.jpg) no-repeat center center, linear-gradient(to bottom, darken($color-white, 20) 0%, darken($color-white, 2.5) 85%);
     background-size: cover;

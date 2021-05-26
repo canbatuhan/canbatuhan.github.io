@@ -56,6 +56,36 @@ section:first-child {
   width: 100%;
   padding: 0; }
 
+/* TO-TOP BUTTON */
+.toTop {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 1rem;
+  transition: scale, 0.5s; }
+  .toTop .toTop-btn {
+    position: relative;
+    align-self: baseline;
+    background-color: #3268a5;
+    text-align: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    transition: background-color, 0.5s; }
+    .toTop .toTop-btn i {
+      position: absolute;
+      top: 25%;
+      bottom: 25%;
+      right: 25%;
+      left: 25%;
+      color: #fdfdfd; }
+  .toTop:active {
+    transform: scale(0.75); }
+  .toTop:hover .toTop-btn {
+    background-color: #56a5d9; }
+
 #common-bg {
   background: url(../img/common-bg.jpg) no-repeat center center, linear-gradient(to bottom, #cacaca 0%, #f7f7f7 85%);
   background-size: cover;
@@ -74,8 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   background-blend-mode: soft-light;
   /* NAVBAR */
   /* TITLE */
-  /* Modify the title when Header is hovered*/
-  /* TO-TOP BUTTON */ }
+  /* Modify the title when Header is hovered*/ }
   #header .navbar {
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0); }
@@ -122,33 +151,6 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 3rem; }
   #header:hover .title p span {
     color: #56a5d9; }
-  #header .toTop {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    right: 2.5%;
-    bottom: 2.5%;
-    transition: scale, 0.5s; }
-    #header .toTop .toTop-btn {
-      position: relative;
-      align-self: baseline;
-      background-color: #3268a5;
-      text-align: center;
-      height: 2.5rem;
-      width: 2.5rem;
-      border-radius: 50%;
-      transition: background-color, 0.5s; }
-      #header .toTop .toTop-btn i {
-        position: absolute;
-        top: 25%;
-        bottom: 25%;
-        right: 25%;
-        left: 25%;
-        color: #fdfdfd; }
-    #header .toTop:active {
-      transform: scale(0.75); }
-    #header .toTop:hover .toTop-btn {
-      background-color: #56a5d9; }
 
 /* ABOUT SECTION */
 #about {
@@ -188,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
       transition: opacity, 0.5s; }
       #about .about-media .about-img img {
         width: 100%;
-        box-shadow: 0.125rem 0.25rem 0.75rem rgba(80, 80, 80, 0.5);
+        box-shadow: 0.125rem 0.25rem 0.75rem rgba(100, 100, 100, 0.5);
         z-index: 999; }
       #about .about-media .about-img:hover {
         cursor: pointer;

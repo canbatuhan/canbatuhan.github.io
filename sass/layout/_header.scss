@@ -85,50 +85,5 @@
         .title p span {
             color: $color-lightblue;
         }
-    }
-    
-    /* TO-TOP BUTTON */
-    .toTop {
-        display: flex;
-        justify-content: center;
-        
-        position: fixed;
-        right: 2.5%;
-        bottom: 2.5%;
-        
-        transition: scale, 0.5s;
-        
-        .toTop-btn {
-            position: relative;
-            align-self: baseline;
-            background-color: $color-blue;
-            
-            text-align: center;
-            height: 2.5rem;
-            width: 2.5rem;
-            border-radius: 50%;
-            
-            transition: background-color, 0.5s;
-            
-            i {
-                position: absolute;
-                top: 25%;
-                bottom: 25%;
-                right: 25%;
-                left: 25%;
-                color: $color-white;
-            }
-        }
-        
-        &:active {
-            transform: scale(0.75);
-        }
-        
-        &:hover {
-            .toTop-btn {
-                background-color: $color-lightblue;
-            }
-        }
-    }
-    
+    }   
 }
