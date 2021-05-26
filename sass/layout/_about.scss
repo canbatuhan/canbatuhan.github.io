@@ -41,11 +41,14 @@
         margin: auto;
     
         .about-img {
-            transition: opacity, 0.75s;
-
+            position: relative;
+            
+            transition: opacity, 0.5s;
+            
             img {
                 width: 100%;
                 box-shadow: 0.125rem 0.25rem 0.75rem rgba(80,80,80,0.5);
+                z-index: 999;
             }
             
             &:hover {
