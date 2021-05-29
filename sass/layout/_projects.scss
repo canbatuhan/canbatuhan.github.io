@@ -51,14 +51,27 @@
                     @include section-head($color-lightgrey);
                 }
                 
+                #rucon-title {
+                    /* Gradient text */
+                    background: $color-rucon1; /* webkit */
+                    background: $color-rucon2; /* o */
+                    background: $color-rucon3; /* default */
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                
+                #fency-title {
+                    color: $color-fency;
+                }
+                
                 p {
                     text-align: left;
                 }
                 
                 .project-link {
-                    @include link($color-lightgrey, $color-lightblue);
+                    @include link($color-lightgrey, $color-white);
                     
-                    padding: 0.25rem;
+                    padding: 0.25rem 0.5rem;
                     border-radius: 0.2rem;
                     
                     transition: color, 0.25s;

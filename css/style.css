@@ -382,16 +382,28 @@ h1, h2, h3, h4, h5, h6 {
           text-transform: uppercase;
           color: #dcdcdc;
           letter-spacing: 0.2rem; }
+        #projects .projects-grid .project-card .project-description #rucon-title {
+          /* Gradient text */
+          background: -webkit-linear-gradient(left, #298676, #0397DC);
+          /* webkit */
+          background: -o-linear-gradient(left, #298676, #0397DC);
+          /* o */
+          background: linear-gradient(to right, #298676, #0397DC);
+          /* default */
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        #projects .projects-grid .project-card .project-description #fency-title {
+          color: #00bd5b; }
         #projects .projects-grid .project-card .project-description p {
           text-align: left; }
         #projects .projects-grid .project-card .project-description .project-link {
           color: #dcdcdc;
           text-decoration: none;
-          padding: 0.25rem;
+          padding: 0.25rem 0.5rem;
           border-radius: 0.2rem;
           transition: color, 0.25s; }
           #projects .projects-grid .project-card .project-description .project-link:hover {
-            color: #56a5d9; }
+            color: #fdfdfd; }
 
 /* IN MEDIA SECTION */
 #inmedia {
