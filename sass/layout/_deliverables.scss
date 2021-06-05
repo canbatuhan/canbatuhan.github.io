@@ -10,7 +10,7 @@
     }
     
     .deliverables-box {
-        @include box(95%);
+        @include box(90%);
         background-color: rgba(darken($color-black, 25%), 0.5);
         
         .deliverables-list {

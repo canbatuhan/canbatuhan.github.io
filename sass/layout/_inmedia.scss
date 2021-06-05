@@ -33,9 +33,7 @@
             flex-wrap: wrap;
             
             .socialmedia-item {
-                flex: 50%;
                 padding: 1rem;
-                text-align: center;
                 
                 .socialmedia-object {
                     height: 18rem;
@@ -47,6 +45,7 @@
                 .socialmedia-title {
                     display: block;
                     margin-top: 0.5rem;
+                    text-align: center;
                     color: $color-lightblue;
                 }
             }
