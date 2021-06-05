@@ -4,14 +4,16 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 20px;
-  scroll-behavior: smooth; }
-  @media screen and (max-width: 1536px) {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  @media screen and (max-width: 1650px) {
     html {
-      font-size: 18px; } }
-  @media screen and (max-width: 1366px) {
+      font-size: 16px; } }
+  @media screen and (max-width: 1450px) {
     html {
-      font-size: 16px; }
+      font-size: 15px; }
       html #header .title .title-first {
         font-size: 3.5rem; }
       html #header .title .title-second {
@@ -22,14 +24,14 @@ html {
         display: none; } }
   @media screen and (max-width: 1080px) {
     html {
-      font-size: 14px; }
+      font-size: 12px; }
       html #funding .funding-box .nav .nav-item {
         width: 50%; }
       html #projects .projects-grid .project-card .project-description p {
         display: none; } }
   @media screen and (max-width: 900px) {
     html {
-      font-size: 12px; }
+      font-size: 10px; }
       html #header .title .title-first {
         font-size: 3rem; }
       html #header .title .title-second {
@@ -38,16 +40,15 @@ html {
         display: none; } }
   @media screen and (max-width: 768px) {
     html {
-      font-size: 10px; }
+      font-size: 8px; }
       html #funding .funding-box .nav .nav-item {
         width: 100%; } }
   @media screen and (max-width: 667px) {
     html {
-      font-size: 9px; } }
+      font-size: 7px; } }
 
 body {
-  background-color: #fdfdfd;
-  overflow-x: hidden; }
+  background-color: #fdfdfd; }
 
 section {
   padding: 4rem 0; }
@@ -72,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   position: fixed;
-  right: 2rem;
+  right: 1.5rem;
   bottom: 1rem;
   transition: scale, 0.5s; }
   #toTop .toTop-btn {
@@ -314,17 +315,29 @@ h1, h2, h3, h4, h5, h6 {
 
 /* DELIVERABLES SECTION */
 #deliverables {
-  background: url(../img/deliverables-bg.jpg) no-repeat center center, linear-gradient(to top, rgba(57, 57, 57, 0.5) 0%, rgba(220, 220, 220, 0.2) 100%);
+  background: url(../img/deliverables-bg.jpg) no-repeat center center;
+  background-color: rgba(0, 0, 0, 0.8);
   background-size: cover;
-  background-blend-mode: soft-light; }
+  background-blend-mode: overlay; }
   #deliverables .deliverables-head {
     text-transform: uppercase;
     color: #fdfdfd;
     letter-spacing: 0.2rem; }
   #deliverables .deliverables-box {
-    width: 80%;
+    width: 95%;
     padding: 2rem;
-    margin: auto; }
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5); }
+    #deliverables .deliverables-box .deliverables-list {
+      list-style: square;
+      color: #bababa; }
+      #deliverables .deliverables-box .deliverables-list .deliverables-item {
+        margin-top: 2rem;
+        margin-bottom: 2rem; }
+        #deliverables .deliverables-box .deliverables-list .deliverables-item:first-of-type {
+          margin-top: 0rem; }
+        #deliverables .deliverables-box .deliverables-list .deliverables-item:last-of-type {
+          margin-bottom: 0rem; }
 
 /* DELIVERABLES */
 #news {
@@ -394,16 +407,17 @@ h1, h2, h3, h4, h5, h6 {
           -webkit-text-fill-color: transparent; }
         #projects .projects-grid .project-card .project-description #fency-title {
           color: #00bd5b; }
-        #projects .projects-grid .project-card .project-description p {
-          text-align: left; }
         #projects .projects-grid .project-card .project-description .project-link {
           color: #dcdcdc;
           text-decoration: none;
+          display: inline-block;
           padding: 0.25rem 0.5rem;
           border-radius: 0.2rem;
-          transition: color, 0.25s; }
+          transition: color, scale, 0.25s; }
           #projects .projects-grid .project-card .project-description .project-link:hover {
             color: #fdfdfd; }
+          #projects .projects-grid .project-card .project-description .project-link:hover {
+            transform: scale(1.1); }
 
 /* IN MEDIA SECTION */
 #inmedia {
@@ -457,11 +471,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #fdfdfd;
     letter-spacing: 0.2rem; }
   #footer .footer-box {
-    width: 80%;
+    width: 90%;
     padding: 2rem;
     margin: auto;
     display: flex;
-    justify-content: center;
     flex-wrap: nowrap;
     padding: 0rem;
     margin-bottom: 1.5rem; }
@@ -473,35 +486,41 @@ h1, h2, h3, h4, h5, h6 {
       flex-wrap: nowrap;
       list-style: none; }
   #footer .top-part {
+    justify-content: flex-start;
+    align-content: stretch;
     /* Copyright */
     /* Locations */ }
     #footer .top-part .copyright-box {
       flex: 15%;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-left: 2rem;
+      text-align: left;
       color: #dcdcdc; }
       #footer .top-part .copyright-box .copyright-head {
+        text-align: left;
         color: #56a5d9; }
         #footer .top-part .copyright-box .copyright-head .copyright-logo {
           display: inline-block;
           height: 2rem;
           margin-right: 0.5rem; }
-    #footer .top-part .location-multilist {
-      flex: 85%;
-      display: flex;
-      justify-content: center;
-      flex-wrap: nowrap; }
-      #footer .top-part .location-multilist .location-list {
-        display: block; }
-        #footer .top-part .location-multilist .location-list .location-item {
-          margin-bottom: 0.25rem; }
-          #footer .top-part .location-multilist .location-list .location-item .location-head {
-            display: block; }
-          #footer .top-part .location-multilist .location-list .location-item .location-link {
-            color: #bababa;
-            text-decoration: none;
-            transition: color, 0.2s; }
-            #footer .top-part .location-multilist .location-list .location-item .location-link:hover {
-              color: #fdfdfd; }
+    #footer .top-part .location-box {
+      flex: 85%; }
+      #footer .top-part .location-box .location-multilist {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap; }
+        #footer .top-part .location-box .location-multilist .location-list {
+          display: block; }
+          #footer .top-part .location-box .location-multilist .location-list .location-item {
+            margin-bottom: 0.25rem; }
+            #footer .top-part .location-box .location-multilist .location-list .location-item .location-link {
+              color: #bababa;
+              text-decoration: none;
+              transition: color, 0.2s; }
+              #footer .top-part .location-box .location-multilist .location-list .location-item .location-link:hover {
+                color: #fdfdfd; }
   #footer .bottom-part {
     justify-content: space-between;
     /* Quicklinks */ }

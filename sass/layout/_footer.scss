@@ -9,10 +9,10 @@
     }
     
     .footer-box {
-        @include box(80%);
+        @include box(90%);
         
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         flex-wrap: nowrap;
         
         padding: 0rem;
@@ -33,15 +33,24 @@
     
     /* Top Part */
     .top-part {
+        justify-content: flex-start;
+        align-content: stretch;
         
         /* Copyright */
         .copyright-box {
             flex: 15%;
             
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            
+            padding-left: 2rem;
+            
+            text-align: left;
             color: $color-lightgrey;
             
             .copyright-head {
+                text-align: left;
                 color: $color-lightblue;
                 
                 .copyright-logo {
@@ -53,26 +62,24 @@
         }
         
         /* Locations */
-        .location-multilist {
+        .location-box {
             flex: 85%;
             
-            display: flex;
-            justify-content: center;
-            flex-wrap: nowrap;
-            
-            .location-list {
-                display: block;
-                
-                .location-item {
-                    margin-bottom: 0.25rem;
-                    
-                    .location-head {
-                        display: block;
-                    }
+            .location-multilist {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: nowrap;
 
-                    .location-link {
-                        @include link($color-grey, $color-white);
-                        transition: color, 0.2s;
+                .location-list {
+                    display: block;
+
+                    .location-item {
+                        margin-bottom: 0.25rem;
+
+                        .location-link {
+                            @include link($color-grey, $color-white);
+                            transition: color, 0.2s;
+                        }
                     }
                 }
             }
