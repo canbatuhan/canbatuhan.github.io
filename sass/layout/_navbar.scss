@@ -1,0 +1,31 @@
+/* NAVBAR STYLE */
+
+#navbar {
+    position: fixed;
+    
+    display: flex;
+    justify-content: flex-end;
+    
+    background-color: $color-blue;
+    font-size: $font-large;
+    
+    .navbar {
+        padding: 0rem;
+        
+        .nav-item {
+            width: 10rem;
+            text-align: center;
+            
+            .nav-link {
+                @include link($color-white, $color-white);
+                
+                padding: 1rem 0;
+                transition: background-color, 0.25s;
+                
+                &:hover {
+                    background-color: $color-lightblue;
+                }
+            }
+        }
+    }
+}

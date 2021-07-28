@@ -1,89 +1,36 @@
-/* HEADER SECTION */
+/* HEADER STYLE */
+
 #header {
-    position: relative;
-    height: 65vh;
-    background: url(../img/header.jpg) no-repeat center center, linear-gradient(to top, #151515 0%, #757575 100%);
-    background-size: cover;
-    background-blend-mode: soft-light;
-
-    /* NAVBAR */
-    .navbar {
-        padding: 1rem;
-        background-color: rgba(0,0,0,0);
-        
-        .nav-item {
-            align-self: center;
-            
-            .nav-link {
-                margin: 0rem 1rem;
-                border-top: 1px rgba(0,0,0,0) solid;
-                border-bottom: 1px rgba(0,0,0,0) solid;
-
-                text-align: center;
-                text-transform: uppercase;
-                color: $color-lightgrey;
-                font-size: 0.8rem;
-
-                transition: color, border-bottom-color, border-top-color, 0.25s;
-
-                &:hover {
-                    color: lighten($color-white, 100);
-                    border-top-color: lighten($color-white, 100);
-                    border-bottom-color: lighten($color-white, 100);
-                }
-            }
-            
-            .navbar-brand {
-                transition: scale, 0.35s;
-
-                &:hover {
-                    transform: scale(1.25);
-                }
-                
-                .logo {
-                    text-align: center;
-                    height: 4rem;
-                }
-            }
-        }
-        
-    }
+    display: flex;
+    flex-direction: column;
     
-    /* TITLE */
-    .title {
-        position: absolute;
-        right: 10%;
-        bottom: 20%;
+    background-color: $color-black;
+    height: 100vh;
+    
+    text-align: center;
+    color: $color-white;
+    
+    .header-text {
+        @include box(50%);
         
-        width: 100%;       
-        padding: 0rem;
-        
-        /* Title */
         p {
-            margin-bottom: 0rem;
-            text-align: right;
-            color: $color-lightgrey;
+            font-size: $font-large;
+            margin: 0.5rem 0;
             
-            /* Point out */
-            span {
-                color: lighten($color-lightblue, 15);
-                transition: color, 0.5s;
+            &:first-of-type {
+                font-size: $font-xlarge;
+            }
+            
+            &:last-of-type a {
+                @include link($color-white, $color-yellow);
+                
+                transition: color, 0.25s;
             }
         }
         
-        .title-first {
-            font-size: 4rem;
-        }
-        
-        .title-second {
-            font-size: 3rem;
-        }
     }
     
-    /* Modify the title when Header is hovered*/
-    &:hover {
-        .title p span {
-            color: $color-lightblue;
-        }
-    }   
+    .header-list {
+        @include box(50%);
+    }
 }

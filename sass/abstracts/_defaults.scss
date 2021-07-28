@@ -1,19 +1,37 @@
-/* DEFAULTS */
-$color-black: #202020;
-$color-white: #fdfdfd;
+/* DEFAULT VARIABLES */
 
+$color-black: #202020;
+$color-white: #fdfdf6;
+
+/* GREY */
 $color-lightgrey: #dcdcdc;
 $color-grey: #bababa;
 $color-darkgrey: #393939;
 
+/* BLUE */
 $color-lightblue: #56a5d9;
 $color-blue: #3268a5;
 $color-darkblue: #265599;
 
-$color-fency: rgb(0, 189, 91);
-$font-fency: 'ArialRoundedMTBold', 'Arial Rounded MT Bold', 'Arial', sans-serif;
+/* RED */
+$color-lightred: #d93645;
+$color-red: #a53832;
+$color-darkred: #992022;
 
-$color-rucon1: -webkit-linear-gradient(left, #298676, #0397DC);
-$color-rucon2: -o-linear-gradient(left, #298676, #0397DC);
-$color-rucon3: linear-gradient(to right, #298676, #0397DC);
+/* PURPLE */
+$color-lightpurple: #b949d9;
+$color-purple: #7929b9;
+$color-darkpurple: #391979;
 
+/* YELLOW */
+$color-lightyellow: #dccc48;
+$color-yellow: #cfbf28;
+$color-darkyellow: #938214;
+
+/* FONT SIZES*/
+$font-xsmall: 0.25rem;
+$font-small: 0.5rem;
+$font-medium: 1rem;
+$font-large: 1.25rem;
+$font-xlarge: 1.5rem;
+$font-xxlarge: 1.75rem;
