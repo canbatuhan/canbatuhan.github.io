@@ -126,16 +126,17 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #202020;
   height: 100vh;
   text-align: center;
+  font-weight: lighter;
   color: #fdfdf6; }
   #header .header-text {
     width: 50%;
     padding: 2rem;
     margin: auto; }
     #header .header-text p {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       margin: 0.5rem 0; }
       #header .header-text p:first-of-type {
-        font-size: 1.5rem; }
+        font-size: 1.75rem; }
       #header .header-text p:last-of-type a {
         color: #fdfdf6;
         text-decoration: none;
@@ -146,6 +147,46 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
     padding: 2rem;
     margin: auto; }
+    #header .header-list .header-links {
+      display: flex;
+      justify-content: center;
+      list-style: none; }
+      #header .header-list .header-links .header-link {
+        padding: 0 1rem;
+        transition: color, 0.1s; }
+        #header .header-list .header-links .header-link i {
+          font-size: 1.75rem;
+          transition: scale, 0.2s; }
+        #header .header-list .header-links .header-link:hover i {
+          transform: scale(1.2); }
+      #header .header-list .header-links #link1 {
+        color: #fdfdf6;
+        text-decoration: none; }
+        #header .header-list .header-links #link1:hover {
+          color: #3268a5; }
+      #header .header-list .header-links #link2 {
+        color: #fdfdf6;
+        text-decoration: none; }
+        #header .header-list .header-links #link2:hover {
+          color: #b949d9; }
+      #header .header-list .header-links #link3 {
+        color: #fdfdf6;
+        text-decoration: none; }
+        #header .header-list .header-links #link3:hover {
+          color: #56a5d9; }
+
+/* ABOUT STYLE */
+#about {
+  background-color: #bababa;
+  font-weight: lighter;
+  color: #202020; }
+  #about .about-text {
+    width: 70%;
+    padding: 2rem;
+    margin: auto; }
+    #about .about-text h2 {
+      text-transform: uppercase;
+      text-align: left; }
 
 /* FLIPPER STRUCTURE */
 .flip-box {

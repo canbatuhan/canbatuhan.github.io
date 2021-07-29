@@ -8,17 +8,18 @@
     height: 100vh;
     
     text-align: center;
+    font-weight: lighter;
     color: $color-white;
     
     .header-text {
         @include box(50%);
         
         p {
-            font-size: $font-large;
+            font-size: $font-xlarge;
             margin: 0.5rem 0;
             
             &:first-of-type {
-                font-size: $font-xlarge;
+                font-size: $font-xxlarge;
             }
             
             &:last-of-type a {
@@ -27,10 +28,36 @@
                 transition: color, 0.25s;
             }
         }
-        
     }
     
     .header-list {
         @include box(50%);
+        
+        .header-links {
+            display: flex;
+            justify-content: center;
+            
+            list-style: none;
+            
+            .header-link {
+                padding: 0 1rem;
+                transition: color, 0.1s;
+                
+                i {
+                    font-size: $font-xxlarge;
+                    transition: scale, 0.2s;
+                }
+                
+                &:hover {
+                    i {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            
+            #link1 {@include link($color-white, $color-blue);}
+            #link2 {@include link($color-white, $color-lightpurple);}
+            #link3 {@include link($color-white, $color-lightblue);}
+        }
     }
 }

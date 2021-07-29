@@ -1,0 +1,16 @@
+/* ABOUT STYLE */
+
+#about {
+    background-color: $color-grey;
+    font-weight: lighter;
+    color: $color-black;
+    
+    .about-text {
+        @include box(70%);
+        
+        h2 {
+            text-transform: uppercase;
+            text-align: left;
+        }
+    }
+}
