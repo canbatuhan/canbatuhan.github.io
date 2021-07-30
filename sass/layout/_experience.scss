@@ -1,14 +1,15 @@
-/* ABOUT STYLE */
+/* EXPERIENCE STYLE */
 
-#about {
-    background-color: $color-darkgrey;
-
+#experience {
+    background-color: $color-black;
+    
+    text-align: center;
     color: $color-grey;
-
-    .about-blog {
-        @include box(50%);
+    
+    .experience-blog {
+        @include box(75%);
         
-        .about-header {
+        .experience-header {
             display: inline-block;
             
             border-bottom: 0.05rem solid transparent;
@@ -18,24 +19,15 @@
             transition: color, border-bottom, 0.2s;
         }
         
-        .about-text {
+        .experience-text {
             text-align: justify;
             text-indent: 1rem;
             font-size: $font-medium;
-            
-            .about-link {
-                @include link($color-grey, $color-lightblue);
-                
-                font-style: italic;
-                color: $color-grey;
-                transition: color, 0.2s;
-            }
-            
         }
     }
     
     &:hover {
-        .about-header {
+        .experience-header {
             color: $color-blue;
             border-bottom-color: $color-lightblue;
         }

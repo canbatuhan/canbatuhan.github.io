@@ -126,17 +126,16 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #202020;
   height: 100vh;
   text-align: center;
-  font-weight: lighter;
   color: #fdfdf6; }
   #header .header-text {
     width: 50%;
     padding: 2rem;
     margin: auto; }
     #header .header-text p {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       margin: 0.5rem 0; }
       #header .header-text p:first-of-type {
-        font-size: 1.75rem; }
+        font-size: 2rem; }
       #header .header-text p:last-of-type a {
         color: #fdfdf6;
         text-decoration: none;
@@ -152,11 +151,10 @@ h1, h2, h3, h4, h5, h6 {
       justify-content: center;
       list-style: none; }
       #header .header-list .header-links .header-link {
-        padding: 0 1rem;
-        transition: color, 0.1s; }
+        padding: 0 1rem; }
         #header .header-list .header-links .header-link i {
-          font-size: 1.75rem;
-          transition: scale, 0.2s; }
+          font-size: 2rem;
+          transition: scale, 0.1s; }
         #header .header-list .header-links .header-link:hover i {
           transform: scale(1.2); }
       #header .header-list .header-links #link1 {
@@ -177,16 +175,56 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ABOUT STYLE */
 #about {
-  background-color: #bababa;
-  font-weight: lighter;
-  color: #202020; }
-  #about .about-text {
-    width: 70%;
+  background-color: #393939;
+  color: #bababa; }
+  #about .about-blog {
+    width: 50%;
     padding: 2rem;
     margin: auto; }
-    #about .about-text h2 {
+    #about .about-blog .about-header {
+      display: inline-block;
+      border-bottom: 0.05rem solid transparent;
       text-transform: uppercase;
-      text-align: left; }
+      text-align: left;
+      transition: color, border-bottom, 0.2s; }
+    #about .about-blog .about-text {
+      text-align: justify;
+      text-indent: 1rem;
+      font-size: 1.25rem; }
+      #about .about-blog .about-text .about-link {
+        color: #bababa;
+        text-decoration: none;
+        font-style: italic;
+        color: #bababa;
+        transition: color, 0.2s; }
+        #about .about-blog .about-text .about-link:hover {
+          color: #56a5d9; }
+  #about:hover .about-header {
+    color: #3268a5;
+    border-bottom-color: #56a5d9; }
+
+/* EXPERIENCE STYLE */
+#experience {
+  background-color: #202020;
+  text-align: center;
+  color: #bababa; }
+  #experience .experience-blog {
+    width: 75%;
+    padding: 2rem;
+    margin: auto; }
+    #experience .experience-blog .experience-header {
+      display: inline-block;
+      border-bottom: 0.05rem solid transparent;
+      text-transform: uppercase;
+      text-align: left;
+      transition: color, border-bottom, 0.2s; }
+    #experience .experience-blog .experience-text {
+      text-align: justify;
+      text-indent: 1rem;
+      font-size: 1.25rem; }
+  #experience:hover .experience-header {
+    color: #3268a5;
+    border-bottom-color: #56a5d9; }
 
 /* FLIPPER STRUCTURE */
 .flip-box {
