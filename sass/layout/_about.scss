@@ -3,10 +3,11 @@
 #about {
     background-color: $color-darkgrey;
 
+    font-family: 'Raleway', sans-serif;
     color: $color-grey;
 
     .about-blog {
-        @include box(50%);
+        @include box(60%);
         
         .about-header {
             display: inline-block;

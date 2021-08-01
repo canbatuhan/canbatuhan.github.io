@@ -3,7 +3,7 @@
 #experience {
     background-color: $color-black;
     
-    text-align: center;
+    font-family: 'Raleway', sans-serif;
     color: $color-grey;
     
     .experience-blog {
@@ -19,10 +19,28 @@
             transition: color, border-bottom, 0.2s;
         }
         
-        .experience-text {
-            text-align: justify;
-            text-indent: 1rem;
-            font-size: $font-medium;
+        .experience-grid {           
+
+            .experience-list {
+                padding: 0;
+                list-style: none;
+                
+                .experience-item {
+                    padding: 0.5rem;
+                    
+                    .experience-company {
+                        font-size: $font-medium;
+                        
+                        .experience-company-name {
+                            color: $color-lightgrey;
+                        }
+                        
+                        .experience-company-title {
+                            color: $color-grey;
+                        }
+                    }
+                }
+            }
         }
     }
     

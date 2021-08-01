@@ -103,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: flex-end;
   background-color: #3268a5;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.25rem; }
   #navbar .navbar {
     padding: 0rem; }
@@ -126,6 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #202020;
   height: 100vh;
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #fdfdf6; }
   #header .header-text {
     width: 50%;
@@ -176,9 +178,10 @@ h1, h2, h3, h4, h5, h6 {
 /* ABOUT STYLE */
 #about {
   background-color: #393939;
+  font-family: 'Raleway', sans-serif;
   color: #bababa; }
   #about .about-blog {
-    width: 50%;
+    width: 60%;
     padding: 2rem;
     margin: auto; }
     #about .about-blog .about-header {
@@ -206,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 /* EXPERIENCE STYLE */
 #experience {
   background-color: #202020;
-  text-align: center;
+  font-family: 'Raleway', sans-serif;
   color: #bababa; }
   #experience .experience-blog {
     width: 75%;
@@ -218,10 +221,17 @@ h1, h2, h3, h4, h5, h6 {
       text-transform: uppercase;
       text-align: left;
       transition: color, border-bottom, 0.2s; }
-    #experience .experience-blog .experience-text {
-      text-align: justify;
-      text-indent: 1rem;
-      font-size: 1.25rem; }
+    #experience .experience-blog .experience-grid .experience-list {
+      padding: 0;
+      list-style: none; }
+      #experience .experience-blog .experience-grid .experience-list .experience-item {
+        padding: 0.5rem; }
+        #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company {
+          font-size: 1.25rem; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-name {
+            color: #dcdcdc; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-title {
+            color: #bababa; }
   #experience:hover .experience-header {
     color: #3268a5;
     border-bottom-color: #56a5d9; }
