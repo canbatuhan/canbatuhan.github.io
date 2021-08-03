@@ -23,7 +23,7 @@
             }
             
             &:last-of-type a {
-                @include link($color-white, $color-yellow);
+                @include link($color-white, $color-lightyellow);
                 
                 transition: color, 0.25s;
             }

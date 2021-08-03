@@ -1,15 +1,16 @@
-/* EXPERIENCE STYLE */
+/* EDUCATION STYLE */
 
-#experience {
-    background-color: $color-darkgrey;
+#education {
+    background-color: $color-black;
     
     font-family: 'Raleway', sans-serif;
     color: $color-grey;
     
-    .experience-blog {
+    .education-blog {
         @include box(75%);
+        text-align: right;
         
-        .experience-header {
+        .education-header {
             display: inline-block;
             
             border-bottom: 0.05rem solid transparent;
@@ -19,32 +20,33 @@
             transition: color, border-bottom, 0.2s;
         }
         
-        .experience-grid {
-            width: 60%;
+        .education-grid {
 
-            .experience-list {
+            .education-list {
                 padding: 0;
                 list-style: none;
                 
-                .experience-item {
+                .education-item {
                     padding: 0.5rem;
                     
-                    .experience-company {
+                    .education-school {
+                        margin-bottom: 0rem;
                         font-size: $font-medium;
                         
-                        .experience-company-name {
+                        .education-school-name {
                             color: $color-lightgrey;
                         }
                         
-                        .experience-company-title {
+                        .education-school-title {
+                            margin-bottom: 0rem;
                             color: $color-grey;
                         }
                     }
                     
-                    .experience-description {
-                        text-indent: 0.5rem;
+                    .education-description {
+                        list-style: none;
                         
-                        .experience-link {
+                        .education-link {
                             font-style: italic;
                             @include link($color-grey, $color-lightred);
                         }
@@ -55,7 +57,7 @@
     }
     
     &:hover {
-        .experience-header {
+        .education-header {
             color: $color-blue;
             border-bottom-color: $color-lightblue;
         }

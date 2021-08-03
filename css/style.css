@@ -54,7 +54,7 @@ html {
       font-size: 7px; } }
 
 body {
-  background-color: #fdfdf6; }
+  background-color: #fdfdfd; }
 
 section {
   padding: 4rem 0; }
@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
       bottom: 25%;
       right: 25%;
       left: 25%;
-      color: #fdfdf6; }
+      color: #fdfdfd; }
   #toTop:active {
     transform: scale(0.75); }
   #toTop:hover .toTop-btn {
@@ -111,12 +111,12 @@ h1, h2, h3, h4, h5, h6 {
       width: 10rem;
       text-align: center; }
       #navbar .navbar .nav-item .nav-link {
-        color: #fdfdf6;
+        color: #fdfdfd;
         text-decoration: none;
         padding: 1rem 0;
         transition: background-color, 0.25s; }
         #navbar .navbar .nav-item .nav-link:hover {
-          color: #fdfdf6; }
+          color: #fdfdfd; }
         #navbar .navbar .nav-item .nav-link:hover {
           background-color: #56a5d9; }
 
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #fdfdf6; }
+  color: #fdfdfd; }
   #header .header-text {
     width: 50%;
     padding: 2rem;
@@ -139,11 +139,11 @@ h1, h2, h3, h4, h5, h6 {
       #header .header-text p:first-of-type {
         font-size: 2rem; }
       #header .header-text p:last-of-type a {
-        color: #fdfdf6;
+        color: #fdfdfd;
         text-decoration: none;
         transition: color, 0.25s; }
         #header .header-text p:last-of-type a:hover {
-          color: #cfbf28; }
+          color: #f2d355; }
   #header .header-list {
     width: 50%;
     padding: 2rem;
@@ -160,17 +160,17 @@ h1, h2, h3, h4, h5, h6 {
         #header .header-list .header-links .header-link:hover i {
           transform: scale(1.2); }
       #header .header-list .header-links #link1 {
-        color: #fdfdf6;
+        color: #fdfdfd;
         text-decoration: none; }
         #header .header-list .header-links #link1:hover {
           color: #3268a5; }
       #header .header-list .header-links #link2 {
-        color: #fdfdf6;
+        color: #fdfdfd;
         text-decoration: none; }
         #header .header-list .header-links #link2:hover {
           color: #b949d9; }
       #header .header-list .header-links #link3 {
-        color: #fdfdf6;
+        color: #fdfdfd;
         text-decoration: none; }
         #header .header-list .header-links #link3:hover {
           color: #56a5d9; }
@@ -206,9 +206,50 @@ h1, h2, h3, h4, h5, h6 {
     color: #3268a5;
     border-bottom-color: #56a5d9; }
 
+/* EDUCATION STYLE */
+#education {
+  background-color: #202020;
+  font-family: 'Raleway', sans-serif;
+  color: #bababa; }
+  #education .education-blog {
+    width: 75%;
+    padding: 2rem;
+    margin: auto;
+    text-align: right; }
+    #education .education-blog .education-header {
+      display: inline-block;
+      border-bottom: 0.05rem solid transparent;
+      text-transform: uppercase;
+      text-align: left;
+      transition: color, border-bottom, 0.2s; }
+    #education .education-blog .education-grid .education-list {
+      padding: 0;
+      list-style: none; }
+      #education .education-blog .education-grid .education-list .education-item {
+        padding: 0.5rem; }
+        #education .education-blog .education-grid .education-list .education-item .education-school {
+          margin-bottom: 0rem;
+          font-size: 1.25rem; }
+          #education .education-blog .education-grid .education-list .education-item .education-school .education-school-name {
+            color: #dcdcdc; }
+          #education .education-blog .education-grid .education-list .education-item .education-school .education-school-title {
+            margin-bottom: 0rem;
+            color: #bababa; }
+        #education .education-blog .education-grid .education-list .education-item .education-description {
+          list-style: none; }
+          #education .education-blog .education-grid .education-list .education-item .education-description .education-link {
+            font-style: italic;
+            color: #bababa;
+            text-decoration: none; }
+            #education .education-blog .education-grid .education-list .education-item .education-description .education-link:hover {
+              color: #d94655; }
+  #education:hover .education-header {
+    color: #3268a5;
+    border-bottom-color: #56a5d9; }
+
 /* EXPERIENCE STYLE */
 #experience {
-  background-color: #202020;
+  background-color: #393939;
   font-family: 'Raleway', sans-serif;
   color: #bababa; }
   #experience .experience-blog {
@@ -221,17 +262,27 @@ h1, h2, h3, h4, h5, h6 {
       text-transform: uppercase;
       text-align: left;
       transition: color, border-bottom, 0.2s; }
-    #experience .experience-blog .experience-grid .experience-list {
-      padding: 0;
-      list-style: none; }
-      #experience .experience-blog .experience-grid .experience-list .experience-item {
-        padding: 0.5rem; }
-        #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company {
-          font-size: 1.25rem; }
-          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-name {
-            color: #dcdcdc; }
-          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-title {
-            color: #bababa; }
+    #experience .experience-blog .experience-grid {
+      width: 60%; }
+      #experience .experience-blog .experience-grid .experience-list {
+        padding: 0;
+        list-style: none; }
+        #experience .experience-blog .experience-grid .experience-list .experience-item {
+          padding: 0.5rem; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company {
+            font-size: 1.25rem; }
+            #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-name {
+              color: #dcdcdc; }
+            #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-title {
+              color: #bababa; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-description {
+            text-indent: 0.5rem; }
+            #experience .experience-blog .experience-grid .experience-list .experience-item .experience-description .experience-link {
+              font-style: italic;
+              color: #bababa;
+              text-decoration: none; }
+              #experience .experience-blog .experience-grid .experience-list .experience-item .experience-description .experience-link:hover {
+                color: #d94655; }
   #experience:hover .experience-header {
     color: #3268a5;
     border-bottom-color: #56a5d9; }
@@ -293,6 +344,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #bababa;
     transition: color, 0.25s; }
     .myModal .myClose:hover {
-      color: #fdfdf6; }
+      color: #fdfdfd; }
 
 /*# sourceMappingURL=style.css.map */
