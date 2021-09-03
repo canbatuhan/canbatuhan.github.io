@@ -1,13 +1,13 @@
 /* EXPERIENCE STYLE */
 
 #experience {
-    background-color: $color-darkgrey;
+    background-color: $color-black;
     
     font-family: 'Raleway', sans-serif;
     color: $color-grey;
     
     .experience-blog {
-        @include box(75%);
+        @include box(65%);
         
         .experience-header {
             display: inline-block;

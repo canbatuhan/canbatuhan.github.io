@@ -1,13 +1,13 @@
 /* EDUCATION STYLE */
 
 #education {
-    background-color: $color-black;
+    background-color: $color-darkgrey;
     
     font-family: 'Raleway', sans-serif;
     color: $color-grey;
     
     .education-blog {
-        @include box(75%);
+        @include box(65%);
         text-align: right;
         
         .education-header {
