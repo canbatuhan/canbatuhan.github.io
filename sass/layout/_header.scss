@@ -4,28 +4,22 @@
     display: flex;
     flex-direction: column;
     
-    background-color: $color-black;
+    background-color: $color-lightgrey;
     height: 100vh;
     
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: $color-white;
+    font-family: 'Raleway', sans-serif;
+    color: $color-darkgrey;
     
     .header-text {
         @include box(50%);
         
         p {
-            font-size: $font-xlarge;
+            font-size: $font-large;
             margin: 0.5rem 0;
             
             &:first-of-type {
                 font-size: $font-xxlarge;
-            }
-            
-            &:last-of-type a {
-                @include link($color-white, $color-lightyellow);
-                
-                transition: color, 0.25s;
             }
         }
     }
@@ -44,7 +38,7 @@
                 
                 i {
                     font-size: $font-xxlarge;
-                    transition: scale, 0.1s;
+                    transition: scale, 0.2s;
                 }
                 
                 &:hover {
@@ -54,9 +48,9 @@
                 }
             }
             
-            #link1 {@include link($color-white, $color-blue);}
-            #link2 {@include link($color-white, $color-lightpurple);}
-            #link3 {@include link($color-white, $color-lightblue);}
+            #link1 {@include link($color-grey, $color-blue);}
+            #link2 {@include link($color-grey, $color-purple);}
+            #link3 {@include link($color-grey, $color-lightblue);}
         }
     }
 }

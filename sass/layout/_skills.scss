@@ -1,0 +1,47 @@
+/* SKILLS STYLE */
+
+#skills {
+    background-color: $color-white;
+    
+    font-family: 'Raleway', sans-serif;
+    color: $color-grey;
+    
+    .skills-blog {
+        @include box(80%);
+        
+        text-align: center;
+        
+        .skills-header {
+            @include sectionheader($color-black);
+        }
+        
+        .skills-group {
+            @include box(100%);
+            
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: left;
+            
+            .skill-grid {
+                
+                .skill-topic {
+                    color: $color-darkgrey;
+                }
+
+                .skill-list {
+                    list-style: circle;
+                }
+                
+            }
+            
+        }
+    }
+    
+    &:hover {
+        .skills-header {
+            color: $color-blue;
+            border-bottom-color: $color-lightblue;
+        }
+    }
+}

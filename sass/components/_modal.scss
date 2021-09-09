@@ -17,7 +17,7 @@
     overflow: auto;
     
     .myModal-title {
-        @include section-head($color-lightgrey);
+        @include sectionheader($color-lightgrey);
         
         display: block;
         margin: 1rem auto;

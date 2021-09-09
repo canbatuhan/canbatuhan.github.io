@@ -4,9 +4,9 @@ $color-black: #202020;
 $color-white: #fdfdfd;
 
 /* GREY */
-$color-lightgrey: #dcdcdc;
-$color-grey: #bababa;
-$color-darkgrey: #393939;
+$color-lightgrey: #f4f4f4;
+$color-grey: #8a8a8a;
+$color-darkgrey: #424242;
 
 /* BLUE */
 $color-lightblue: #56a5d9;
@@ -18,6 +18,11 @@ $color-lightred: #d94655;
 $color-red: #a53832;
 $color-darkred: #791012;
 
+/* GREEN */
+$color-lightgreen: #78ca7d;
+$color-green: #379f57;
+$color-darkgreen: #276a32;
+
 /* PURPLE */
 $color-lightpurple: #b949d9;
 $color-purple: #7929b9;
@@ -25,12 +30,23 @@ $color-darkpurple: #391979;
 
 /* YELLOW */
 $color-lightyellow: #f2d355;
-$color-yellow: #bfaf38;
-$color-darkyellow: #736204;
+$color-yellow: #bfa536;
+$color-darkyellow: #737224;
+
+/* ORANGE */
+$color-lightorange: #fc9a44;
+$color-orange: #cd7942;
+$color-darkorange: #a26912;
+
+/* BROWN */
+$color-lightbrown: #6c4a34;
+$color-brown: #5c3a24;
+$color-darkbrown: #4c2a14;
 
 /* FONT SIZES*/
 $font-xsmall: 0.5rem;
 $font-small: 0.75rem;
+$font-midsmall: 1rem;
 $font-medium: 1.25rem;
 $font-large: 1.5rem;
 $font-xlarge: 1.75rem;

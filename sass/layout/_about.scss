@@ -1,7 +1,7 @@
 /* ABOUT STYLE */
 
 #about {
-    background-color: $color-darkgrey;
+    background-color: $color-white;
 
     font-family: 'Raleway', sans-serif;
     color: $color-grey;
@@ -10,13 +10,7 @@
         @include box(50%);
         
         .about-header {
-            display: inline-block;
-            
-            border-bottom: 0.05rem solid transparent;
-            text-transform: uppercase;
-            text-align: left;
-            
-            transition: color, border-bottom, 0.2s;
+            @include sectionheader($color-black);
         }
         
         .about-text {
@@ -25,10 +19,8 @@
             font-size: $font-medium;
             
             .about-link {
-                @include link($color-grey, $color-lightblue);
-                
+                @include link($color-grey, $color-orange);
                 font-style: italic;
-                color: $color-grey;
                 transition: color, 0.2s;
             }
             

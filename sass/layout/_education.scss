@@ -1,23 +1,17 @@
 /* EDUCATION STYLE */
 
 #education {
-    background-color: $color-darkgrey;
+    background-color: $color-lightgrey;
     
     font-family: 'Raleway', sans-serif;
     color: $color-grey;
     
     .education-blog {
         @include box(65%);
-        text-align: right;
+        text-align: center;
         
         .education-header {
-            display: inline-block;
-            
-            border-bottom: 0.05rem solid transparent;
-            text-transform: uppercase;
-            text-align: left;
-            
-            transition: color, border-bottom, 0.2s;
+            @include sectionheader($color-black);
         }
         
         .education-grid {
@@ -27,6 +21,7 @@
                 list-style: none;
                 
                 .education-item {
+                    margin-bottom: 1.5rem;
                     padding: 0.5rem;
                     
                     .education-school {
@@ -34,22 +29,19 @@
                         font-size: $font-medium;
                         
                         .education-school-name {
-                            color: $color-lightgrey;
+                            color: $color-darkgrey;
                         }
                         
                         .education-school-title {
                             margin-bottom: 0rem;
-                            color: $color-grey;
+                            font-style: italic;
                         }
                     }
                     
                     .education-description {
                         list-style: none;
-                        
-                        .education-link {
-                            font-style: italic;
-                            @include link($color-grey, $color-lightred);
-                        }
+                        padding: 0;
+                        font-size: $font-midsmall;
                     }
                 }
             }

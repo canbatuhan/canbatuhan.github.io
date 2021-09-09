@@ -5,10 +5,40 @@
     
     display: flex;
     justify-content: flex-end;
-    
-    background-color: $color-blue;
+
+    background-color: $color-lightgreen;
     font-family: 'Raleway', sans-serif;
     font-size: $font-medium;
+    
+    .nav-brand {
+        flex: 1;
+        align-self: center;
+        
+        margin-bottom: 0rem;
+        
+        text-align: center;
+        font-size: $font-large;
+        
+        .brand-link {
+            @include link($color-white, $color-black);
+
+            transition: font-weight, 0.1s;
+            
+            span {
+                font-weight: 600;
+                transition: font-weight, 0.1s;
+            }
+            
+            &:hover {
+                font-weight: 600;
+            
+                span {
+                    font-weight: 350;
+                }
+            }
+        }
+        
+    }
     
     .navbar {
         padding: 0rem;
@@ -18,13 +48,14 @@
             text-align: center;
             
             .nav-link {
-                @include link($color-white, $color-white);
+                @include link($color-white, $color-lightgreen);
                 
                 padding: 1rem 0;
-                transition: background-color, 0.25s;
+                text-transform: capitalize;
+                transition: background-image, 0.2s;
                 
                 &:hover {
-                    background-color: $color-lightblue;
+                    background-color: $color-lightgrey;
                 }
             }
         }
