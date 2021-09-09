@@ -43,14 +43,14 @@
                 
                 &:hover {
                     i {
-                        transform: scale(1.2);
+                        transform: scale(1.1);
                     }
                 }
             }
             
-            #link1 {@include link($color-grey, $color-blue);}
-            #link2 {@include link($color-grey, $color-purple);}
-            #link3 {@include link($color-grey, $color-lightblue);}
+            #link1 {@include link($color-darkgrey, $color-blue);}
+            #link2 {@include link($color-darkgrey, $color-purple);}
+            #link3 {@include link($color-darkgrey, $color-lightblue);}
         }
     }
 }

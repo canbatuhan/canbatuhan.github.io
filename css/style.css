@@ -113,17 +113,17 @@ h1, h2, h3, h4, h5, h6 {
           color: #78ca7d;
           text-decoration: none; }
         #navbar .navbar .nav-item .nav-link:hover {
-          background-color: #f4f4f4; }
+          background-color: #f0f0f0; }
 
 /* HEADER STYLE */
 #header {
   display: flex;
   flex-direction: column;
-  background-color: #f4f4f4;
+  background-color: #f0f0f0;
   height: 100vh;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  color: #424242; }
+  color: #525252; }
   #header .header-text {
     width: 50%;
     padding: 2rem;
@@ -147,21 +147,21 @@ h1, h2, h3, h4, h5, h6 {
           font-size: 2rem;
           transition: scale, 0.2s; }
         #header .header-list .header-links .header-link:hover i {
-          transform: scale(1.2); }
+          transform: scale(1.1); }
       #header .header-list .header-links #link1 {
-        color: #8a8a8a;
+        color: #525252;
         text-decoration: none; }
         #header .header-list .header-links #link1:hover {
           color: #3268a5;
           text-decoration: none; }
       #header .header-list .header-links #link2 {
-        color: #8a8a8a;
+        color: #525252;
         text-decoration: none; }
         #header .header-list .header-links #link2:hover {
           color: #7929b9;
           text-decoration: none; }
       #header .header-list .header-links #link3 {
-        color: #8a8a8a;
+        color: #525252;
         text-decoration: none; }
         #header .header-list .header-links #link3:hover {
           color: #56a5d9;
@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 #about {
   background-color: #fdfdfd;
   font-family: 'Raleway', sans-serif;
-  color: #8a8a8a; }
+  color: #828282; }
   #about .about-blog {
     width: 50%;
     padding: 2rem;
@@ -189,12 +189,12 @@ h1, h2, h3, h4, h5, h6 {
       text-indent: 1rem;
       font-size: 1.25rem; }
       #about .about-blog .about-text .about-link {
-        color: #8a8a8a;
+        color: #828282;
         text-decoration: none;
         font-style: italic;
         transition: color, 0.2s; }
         #about .about-blog .about-text .about-link:hover {
-          color: #cd7942;
+          color: #cd7f23;
           text-decoration: none; }
   #about:hover .about-header {
     color: #3268a5;
@@ -202,9 +202,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* EDUCATION STYLE */
 #education {
-  background-color: #f4f4f4;
+  background-color: #f0f0f0;
   font-family: 'Raleway', sans-serif;
-  color: #8a8a8a; }
+  color: #828282; }
   #education .education-blog {
     width: 65%;
     padding: 2rem;
@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
           margin-bottom: 0rem;
           font-size: 1.25rem; }
           #education .education-blog .education-grid .education-list .education-item .education-school .education-school-name {
-            color: #424242; }
+            color: #525252; }
           #education .education-blog .education-grid .education-list .education-item .education-school .education-school-title {
             margin-bottom: 0rem;
             font-style: italic; }
@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 #experience {
   background-color: #fdfdfd;
   font-family: 'Raleway', sans-serif;
-  color: #8a8a8a; }
+  color: #828282; }
   #experience .experience-blog {
     width: 65%;
     padding: 2rem;
@@ -268,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company {
             font-size: 1.25rem; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-name {
-              color: #424242; }
+              color: #525252; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-date {
               margin-bottom: 0rem;
               font-size: 1rem; }
@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
             text-indent: 0.5rem;
             font-size: 1rem; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external .experience-link {
-              color: #424242;
+              color: #525252;
               text-decoration: none;
               display: inline-block;
               transition: all 0.2s; }
@@ -312,9 +312,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* PROJECTS STYLE */
 #projects {
-  background-color: #f4f4f4;
+  background-color: #f0f0f0;
   font-family: 'Raleway', sans-serif;
-  color: #8a8a8a; }
+  color: #828282; }
   #projects .projects-blog {
     width: 65%;
     padding: 2rem;
@@ -336,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
           margin-bottom: 0.5rem;
           font-size: 1.25rem; }
           #projects .projects-blog .projects-list .project-item .project-description .project-name {
-            color: #424242; }
+            color: #525252; }
           #projects .projects-blog .projects-list .project-item .project-description .project-funding {
             margin-bottom: 0rem;
             font-size: 1rem; }
@@ -350,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
           text-indent: 0.5rem;
           font-size: 1rem; }
           #projects .projects-blog .projects-list .project-item .project-external .project-link {
-            color: #424242;
+            color: #525252;
             text-decoration: none;
             display: inline-block;
             transition: all 0.2s; }
@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
 #skills {
   background-color: #fdfdfd;
   font-family: 'Raleway', sans-serif;
-  color: #8a8a8a; }
+  color: #828282; }
   #skills .skills-blog {
     width: 80%;
     padding: 2rem;
@@ -395,7 +395,7 @@ h1, h2, h3, h4, h5, h6 {
       flex-wrap: wrap;
       text-align: left; }
       #skills .skills-blog .skills-group .skill-grid .skill-topic {
-        color: #424242; }
+        color: #525252; }
       #skills .skills-blog .skills-group .skill-grid .skill-list {
         list-style: circle; }
   #skills:hover .skills-header {
@@ -443,7 +443,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 0.05rem solid transparent;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    color: #f4f4f4;
+    color: #f0f0f0;
     transition: color, 0.5s;
     transition: border-bottom-color, 0.75s;
     display: block;
@@ -460,7 +460,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 3rem;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #8a8a8a;
+    color: #828282;
     transition: color, 0.25s; }
     .myModal .myClose:hover {
       color: #fdfdfd; }
