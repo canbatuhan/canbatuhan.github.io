@@ -6,7 +6,7 @@
     display: flex;
     justify-content: flex-end;
 
-    background-color: $color-lightgreen;
+    background-color: $color-lightblue;
     font-family: 'Raleway', sans-serif;
     font-size: $font-medium;
     
@@ -48,11 +48,11 @@
             text-align: center;
             
             .nav-link {
-                @include link($color-white, $color-lightgreen);
+                @include link($color-white, $color-lightblue);
                 
                 padding: 1rem 0;
                 text-transform: capitalize;
-                transition: background-image, 0.2s;
+                transition: all, 0.25s;
                 
                 &:hover {
                     background-color: $color-lightgrey;
