@@ -55,7 +55,7 @@
                     }
                     
                     .experience-link {
-                        @include link($color-green, $color-lightgreen);
+                        @include link($color-red, $color-lightred);
                         transition: color 0.2s;
                     }
                     
@@ -88,8 +88,8 @@
     
     &:hover {
         .experience-header {
-            color: $color-green;
-            border-bottom-color: $color-lightgreen;
+            color: $color-blue;
+            border-bottom-color: $color-lightblue;
         }
     }
 }

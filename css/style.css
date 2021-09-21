@@ -7,6 +7,7 @@
 /* YELLOW */
 /* ORANGE */
 /* BROWN */
+/* CYPRUS */
 /* FONT SIZES*/
 * {
   margin: 0;
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   display: flex;
   justify-content: flex-end;
-  background-color: #56a5d9;
+  background-color: #0f4645;
   font-family: 'Raleway', sans-serif;
   font-size: 1.25rem; }
   #navbar .nav-brand {
@@ -89,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
       transition: font-weight, 0.1s; }
       #navbar .nav-brand .brand-link:hover {
-        color: #202020;
+        color: #828282;
         text-decoration: none; }
       #navbar .nav-brand .brand-link span {
         font-weight: 600;
@@ -110,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
         text-transform: capitalize;
         transition: all, 0.25s; }
         #navbar .navbar .nav-item .nav-link:hover {
-          color: #56a5d9;
+          color: #0f4645;
           text-decoration: none; }
         #navbar .navbar .nav-item .nav-link:hover {
           background-color: #f0f0f0; }
@@ -197,8 +198,8 @@ h1, h2, h3, h4, h5, h6 {
           color: #cd7f23;
           text-decoration: none; }
   #about:hover .about-header {
-    color: #379f57;
-    border-bottom-color: #78ca7d; }
+    color: #3268a5;
+    border-bottom-color: #56a5d9; }
 
 /* EDUCATION STYLE */
 #education {
@@ -237,8 +238,8 @@ h1, h2, h3, h4, h5, h6 {
           padding: 0;
           font-size: 1rem; }
   #education:hover .education-header {
-    color: #379f57;
-    border-bottom-color: #78ca7d; }
+    color: #3268a5;
+    border-bottom-color: #56a5d9; }
 
 /* EXPERIENCE STYLE */
 #experience {
@@ -282,11 +283,11 @@ h1, h2, h3, h4, h5, h6 {
               text-indent: 0.5rem;
               margin: 0.5rem 0; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-link {
-            color: #379f57;
+            color: #a53832;
             text-decoration: none;
             transition: color 0.2s; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-link:hover {
-              color: #78ca7d;
+              color: #d94655;
               text-decoration: none; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external {
             text-indent: 0.5rem;
@@ -307,8 +308,8 @@ h1, h2, h3, h4, h5, h6 {
               #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external .experience-link:hover {
                 transform: scale(1.1); }
   #experience:hover .experience-header {
-    color: #379f57;
-    border-bottom-color: #78ca7d; }
+    color: #3268a5;
+    border-bottom-color: #56a5d9; }
 
 /* PROJECTS STYLE */
 #projects {
@@ -365,8 +366,8 @@ h1, h2, h3, h4, h5, h6 {
             #projects .projects-blog .projects-list .project-item .project-external .project-link:hover {
               transform: scale(1.1); }
   #projects:hover .projects-header {
-    color: #379f57;
-    border-bottom-color: #78ca7d; }
+    color: #3268a5;
+    border-bottom-color: #56a5d9; }
 
 /* SKILLS STYLE */
 #skills {
@@ -399,8 +400,8 @@ h1, h2, h3, h4, h5, h6 {
       #skills .skills-blog .skills-group .skill-grid .skill-list {
         list-style: circle; }
   #skills:hover .skills-header {
-    color: #379f57;
-    border-bottom-color: #78ca7d; }
+    color: #3268a5;
+    border-bottom-color: #56a5d9; }
 
 /* FLIPPER STRUCTURE */
 .flip-box {
