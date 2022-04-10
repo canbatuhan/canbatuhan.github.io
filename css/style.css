@@ -79,39 +79,19 @@ a {
 #navbar {
   position: fixed;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: #0f4645;
   font-family: 'Raleway', sans-serif;
   font-size: 1.25rem; }
-  #navbar .nav-brand {
-    flex: 1;
-    align-self: center;
-    margin-bottom: 0rem;
-    text-align: center;
-    font-size: 1.5rem; }
-    #navbar .nav-brand .brand-link {
-      color: #fdfdfd;
-      text-decoration: none;
-      transition: font-weight, 0.1s; }
-      #navbar .nav-brand .brand-link:hover {
-        color: #828282;
-        text-decoration: none; }
-      #navbar .nav-brand .brand-link span {
-        font-weight: 600;
-        transition: font-weight, 0.1s; }
-      #navbar .nav-brand .brand-link:hover {
-        font-weight: 600; }
-        #navbar .nav-brand .brand-link:hover span {
-          font-weight: 350; }
   #navbar .navbar {
     padding: 0rem; }
     #navbar .navbar .nav-item {
-      width: 10rem;
-      text-align: center; }
+      text-align: center;
+      width: 10rem; }
       #navbar .navbar .nav-item .nav-link {
         color: #fdfdfd;
         text-decoration: none;
-        padding: 1rem 0;
+        padding: 1rem;
         text-transform: capitalize;
         transition: all, 0.25s; }
         #navbar .navbar .nav-item .nav-link:hover {

@@ -4,53 +4,23 @@
     position: fixed;
     
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 
     background-color: $color-cyprus;
     font-family: 'Raleway', sans-serif;
     font-size: $font-medium;
     
-    .nav-brand {
-        flex: 1;
-        align-self: center;
-        
-        margin-bottom: 0rem;
-        
-        text-align: center;
-        font-size: $font-large;
-        
-        .brand-link {
-            @include link($color-white, $color-grey);
-
-            transition: font-weight, 0.1s;
-            
-            span {
-                font-weight: 600;
-                transition: font-weight, 0.1s;
-            }
-            
-            &:hover {
-                font-weight: 600;
-            
-                span {
-                    font-weight: 350;
-                }
-            }
-        }
-        
-    }
-    
     .navbar {
         padding: 0rem;
         
         .nav-item {
-            width: 10rem;
             text-align: center;
+            width: 10rem;
             
             .nav-link {
                 @include link($color-white, $color-cyprus);
                 
-                padding: 1rem 0;
+                padding: 1rem;
                 text-transform: capitalize;
                 transition: all, 0.25s;
                 
