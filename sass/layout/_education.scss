@@ -28,11 +28,16 @@
                         margin-bottom: 0rem;
                         font-size: $font-medium;
                         
-                        .education-school-name {
+                        .education-school-title {
+                            color: $color-darkblue;
+                        }
+                        
+                        .education-school-time {
                             color: $color-darkgrey;
                         }
                         
-                        .education-school-title {
+                        .education-school-name {
+                            color: $color-black;
                             margin-bottom: 0rem;
                             font-style: italic;
                         }

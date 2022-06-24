@@ -212,9 +212,12 @@ a {
         #education .education-blog .education-grid .education-list .education-item .education-school {
           margin-bottom: 0rem;
           font-size: 1.25rem; }
-          #education .education-blog .education-grid .education-list .education-item .education-school .education-school-name {
-            color: #525252; }
           #education .education-blog .education-grid .education-list .education-item .education-school .education-school-title {
+            color: #163579; }
+          #education .education-blog .education-grid .education-list .education-item .education-school .education-school-time {
+            color: #525252; }
+          #education .education-blog .education-grid .education-list .education-item .education-school .education-school-name {
+            color: #202020;
             margin-bottom: 0rem;
             font-style: italic; }
         #education .education-blog .education-grid .education-list .education-item .education-description {
