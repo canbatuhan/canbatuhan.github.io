@@ -254,14 +254,17 @@ a {
           margin-bottom: 1.5rem;
           padding: 0.5rem; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company {
+            margin-bottom: 0.5rem;
             font-size: 1.25rem; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-name {
-              color: #525252; }
-            #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-date {
-              margin-bottom: 0rem;
-              font-size: 1rem; }
+              font-size: 1.5rem;
+              color: #525252;
+              margin-bottom: 0.25rem; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-title {
-              font-style: italic; }
+              color: #525252;
+              margin-bottom: 0rem; }
+            #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-date {
+              font-size: 1rem; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-description {
             text-indent: 0.5rem; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-responsibilities-list {

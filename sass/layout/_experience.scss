@@ -25,20 +25,25 @@
                     padding: 0.5rem;
                     
                     .experience-company {
+                        margin-bottom: 0.5rem;
                         font-size: $font-medium;
                         
                         .experience-company-name {
+                            font-size: $font-large;
                             color: $color-darkgrey;
-                        }
-                        
-                        .experience-company-date {
-                            margin-bottom: 0rem;
-                            font-size: $font-midsmall;
+                            margin-bottom: 0.25rem;
                         }
                         
                         .experience-company-title {
-                            font-style: italic;
+                            color: $color-darkgrey;
+                            margin-bottom: 0rem;
                         }
+                        
+                        .experience-company-date {
+                            font-size: $font-midsmall;
+                        }
+                        
+                        
                     }
                     
                     .experience-description {
