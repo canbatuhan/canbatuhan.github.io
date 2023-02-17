@@ -301,9 +301,41 @@ a {
     color: #3268a5;
     border-bottom-color: #56a5d9; }
 
+/* EXPERIENCE STYLE */
+#publications {
+  background-color: #f0f0f0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25rem;
+  color: #828282; }
+  #publications .publications-blog {
+    width: 65%;
+    padding: 2rem;
+    margin: auto;
+    text-align: center; }
+    #publications .publications-blog .publications-header {
+      display: inline-block;
+      border-bottom: 0.05rem solid transparent;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      color: #202020;
+      transition: color, 0.5s;
+      transition: border-bottom-color, 0.75s; }
+    #publications .publications-blog .publications-grid {
+      width: 100%;
+      text-align: left; }
+      #publications .publications-blog .publications-grid .publications-list {
+        padding: 1rem;
+        list-style: square; }
+        #publications .publications-blog .publications-grid .publications-list .publications-item {
+          margin-bottom: 1.5rem;
+          padding: 0.5rem; }
+  #publications:hover .publications-header {
+    color: #3268a5;
+    border-bottom-color: #56a5d9; }
+
 /* PROJECTS STYLE */
 #projects {
-  background-color: #f0f0f0;
+  background-color: #fdfdfd;
   font-family: 'Raleway', sans-serif;
   color: #828282; }
   #projects .projects-blog {
@@ -361,7 +393,7 @@ a {
 
 /* SKILLS STYLE */
 #skills {
-  background-color: #fdfdfd;
+  background-color: #f0f0f0;
   font-family: 'Raleway', sans-serif;
   color: #828282; }
   #skills .skills-blog {
