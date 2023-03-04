@@ -1,7 +1,7 @@
-@import 'abstracts/defaults';
-@import 'abstracts/mixins';
-
+@import 'base/constants';
 @import 'base/base';
+
+@import 'assets/mixin';
 
 @import 'layout/navbar';
 @import 'layout/header';
@@ -11,7 +11,3 @@
 @import 'layout/publications';
 @import 'layout/projects';
 @import 'layout/skills';
-
-@import 'components/flipper';
-@import 'components/modal';
-@import 'components/toTop';

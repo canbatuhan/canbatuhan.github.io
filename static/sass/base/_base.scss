@@ -4,18 +4,18 @@
 }
 
 html {
-    font-size: 18px;
+    font-size: 16px;
     scroll-behavior: smooth;
     
     overflow-x: hidden;
     overflow-y: auto;
     
     @media screen and (max-width: 1650px) {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     @media screen and (max-width: 1450px) {
-        font-size: 15px;
+        font-size: 13px;
         
         #header .title {
             
@@ -38,7 +38,7 @@ html {
     }
     
     @media screen and (max-width: 1080px) {
-        font-size: 12px;
+        font-size: 11px;
         
         #funding .funding-box .nav .nav-item {
             width: 50%;
@@ -50,7 +50,7 @@ html {
     }
     
     @media screen and (max-width: 900px) {
-        font-size: 10px;
+        font-size: 9px;
         
         #header .title {
             
@@ -69,7 +69,7 @@ html {
     }
     
     @media screen and (max-width: 768px) {
-        font-size: 8px;
+        font-size: 7px;
         
         #funding .funding-box .nav .nav-item {
             width: 100%;
@@ -77,22 +77,27 @@ html {
     }
     
     @media screen and (max-width: 667px) {
-        font-size: 7px;
+        font-size: 6px;
     }
 }
 
 body {
-    background-color: $color-white;
+    background-color: $color-palette-light;
+    color: $color-darkgrey;
     cursor: default;
 }
 
 section {
-    padding: 4rem 0;
+    width: 85%;
+    min-height: 100vh;
+    float: right;
+    padding: 4rem;
 }
 
 section:first-child {
-    width: 100%;
-    padding: 0;
+    position: fixed;
+    width: 15%;
+    padding: 0rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
