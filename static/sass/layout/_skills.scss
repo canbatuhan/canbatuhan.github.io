@@ -1,0 +1,68 @@
+#skills {
+    display: flex;
+    justify-content: flex-start;
+    
+    .skills-blog {
+        text-align: justify;
+        
+        .skills-header {
+            font-family: 'Gajraj One', sans-serif;
+            font-size: $font-xxlarge;
+            
+            color: $color-palette-dark;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+        }
+        
+        .skills-group {
+            display: flex;
+            flex-direction: column;
+            
+            .skill-grid {
+                font-family: 'Squada One', sans-serif;
+                
+                .skill-topic {
+                    margin-bottom: 1rem;
+                    font-size: $font-large;
+                    color: $color-palette-solid;
+                    
+                    text-align: left;
+                    text-transform: uppercase;
+                    letter-spacing: 0.3rem;
+                }
+                
+                .skill-list {
+                    width: 50%;
+                    margin: 0rem;
+                    padding: 0rem;
+                    
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    
+                    list-style: none;
+                    font-size: $font-medium;
+                    
+                    .skill-item {
+                        margin-right: 1rem;
+                        margin-bottom: 1rem;
+                        padding: 0.25rem 1rem;
+                        
+                        color: $color-lightgrey;
+                        background-color: $color-palette-dark;
+                        border-radius: 1rem;
+                        letter-spacing: 0.1rem;
+                        
+                        transition: color, background-color, 0.25s;
+                        
+                        &:hover {
+                            color: $color-darkgrey;
+                            background-color: $color-palette-bright;
+                            box-shadow: 0.1rem 0.1rem 0.5rem black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

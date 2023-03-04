@@ -1,0 +1,10 @@
+@mixin link($base-color, $hover-color, $transition-duration) {
+    color: $base-color;
+    text-decoration: none;
+    transition-duration: $transition-duration;
+    
+    &:hover {
+        color: $hover-color;
+        text-decoration: none;
+    }
+}

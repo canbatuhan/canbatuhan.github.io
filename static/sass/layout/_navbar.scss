@@ -1,0 +1,59 @@
+#navbar {
+    width: auto;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: $color-palette-dark;
+    
+    navbar {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        box-shadow: 0.2rem 0rem 1rem black;
+        
+        #nav-items {
+            list-style: none;
+            
+            .nav-item {
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+                
+                .nav-link {
+                    @include link($color-palette-bright, $color-palette-light, 0.25s);
+                }
+                
+                transition: background-color, 0.25s;
+                &:hover {
+                    background-color: $color-palette-solid;
+                }
+            }
+        }
+        
+        .nav-links {            
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            
+            font-size: $font-medium;
+            list-style: none;
+            
+            li {
+
+                #link1 {
+                    @include link($color-lightgrey, $color-blue, 0.25s);
+                }
+
+                #link2 {
+                    @include link($color-lightgrey, $color-purple, 0.25s);
+                }
+
+                .nav-link {                
+                    &:hover {
+                        border-radius: 50%;
+                        background-color: $color-palette-light;
+                    }
+                }
+            }
+        }
+    }
+}

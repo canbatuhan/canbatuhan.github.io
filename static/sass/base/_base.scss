@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    @media screen and (max-width: 1650px) {
+        font-size: 14px;
+    }
+    
+    @media screen and (max-width: 1450px) {
+        font-size: 13px;
+        
+        #header .title {
+            
+            .title-first {
+                font-size: 3.5rem;
+            }
+            
+            .title-second {
+                font-size: 2.5rem;
+            }
+        }
+        
+        #funding .funding-box .nav .nav-item {
+            width: 33%;
+        }
+        
+        .myModal .myModal-title {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 1080px) {
+        font-size: 11px;
+        
+        #funding .funding-box .nav .nav-item {
+            width: 50%;
+        }
+        
+        #projects .projects-grid .project-card .project-description p {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 900px) {
+        font-size: 9px;
+        
+        #header .title {
+            
+            .title-first {
+                font-size: 3rem;
+            }
+            
+            .title-second {
+                font-size: 2rem;
+            }
+        }
+        
+        #about .about-box .about-media iframe {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        font-size: 7px;
+        
+        #funding .funding-box .nav .nav-item {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 667px) {
+        font-size: 6px;
+    }
+}
+
+body {
+    background-color: $color-palette-light;
+    color: $color-darkgrey;
+    cursor: default;
+}
+
+section {
+    width: 85%;
+    min-height: 100vh;
+    float: right;
+    padding: 4rem;
+}
+
+section:first-child {
+    position: fixed;
+    width: 15%;
+    padding: 0rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-weight: 600;
+}
+
+a {
+    cursor: pointer;
+}

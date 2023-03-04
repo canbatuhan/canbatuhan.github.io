@@ -1,0 +1,90 @@
+#experience {
+    display: flex;
+    justify-content: flex-start;
+    
+    .experience-blog {
+        text-align: justify;
+        
+        .experience-header {
+            font-family: 'Gajraj One', sans-serif;
+            font-size: $font-xxlarge;
+            
+            color: $color-palette-dark;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+        }
+        
+        .experience-grid {
+            font-family: 'Squada One', sans-serif;
+            
+            .experience-list {
+                list-style: none;
+                
+                .experience-item {
+                    
+                    .experience-company {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        margin-bottom: 0.25rem;
+                        
+                        .experience-company-name {
+                            color: $color-palette-solid;
+                            font-size: $font-xlarge;
+                        }
+                        
+                        #exp-ykt {
+                            color: $color-blue;
+                        }
+                        
+                        #exp-cloud {
+                            color: $color-lightblue;
+                        }
+                        
+                        #exp-rake {
+                            color: $color-red;
+                        }
+                        
+                        .experience-company-title {
+                            margin-bottom: 0rem;
+                            margin-right: 0.5rem;
+                            font-size: $font-medium;
+                            color: $color-palette-bright;
+                        }
+                        
+                        .experience-company-date {
+                            margin-bottom: 0rem;
+                            font-size: $font-medium;
+                            color: $color-grey;
+                        }
+                    }
+                    
+                    .experience-description {
+                        margin-bottom: 0.5rem;
+                        font-size: $font-medium;
+                        list-style: none;
+                        
+                        a {
+                            font-style: italic; 
+                            @include link($color-grey, $color-palette-dark, 0.25s);
+                        }
+                    }
+                    
+                    .experience-external {
+                        margin-bottom: 0.5rem;
+                        font-size: $font-midsmall;
+                        
+                        i {
+                            margin-right: 0.5rem;
+                        }
+                        
+                        a {
+                            @include link($color-grey, $color-palette-dark, 0.25s);
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

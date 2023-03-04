@@ -1,0 +1,29 @@
+#publications {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    .publications-blog {
+        
+        .publications-header {
+            font-family: 'Gajraj One', sans-serif;
+            font-size: $font-xxlarge;
+            
+            color: $color-palette-dark;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+        }
+        
+        .publications-grid {
+            font-family: 'Squada One', sans-serif;
+            
+            .publications-list {
+                list-style: square;
+                
+                .publication-item {
+                    font-size: $font-medium;
+                }
+            }
+        }
+    }
+}

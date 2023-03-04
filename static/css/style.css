@@ -1,0 +1,369 @@
+/* DEFAULT VARIABLES */
+/* GREY */
+/* BLUE */
+/* RED */
+/* GREEN */
+/* PURPLE */
+/* YELLOW */
+/* ORANGE */
+/* BROWN */
+/* CYPRUS */
+/* PALETTE */
+/* FONT SIZES*/
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  @media screen and (max-width: 1650px) {
+    html {
+      font-size: 14px; } }
+  @media screen and (max-width: 1450px) {
+    html {
+      font-size: 13px; }
+      html #header .title .title-first {
+        font-size: 3.5rem; }
+      html #header .title .title-second {
+        font-size: 2.5rem; }
+      html #funding .funding-box .nav .nav-item {
+        width: 33%; }
+      html .myModal .myModal-title {
+        display: none; } }
+  @media screen and (max-width: 1080px) {
+    html {
+      font-size: 11px; }
+      html #funding .funding-box .nav .nav-item {
+        width: 50%; }
+      html #projects .projects-grid .project-card .project-description p {
+        display: none; } }
+  @media screen and (max-width: 900px) {
+    html {
+      font-size: 9px; }
+      html #header .title .title-first {
+        font-size: 3rem; }
+      html #header .title .title-second {
+        font-size: 2rem; }
+      html #about .about-box .about-media iframe {
+        display: none; } }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 7px; }
+      html #funding .funding-box .nav .nav-item {
+        width: 100%; } }
+  @media screen and (max-width: 667px) {
+    html {
+      font-size: 6px; } }
+
+body {
+  background-color: #FCFFE7;
+  color: #525252;
+  cursor: default; }
+
+section {
+  width: 85%;
+  min-height: 100vh;
+  float: right;
+  padding: 4rem; }
+
+section:first-child {
+  position: fixed;
+  width: 15%;
+  padding: 0rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-weight: 600; }
+
+a {
+  cursor: pointer; }
+
+#navbar {
+  width: auto;
+  font-family: 'Press Start 2P', sans-serif;
+  background-color: #2B3467; }
+  #navbar navbar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0.2rem 0rem 1rem black; }
+    #navbar navbar #nav-items {
+      list-style: none; }
+      #navbar navbar #nav-items .nav-item {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        transition: background-color, 0.25s; }
+        #navbar navbar #nav-items .nav-item .nav-link {
+          color: #9AB7D9;
+          text-decoration: none;
+          transition-duration: 0.25s; }
+          #navbar navbar #nav-items .nav-item .nav-link:hover {
+            color: #FCFFE7;
+            text-decoration: none; }
+        #navbar navbar #nav-items .nav-item:hover {
+          background-color: #EB455F; }
+    #navbar navbar .nav-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 1.25rem;
+      list-style: none; }
+      #navbar navbar .nav-links li #link1 {
+        color: #f0f0f0;
+        text-decoration: none;
+        transition-duration: 0.25s; }
+        #navbar navbar .nav-links li #link1:hover {
+          color: #3268a5;
+          text-decoration: none; }
+      #navbar navbar .nav-links li #link2 {
+        color: #f0f0f0;
+        text-decoration: none;
+        transition-duration: 0.25s; }
+        #navbar navbar .nav-links li #link2:hover {
+          color: #7929b9;
+          text-decoration: none; }
+      #navbar navbar .nav-links li .nav-link:hover {
+        border-radius: 50%;
+        background-color: #FCFFE7; }
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #header .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Squada One', sans-serif; }
+    #header .header-text p {
+      color: transparent; }
+    #header .header-text #header-name {
+      transition-duration: 1.5s; }
+    #header .header-text #header-department {
+      transition-duration: 2.0s; }
+    #header .header-text #header-institute {
+      transition-duration: 2.5s; }
+  #header:hover .header-text p {
+    color: #EB455F; }
+
+#about {
+  display: flex;
+  align-items: center; }
+  #about .about-blog {
+    text-align: justify; }
+    #about .about-blog .about-header {
+      font-family: 'Gajraj One', sans-serif;
+      font-size: 2rem;
+      color: #2B3467;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem; }
+    #about .about-blog .about-text {
+      font-size: 1.25rem;
+      font-family: 'Squada One', sans-serif; }
+
+#education {
+  display: flex;
+  align-items: center; }
+  #education .education-blog {
+    text-align: justify; }
+    #education .education-blog .education-header {
+      font-family: 'Gajraj One', sans-serif;
+      font-size: 2rem;
+      color: #2B3467;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem; }
+    #education .education-blog .education-grid {
+      font-family: 'Squada One', sans-serif; }
+      #education .education-blog .education-grid .education-list {
+        list-style: none; }
+        #education .education-blog .education-grid .education-list .education-item .education-school .education-school-title {
+          font-size: 1.75rem;
+          color: #EB455F; }
+        #education .education-blog .education-grid .education-list .education-item .education-school .education-school-time {
+          font-size: 1.25rem;
+          color: #EB455F; }
+        #education .education-blog .education-grid .education-list .education-item .education-school .education-school-name {
+          margin-bottom: 0rem;
+          font-size: 1.5rem;
+          color: #9AB7D9; }
+        #education .education-blog .education-grid .education-list .education-item .education-description {
+          font-size: 1.25rem;
+          list-style: none; }
+
+#experience {
+  display: flex;
+  justify-content: flex-start; }
+  #experience .experience-blog {
+    text-align: justify; }
+    #experience .experience-blog .experience-header {
+      font-family: 'Gajraj One', sans-serif;
+      font-size: 2rem;
+      color: #2B3467;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem; }
+    #experience .experience-blog .experience-grid {
+      font-family: 'Squada One', sans-serif; }
+      #experience .experience-blog .experience-grid .experience-list {
+        list-style: none; }
+        #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          margin-bottom: 0.25rem; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-name {
+            color: #EB455F;
+            font-size: 1.75rem; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company #exp-ykt {
+            color: #3268a5; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company #exp-cloud {
+            color: #56a5d9; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company #exp-rake {
+            color: #a53832; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-title {
+            margin-bottom: 0rem;
+            margin-right: 0.5rem;
+            font-size: 1.25rem;
+            color: #9AB7D9; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-date {
+            margin-bottom: 0rem;
+            font-size: 1.25rem;
+            color: #828282; }
+        #experience .experience-blog .experience-grid .experience-list .experience-item .experience-description {
+          margin-bottom: 0.5rem;
+          font-size: 1.25rem;
+          list-style: none; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-description a {
+            font-style: italic;
+            color: #828282;
+            text-decoration: none;
+            transition-duration: 0.25s; }
+            #experience .experience-blog .experience-grid .experience-list .experience-item .experience-description a:hover {
+              color: #2B3467;
+              text-decoration: none; }
+        #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external {
+          margin-bottom: 0.5rem;
+          font-size: 1rem; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external i {
+            margin-right: 0.5rem; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external a {
+            color: #828282;
+            text-decoration: none;
+            transition-duration: 0.25s; }
+            #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external a:hover {
+              color: #2B3467;
+              text-decoration: none; }
+
+#publications {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  #publications .publications-blog .publications-header {
+    font-family: 'Gajraj One', sans-serif;
+    font-size: 2rem;
+    color: #2B3467;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem; }
+  #publications .publications-blog .publications-grid {
+    font-family: 'Squada One', sans-serif; }
+    #publications .publications-blog .publications-grid .publications-list {
+      list-style: square; }
+      #publications .publications-blog .publications-grid .publications-list .publication-item {
+        font-size: 1.25rem; }
+
+#projects {
+  display: flex;
+  justify-content: flex-start; }
+  #projects .projects-blog {
+    text-align: justify; }
+    #projects .projects-blog .projects-header {
+      font-family: 'Gajraj One', sans-serif;
+      font-size: 2rem;
+      color: #2B3467;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem; }
+    #projects .projects-blog .projects-list {
+      list-style: none;
+      font-family: 'Squada One', sans-serif; }
+      #projects .projects-blog .projects-list .project-item {
+        margin-bottom: 1rem; }
+        #projects .projects-blog .projects-list .project-item .project-description {
+          margin-bottom: 0.25rem; }
+          #projects .projects-blog .projects-list .project-item .project-description .project-name {
+            margin-bottom: 0rem;
+            font-size: 1.5rem;
+            color: #EB455F; }
+          #projects .projects-blog .projects-list .project-item .project-description .project-funding {
+            margin-bottom: 0rem;
+            font-size: 1.25rem;
+            color: #9AB7D9; }
+          #projects .projects-blog .projects-list .project-item .project-description .project-date {
+            margin-bottom: 0rem;
+            font-size: 1rem;
+            color: #828282; }
+          #projects .projects-blog .projects-list .project-item .project-description .project-title {
+            margin-bottom: 0rem;
+            font-size: 1.25rem; }
+        #projects .projects-blog .projects-list .project-item .project-external {
+          margin-bottom: 0.5rem;
+          font-size: 1rem; }
+          #projects .projects-blog .projects-list .project-item .project-external i {
+            margin-right: 0.5rem; }
+          #projects .projects-blog .projects-list .project-item .project-external a {
+            color: #828282;
+            text-decoration: none;
+            transition-duration: 0.25s; }
+            #projects .projects-blog .projects-list .project-item .project-external a:hover {
+              color: #2B3467;
+              text-decoration: none; }
+
+#skills {
+  display: flex;
+  justify-content: flex-start; }
+  #skills .skills-blog {
+    text-align: justify; }
+    #skills .skills-blog .skills-header {
+      font-family: 'Gajraj One', sans-serif;
+      font-size: 2rem;
+      color: #2B3467;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem; }
+    #skills .skills-blog .skills-group {
+      display: flex;
+      flex-direction: column; }
+      #skills .skills-blog .skills-group .skill-grid {
+        font-family: 'Squada One', sans-serif; }
+        #skills .skills-blog .skills-group .skill-grid .skill-topic {
+          margin-bottom: 1rem;
+          font-size: 1.5rem;
+          color: #EB455F;
+          text-align: left;
+          text-transform: uppercase;
+          letter-spacing: 0.3rem; }
+        #skills .skills-blog .skills-group .skill-grid .skill-list {
+          width: 50%;
+          margin: 0rem;
+          padding: 0rem;
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          list-style: none;
+          font-size: 1.25rem; }
+          #skills .skills-blog .skills-group .skill-grid .skill-list .skill-item {
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            padding: 0.25rem 1rem;
+            color: #f0f0f0;
+            background-color: #2B3467;
+            border-radius: 1rem;
+            letter-spacing: 0.1rem;
+            transition: color, background-color, 0.25s; }
+            #skills .skills-blog .skills-group .skill-grid .skill-list .skill-item:hover {
+              color: #525252;
+              background-color: #9AB7D9;
+              box-shadow: 0.1rem 0.1rem 0.5rem black; }
+
+/*# sourceMappingURL=style.css.map */

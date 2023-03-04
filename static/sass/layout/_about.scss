@@ -1,0 +1,24 @@
+#about {
+    display: flex;
+    align-items: center;
+    
+    .about-blog {
+        
+        text-align: justify;
+        
+        .about-header {
+            font-family: 'Gajraj One', sans-serif;
+            font-size: $font-xxlarge;
+            
+            color: $color-palette-dark;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+        }
+        
+        .about-text {
+            font-size: $font-medium;
+            font-family: 'Squada One', sans-serif;
+        }
+    }
+    
+}

@@ -1,0 +1,52 @@
+#education {
+    display: flex;
+    align-items: center;
+    
+    .education-blog {
+        text-align: justify;
+        
+        .education-header {
+            font-family: 'Gajraj One', sans-serif;
+            font-size: $font-xxlarge;
+            
+            color: $color-palette-dark;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+        }
+        
+        .education-grid {
+            font-family: 'Squada One', sans-serif;
+            
+            .education-list {
+                list-style: none;
+                
+                .education-item {
+                    
+                    .education-school {
+                        
+                        .education-school-title {
+                            font-size: $font-xlarge;
+                            color: $color-palette-solid;
+                        }
+                        
+                        .education-school-time {
+                            font-size: $font-medium;
+                            color: $color-palette-solid;
+                        }
+                        
+                        .education-school-name {
+                            margin-bottom: 0rem;
+                            font-size: $font-large;
+                            color: $color-palette-bright;
+                        }
+                    }
+                    
+                    .education-description {
+                        font-size: $font-medium;
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+}

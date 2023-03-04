@@ -1,0 +1,66 @@
+#projects {
+    display: flex;
+    justify-content: flex-start;
+    
+    .projects-blog {
+        text-align: justify;
+        
+        .projects-header {
+            font-family: 'Gajraj One', sans-serif;
+            font-size: $font-xxlarge;
+            
+            color: $color-palette-dark;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+        }
+        
+        .projects-list {
+            list-style: none;
+            font-family: 'Squada One', sans-serif;
+            
+            .project-item {
+                margin-bottom: 1rem;
+                
+                .project-description {
+                    margin-bottom: 0.25rem;
+                    
+                    .project-name {
+                        margin-bottom: 0rem;
+                        font-size: $font-large;
+                        color: $color-palette-solid;
+                    }
+                    
+                    .project-funding {
+                        margin-bottom: 0rem;
+                        font-size: $font-medium;
+                        color: $color-palette-bright;
+                    }
+                    
+                    .project-date {
+                        margin-bottom: 0rem;
+                        font-size: $font-midsmall;
+                        color: $color-grey;
+                    }
+                    
+                    .project-title {
+                        margin-bottom: 0rem;
+                        font-size: $font-medium;
+                    }
+                }
+                
+                .project-external {
+                    margin-bottom: 0.5rem;
+                    font-size: $font-midsmall;
+                        
+                    i {
+                        margin-right: 0.5rem;
+                    }
+                        
+                    a {
+                        @include link($color-grey, $color-palette-dark, 0.25s);  
+                    }
+                }
+            }
+        }
+    }
+}
