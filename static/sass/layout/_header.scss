@@ -11,25 +11,6 @@
         font-family: 'Squada One', sans-serif;
         
         p {
-            color: transparent;
-        }
-        
-        #header-name {
-            transition-duration: 1.5s;
-        }
-        
-        #header-department {
-            transition-duration: 2.0s;
-        }
-        
-        #header-institute {
-            transition-duration: 2.5s;
-        }
-        
-    }
-    
-    &:hover {
-        .header-text p {
             color: $color-palette-solid;
         }
     }

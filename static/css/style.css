@@ -90,7 +90,7 @@ a {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-shadow: 0.2rem 0rem 1rem black; }
     #navbar navbar #nav-items {
       list-style: none; }
@@ -114,22 +114,30 @@ a {
       font-size: 1.25rem;
       list-style: none; }
       #navbar navbar .nav-links li #link1 {
-        color: #f0f0f0;
+        color: #FCFFE7;
         text-decoration: none;
-        transition-duration: 0.25s; }
+        transition-duration: 0.1s; }
         #navbar navbar .nav-links li #link1:hover {
           color: #3268a5;
           text-decoration: none; }
       #navbar navbar .nav-links li #link2 {
-        color: #f0f0f0;
+        color: #FCFFE7;
         text-decoration: none;
-        transition-duration: 0.25s; }
+        transition-duration: 0.1s; }
         #navbar navbar .nav-links li #link2:hover {
           color: #7929b9;
           text-decoration: none; }
-      #navbar navbar .nav-links li .nav-link:hover {
-        border-radius: 50%;
-        background-color: #FCFFE7; }
+      #navbar navbar .nav-links li .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem; }
+        #navbar navbar .nav-links li .nav-link:hover {
+          border-radius: 1rem;
+          background-color: #FCFFE7; }
+        #navbar navbar .nav-links li .nav-link i {
+          font-size: 1.5rem; }
 
 #header {
   display: flex;
@@ -141,15 +149,7 @@ a {
     justify-content: center;
     font-family: 'Squada One', sans-serif; }
     #header .header-text p {
-      color: transparent; }
-    #header .header-text #header-name {
-      transition-duration: 1.5s; }
-    #header .header-text #header-department {
-      transition-duration: 2.0s; }
-    #header .header-text #header-institute {
-      transition-duration: 2.5s; }
-  #header:hover .header-text p {
-    color: #EB455F; }
+      color: #EB455F; }
 
 #about {
   display: flex;
