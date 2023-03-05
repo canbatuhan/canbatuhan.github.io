@@ -61,6 +61,7 @@ html {
 body {
   background-color: #FCFFE7;
   color: #525252;
+  letter-spacing: 0.1rem;
   cursor: default; }
 
 section {
