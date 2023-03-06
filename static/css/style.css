@@ -59,7 +59,7 @@ html {
       font-size: 6px; } }
 
 body {
-  background-color: #FCFFE7;
+  background-color: #FAF3E3;
   color: #525252;
   letter-spacing: 0.1rem;
   cursor: default; }
@@ -85,7 +85,7 @@ a {
 #navbar {
   width: auto;
   font-family: 'Press Start 2P', sans-serif;
-  background-color: #2B3467; }
+  background-color: #000000; }
   #navbar navbar {
     min-height: 100vh;
     display: flex;
@@ -99,14 +99,14 @@ a {
         letter-spacing: 0.2rem;
         transition: background-color, 0.25s; }
         #navbar navbar #nav-items .nav-item .nav-link {
-          color: #9AB7D9;
+          color: #FF9F29;
           text-decoration: none;
           transition-duration: 0.25s; }
           #navbar navbar #nav-items .nav-item .nav-link:hover {
-            color: #FCFFE7;
+            color: #FAF3E3;
             text-decoration: none; }
         #navbar navbar #nav-items .nav-item:hover {
-          background-color: #EB455F; }
+          background-color: #1A4D2E; }
     #navbar navbar .nav-links {
       display: flex;
       flex-direction: row;
@@ -114,18 +114,18 @@ a {
       font-size: 1.25rem;
       list-style: none; }
       #navbar navbar .nav-links li #link1 {
-        color: #FCFFE7;
+        color: #FF9F29;
         text-decoration: none;
         transition-duration: 0.1s; }
         #navbar navbar .nav-links li #link1:hover {
-          color: #3268a5;
+          color: #FAF3E3;
           text-decoration: none; }
       #navbar navbar .nav-links li #link2 {
-        color: #FCFFE7;
+        color: #FF9F29;
         text-decoration: none;
         transition-duration: 0.1s; }
         #navbar navbar .nav-links li #link2:hover {
-          color: #7929b9;
+          color: #FAF3E3;
           text-decoration: none; }
       #navbar navbar .nav-links li .nav-link {
         display: flex;
@@ -135,7 +135,7 @@ a {
         height: 3rem; }
         #navbar navbar .nav-links li .nav-link:hover {
           border-radius: 1rem;
-          background-color: #FCFFE7; }
+          background-color: #1A4D2E; }
         #navbar navbar .nav-links li .nav-link i {
           font-size: 1.5rem; }
 
@@ -149,7 +149,7 @@ a {
     justify-content: center;
     font-family: 'Squada One', sans-serif; }
     #header .header-text p {
-      color: #EB455F; }
+      color: #1A4D2E; }
 
 #about {
   display: flex;
@@ -159,7 +159,7 @@ a {
     #about .about-blog .about-header {
       font-family: 'Gajraj One', sans-serif;
       font-size: 2rem;
-      color: #2B3467;
+      color: #000000;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #about .about-blog .about-text {
@@ -174,7 +174,7 @@ a {
     #education .education-blog .education-header {
       font-family: 'Gajraj One', sans-serif;
       font-size: 2rem;
-      color: #2B3467;
+      color: #000000;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #education .education-blog .education-grid {
@@ -183,14 +183,14 @@ a {
         list-style: none; }
         #education .education-blog .education-grid .education-list .education-item .education-school .education-school-title {
           font-size: 1.75rem;
-          color: #EB455F; }
+          color: #1A4D2E; }
         #education .education-blog .education-grid .education-list .education-item .education-school .education-school-time {
           font-size: 1.25rem;
-          color: #EB455F; }
+          color: #1A4D2E; }
         #education .education-blog .education-grid .education-list .education-item .education-school .education-school-name {
           margin-bottom: 0rem;
           font-size: 1.5rem;
-          color: #9AB7D9; }
+          color: #FF9F29; }
         #education .education-blog .education-grid .education-list .education-item .education-description {
           font-size: 1.25rem;
           list-style: none; }
@@ -203,7 +203,7 @@ a {
     #experience .experience-blog .experience-header {
       font-family: 'Gajraj One', sans-serif;
       font-size: 2rem;
-      color: #2B3467;
+      color: #000000;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #experience .experience-blog .experience-grid {
@@ -216,7 +216,7 @@ a {
           flex-wrap: nowrap;
           margin-bottom: 0.25rem; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-name {
-            color: #EB455F;
+            color: #1A4D2E;
             font-size: 1.75rem; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company #exp-ykt {
             color: #3268a5; }
@@ -228,7 +228,7 @@ a {
             margin-bottom: 0rem;
             margin-right: 0.5rem;
             font-size: 1.25rem;
-            color: #9AB7D9; }
+            color: #FF9F29; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-date {
             margin-bottom: 0rem;
             font-size: 1.25rem;
@@ -243,7 +243,7 @@ a {
             text-decoration: none;
             transition-duration: 0.25s; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-description a:hover {
-              color: #2B3467;
+              color: #000000;
               text-decoration: none; }
         #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external {
           margin-bottom: 0.5rem;
@@ -255,7 +255,7 @@ a {
             text-decoration: none;
             transition-duration: 0.25s; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external a:hover {
-              color: #2B3467;
+              color: #000000;
               text-decoration: none; }
 
 #publications {
@@ -265,7 +265,7 @@ a {
   #publications .publications-blog .publications-header {
     font-family: 'Gajraj One', sans-serif;
     font-size: 2rem;
-    color: #2B3467;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 0.3rem; }
   #publications .publications-blog .publications-grid {
@@ -283,7 +283,7 @@ a {
     #projects .projects-blog .projects-header {
       font-family: 'Gajraj One', sans-serif;
       font-size: 2rem;
-      color: #2B3467;
+      color: #000000;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #projects .projects-blog .projects-list {
@@ -296,11 +296,11 @@ a {
           #projects .projects-blog .projects-list .project-item .project-description .project-name {
             margin-bottom: 0rem;
             font-size: 1.5rem;
-            color: #EB455F; }
+            color: #1A4D2E; }
           #projects .projects-blog .projects-list .project-item .project-description .project-funding {
             margin-bottom: 0rem;
             font-size: 1.25rem;
-            color: #9AB7D9; }
+            color: #FF9F29; }
           #projects .projects-blog .projects-list .project-item .project-description .project-date {
             margin-bottom: 0rem;
             font-size: 1rem;
@@ -318,7 +318,7 @@ a {
             text-decoration: none;
             transition-duration: 0.25s; }
             #projects .projects-blog .projects-list .project-item .project-external a:hover {
-              color: #2B3467;
+              color: #000000;
               text-decoration: none; }
 
 #skills {
@@ -329,7 +329,7 @@ a {
     #skills .skills-blog .skills-header {
       font-family: 'Gajraj One', sans-serif;
       font-size: 2rem;
-      color: #2B3467;
+      color: #000000;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #skills .skills-blog .skills-group {
@@ -340,7 +340,7 @@ a {
         #skills .skills-blog .skills-group .skill-grid .skill-topic {
           margin-bottom: 1rem;
           font-size: 1.5rem;
-          color: #EB455F;
+          color: #1A4D2E;
           text-align: left;
           text-transform: uppercase;
           letter-spacing: 0.3rem; }
@@ -358,13 +358,13 @@ a {
             margin-bottom: 1rem;
             padding: 0.25rem 1rem;
             color: #f0f0f0;
-            background-color: #2B3467;
+            background-color: #000000;
             border-radius: 1rem;
             letter-spacing: 0.1rem;
             transition: color, background-color, 0.25s; }
             #skills .skills-blog .skills-group .skill-grid .skill-list .skill-item:hover {
               color: #525252;
-              background-color: #9AB7D9;
+              background-color: #FF9F29;
               box-shadow: 0.1rem 0.1rem 0.5rem black; }
 
 /*# sourceMappingURL=style.css.map */

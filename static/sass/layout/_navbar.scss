@@ -40,11 +40,11 @@
             li {
 
                 #link1 {
-                    @include link($color-palette-light, $color-blue, 0.1s);
+                    @include link($color-palette-bright, $color-palette-light, 0.1s);
                 }
 
                 #link2 {
-                    @include link($color-palette-light, $color-purple, 0.1s);
+                    @include link($color-palette-bright, $color-palette-light, 0.1s);
                 }
 
                 .nav-link {
@@ -57,7 +57,7 @@
                     
                     &:hover {
                         border-radius: 1rem;
-                        background-color: $color-palette-light;
+                        background-color: $color-palette-solid;
                     }
                     
                     i {
