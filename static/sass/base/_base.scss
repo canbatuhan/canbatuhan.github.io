@@ -84,7 +84,7 @@ html {
 body {
     background-color: $color-palette-light;
     color: $color-darkgrey;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0rem;
     cursor: default;
 }
 
@@ -92,7 +92,7 @@ section {
     width: 85%;
     min-height: 100vh;
     float: right;
-    padding: 4rem;
+    padding: 0rem;
 }
 
 section:first-child {

@@ -59,16 +59,16 @@ html {
       font-size: 6px; } }
 
 body {
-  background-color: #FAF3E3;
+  background-color: #f0f0f0;
   color: #525252;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0rem;
   cursor: default; }
 
 section {
   width: 85%;
   min-height: 100vh;
   float: right;
-  padding: 4rem; }
+  padding: 0rem; }
 
 section:first-child {
   position: fixed;
@@ -84,8 +84,8 @@ a {
 
 #navbar {
   width: auto;
-  font-family: 'Press Start 2P', sans-serif;
-  background-color: #000000; }
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #3268a5; }
   #navbar navbar {
     min-height: 100vh;
     display: flex;
@@ -99,14 +99,14 @@ a {
         letter-spacing: 0.2rem;
         transition: background-color, 0.25s; }
         #navbar navbar #nav-items .nav-item .nav-link {
-          color: #FF9F29;
+          color: #fcaa44;
           text-decoration: none;
           transition-duration: 0.25s; }
           #navbar navbar #nav-items .nav-item .nav-link:hover {
-            color: #FAF3E3;
+            color: #f0f0f0;
             text-decoration: none; }
         #navbar navbar #nav-items .nav-item:hover {
-          background-color: #1A4D2E; }
+          background-color: #56a5d9; }
     #navbar navbar .nav-links {
       display: flex;
       flex-direction: row;
@@ -114,18 +114,18 @@ a {
       font-size: 1.25rem;
       list-style: none; }
       #navbar navbar .nav-links li #link1 {
-        color: #FF9F29;
+        color: #fcaa44;
         text-decoration: none;
         transition-duration: 0.1s; }
         #navbar navbar .nav-links li #link1:hover {
-          color: #FAF3E3;
+          color: #f0f0f0;
           text-decoration: none; }
       #navbar navbar .nav-links li #link2 {
-        color: #FF9F29;
+        color: #fcaa44;
         text-decoration: none;
         transition-duration: 0.1s; }
         #navbar navbar .nav-links li #link2:hover {
-          color: #FAF3E3;
+          color: #f0f0f0;
           text-decoration: none; }
       #navbar navbar .nav-links li .nav-link {
         display: flex;
@@ -135,7 +135,7 @@ a {
         height: 3rem; }
         #navbar navbar .nav-links li .nav-link:hover {
           border-radius: 1rem;
-          background-color: #1A4D2E; }
+          background-color: #56a5d9; }
         #navbar navbar .nav-links li .nav-link i {
           font-size: 1.5rem; }
 
@@ -147,9 +147,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Squada One', sans-serif; }
+    font-family: 'Source Sans Pro', sans-serif; }
     #header .header-text p {
-      color: #1A4D2E; }
+      color: #3268a5; }
 
 #about {
   display: flex;
@@ -157,14 +157,14 @@ a {
   #about .about-blog {
     text-align: justify; }
     #about .about-blog .about-header {
-      font-family: 'Gajraj One', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
       font-size: 2rem;
-      color: #000000;
+      color: #3268a5;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #about .about-blog .about-text {
       font-size: 1.25rem;
-      font-family: 'Squada One', sans-serif; }
+      font-family: 'Raleway', sans-serif; }
 
 #education {
   display: flex;
@@ -172,25 +172,24 @@ a {
   #education .education-blog {
     text-align: justify; }
     #education .education-blog .education-header {
-      font-family: 'Gajraj One', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
       font-size: 2rem;
-      color: #000000;
+      color: #3268a5;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #education .education-blog .education-grid {
-      font-family: 'Squada One', sans-serif; }
+      font-family: 'Raleway', sans-serif; }
       #education .education-blog .education-grid .education-list {
         list-style: none; }
         #education .education-blog .education-grid .education-list .education-item .education-school .education-school-title {
-          font-size: 1.75rem;
-          color: #1A4D2E; }
+          font-size: 1.75rem; }
         #education .education-blog .education-grid .education-list .education-item .education-school .education-school-time {
           font-size: 1.25rem;
-          color: #1A4D2E; }
+          color: #56a5d9; }
         #education .education-blog .education-grid .education-list .education-item .education-school .education-school-name {
           margin-bottom: 0rem;
           font-size: 1.5rem;
-          color: #FF9F29; }
+          color: #fcaa44; }
         #education .education-blog .education-grid .education-list .education-item .education-description {
           font-size: 1.25rem;
           list-style: none; }
@@ -201,13 +200,13 @@ a {
   #experience .experience-blog {
     text-align: justify; }
     #experience .experience-blog .experience-header {
-      font-family: 'Gajraj One', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
       font-size: 2rem;
-      color: #000000;
+      color: #3268a5;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #experience .experience-blog .experience-grid {
-      font-family: 'Squada One', sans-serif; }
+      font-family: 'Raleway', sans-serif; }
       #experience .experience-blog .experience-grid .experience-list {
         list-style: none; }
         #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company {
@@ -216,7 +215,7 @@ a {
           flex-wrap: nowrap;
           margin-bottom: 0.25rem; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-name {
-            color: #1A4D2E;
+            color: #56a5d9;
             font-size: 1.75rem; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company #exp-ykt {
             color: #3268a5; }
@@ -228,7 +227,7 @@ a {
             margin-bottom: 0rem;
             margin-right: 0.5rem;
             font-size: 1.25rem;
-            color: #FF9F29; }
+            color: #fcaa44; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-date {
             margin-bottom: 0rem;
             font-size: 1.25rem;
@@ -243,7 +242,7 @@ a {
             text-decoration: none;
             transition-duration: 0.25s; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-description a:hover {
-              color: #000000;
+              color: #3268a5;
               text-decoration: none; }
         #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external {
           margin-bottom: 0.5rem;
@@ -255,7 +254,7 @@ a {
             text-decoration: none;
             transition-duration: 0.25s; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external a:hover {
-              color: #000000;
+              color: #3268a5;
               text-decoration: none; }
 
 #publications {
@@ -263,13 +262,13 @@ a {
   justify-content: flex-start;
   align-items: flex-start; }
   #publications .publications-blog .publications-header {
-    font-family: 'Gajraj One', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 2rem;
-    color: #000000;
+    color: #3268a5;
     text-transform: uppercase;
     letter-spacing: 0.3rem; }
   #publications .publications-blog .publications-grid {
-    font-family: 'Squada One', sans-serif; }
+    font-family: 'Raleway', sans-serif; }
     #publications .publications-blog .publications-grid .publications-list {
       list-style: square; }
       #publications .publications-blog .publications-grid .publications-list .publication-item {
@@ -281,26 +280,25 @@ a {
   #projects .projects-blog {
     text-align: justify; }
     #projects .projects-blog .projects-header {
-      font-family: 'Gajraj One', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
       font-size: 2rem;
-      color: #000000;
+      color: #3268a5;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #projects .projects-blog .projects-list {
       list-style: none;
-      font-family: 'Squada One', sans-serif; }
+      font-family: 'Raleway', sans-serif; }
       #projects .projects-blog .projects-list .project-item {
         margin-bottom: 1rem; }
         #projects .projects-blog .projects-list .project-item .project-description {
           margin-bottom: 0.25rem; }
           #projects .projects-blog .projects-list .project-item .project-description .project-name {
             margin-bottom: 0rem;
-            font-size: 1.5rem;
-            color: #1A4D2E; }
+            font-size: 1.5rem; }
           #projects .projects-blog .projects-list .project-item .project-description .project-funding {
             margin-bottom: 0rem;
             font-size: 1.25rem;
-            color: #FF9F29; }
+            color: #fcaa44; }
           #projects .projects-blog .projects-list .project-item .project-description .project-date {
             margin-bottom: 0rem;
             font-size: 1rem;
@@ -318,7 +316,7 @@ a {
             text-decoration: none;
             transition-duration: 0.25s; }
             #projects .projects-blog .projects-list .project-item .project-external a:hover {
-              color: #000000;
+              color: #3268a5;
               text-decoration: none; }
 
 #skills {
@@ -327,20 +325,20 @@ a {
   #skills .skills-blog {
     text-align: justify; }
     #skills .skills-blog .skills-header {
-      font-family: 'Gajraj One', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
       font-size: 2rem;
-      color: #000000;
+      color: #3268a5;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #skills .skills-blog .skills-group {
       display: flex;
       flex-direction: column; }
       #skills .skills-blog .skills-group .skill-grid {
-        font-family: 'Squada One', sans-serif; }
+        font-family: 'Raleway', sans-serif; }
         #skills .skills-blog .skills-group .skill-grid .skill-topic {
           margin-bottom: 1rem;
           font-size: 1.5rem;
-          color: #1A4D2E;
+          color: #56a5d9;
           text-align: left;
           text-transform: uppercase;
           letter-spacing: 0.3rem; }
@@ -358,13 +356,13 @@ a {
             margin-bottom: 1rem;
             padding: 0.25rem 1rem;
             color: #f0f0f0;
-            background-color: #000000;
+            background-color: #3268a5;
             border-radius: 1rem;
             letter-spacing: 0.1rem;
             transition: color, background-color, 0.25s; }
             #skills .skills-blog .skills-group .skill-grid .skill-list .skill-item:hover {
               color: #525252;
-              background-color: #FF9F29;
+              background-color: #fcaa44;
               box-shadow: 0.1rem 0.1rem 0.5rem black; }
 
 /*# sourceMappingURL=style.css.map */

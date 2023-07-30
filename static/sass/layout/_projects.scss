@@ -6,7 +6,7 @@
         text-align: justify;
         
         .projects-header {
-            font-family: 'Gajraj One', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
             font-size: $font-xxlarge;
             
             color: $color-palette-dark;
@@ -16,7 +16,7 @@
         
         .projects-list {
             list-style: none;
-            font-family: 'Squada One', sans-serif;
+            font-family: 'Raleway', sans-serif;
             
             .project-item {
                 margin-bottom: 1rem;
@@ -27,7 +27,6 @@
                     .project-name {
                         margin-bottom: 0rem;
                         font-size: $font-large;
-                        color: $color-palette-solid;
                     }
                     
                     .project-funding {
