@@ -196,7 +196,7 @@ a {
 
 #experience {
   display: flex;
-  justify-content: flex-start; }
+  align-items: center; }
   #experience .experience-blog {
     text-align: justify; }
     #experience .experience-blog .experience-header {
@@ -223,6 +223,8 @@ a {
             color: #56a5d9; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company #exp-rake {
             color: #a53832; }
+          #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company #exp-itu {
+            color: #276a32; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-title {
             margin-bottom: 0rem;
             margin-right: 0.5rem;

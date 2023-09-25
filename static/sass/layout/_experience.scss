@@ -1,6 +1,6 @@
 #experience {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
     
     .experience-blog {
         text-align: justify;
@@ -43,6 +43,10 @@
                         
                         #exp-rake {
                             color: $color-red;
+                        }
+                        
+                        #exp-itu {
+                            color: $color-darkgreen;
                         }
                         
                         .experience-company-title {
