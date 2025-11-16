@@ -59,8 +59,8 @@ html {
       font-size: 6px; } }
 
 body {
-  background-color: #f0f0f0;
-  color: #525252;
+  background-color: #fdfdfd;
+  color: #202020;
   letter-spacing: 0rem;
   cursor: default; }
 
@@ -85,7 +85,7 @@ a {
 #navbar {
   width: auto;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #3268a5; }
+  background-color: #202020; }
   #navbar navbar {
     min-height: 100vh;
     display: flex;
@@ -103,10 +103,10 @@ a {
           text-decoration: none;
           transition-duration: 0.25s; }
           #navbar navbar #nav-items .nav-item .nav-link:hover {
-            color: #f0f0f0;
+            color: #fdfdfd;
             text-decoration: none; }
         #navbar navbar #nav-items .nav-item:hover {
-          background-color: #56a5d9; }
+          background-color: #fcaa44; }
     #navbar navbar .nav-links {
       display: flex;
       flex-direction: row;
@@ -118,14 +118,14 @@ a {
         text-decoration: none;
         transition-duration: 0.1s; }
         #navbar navbar .nav-links li #link1:hover {
-          color: #f0f0f0;
+          color: #fdfdfd;
           text-decoration: none; }
       #navbar navbar .nav-links li #link2 {
         color: #fcaa44;
         text-decoration: none;
         transition-duration: 0.1s; }
         #navbar navbar .nav-links li #link2:hover {
-          color: #f0f0f0;
+          color: #fdfdfd;
           text-decoration: none; }
       #navbar navbar .nav-links li .nav-link {
         display: flex;
@@ -135,7 +135,7 @@ a {
         height: 3rem; }
         #navbar navbar .nav-links li .nav-link:hover {
           border-radius: 1rem;
-          background-color: #56a5d9; }
+          background-color: #fcaa44; }
         #navbar navbar .nav-links li .nav-link i {
           font-size: 1.5rem; }
 
@@ -149,7 +149,7 @@ a {
     justify-content: center;
     font-family: 'Source Sans Pro', sans-serif; }
     #header .header-text p {
-      color: #3268a5; }
+      color: #202020; }
 
 #about {
   display: flex;
@@ -159,7 +159,7 @@ a {
     #about .about-blog .about-header {
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 2rem;
-      color: #3268a5;
+      color: #202020;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #about .about-blog .about-text {
@@ -174,7 +174,7 @@ a {
     #education .education-blog .education-header {
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 2rem;
-      color: #3268a5;
+      color: #202020;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #education .education-blog .education-grid {
@@ -185,7 +185,7 @@ a {
           font-size: 1.75rem; }
         #education .education-blog .education-grid .education-list .education-item .education-school .education-school-time {
           font-size: 1.25rem;
-          color: #56a5d9; }
+          color: #fcaa44; }
         #education .education-blog .education-grid .education-list .education-item .education-school .education-school-name {
           margin-bottom: 0rem;
           font-size: 1.5rem;
@@ -202,7 +202,7 @@ a {
     #experience .experience-blog .experience-header {
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 2rem;
-      color: #3268a5;
+      color: #202020;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #experience .experience-blog .experience-grid {
@@ -215,7 +215,7 @@ a {
           flex-wrap: nowrap;
           margin-bottom: 0.25rem; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company .experience-company-name {
-            color: #56a5d9;
+            color: #fcaa44;
             font-size: 1.75rem; }
           #experience .experience-blog .experience-grid .experience-list .experience-item .experience-company #exp-ykt {
             color: #3268a5; }
@@ -244,7 +244,7 @@ a {
             text-decoration: none;
             transition-duration: 0.25s; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-description a:hover {
-              color: #3268a5;
+              color: #202020;
               text-decoration: none; }
         #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external {
           margin-bottom: 0.5rem;
@@ -256,7 +256,7 @@ a {
             text-decoration: none;
             transition-duration: 0.25s; }
             #experience .experience-blog .experience-grid .experience-list .experience-item .experience-external a:hover {
-              color: #3268a5;
+              color: #202020;
               text-decoration: none; }
 
 #publications {
@@ -266,7 +266,7 @@ a {
   #publications .publications-blog .publications-header {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2rem;
-    color: #3268a5;
+    color: #202020;
     text-transform: uppercase;
     letter-spacing: 0.3rem; }
   #publications .publications-blog .publications-grid {
@@ -284,7 +284,7 @@ a {
     #projects .projects-blog .projects-header {
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 2rem;
-      color: #3268a5;
+      color: #202020;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #projects .projects-blog .projects-list {
@@ -318,7 +318,7 @@ a {
             text-decoration: none;
             transition-duration: 0.25s; }
             #projects .projects-blog .projects-list .project-item .project-external a:hover {
-              color: #3268a5;
+              color: #202020;
               text-decoration: none; }
 
 #skills {
@@ -329,7 +329,7 @@ a {
     #skills .skills-blog .skills-header {
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 2rem;
-      color: #3268a5;
+      color: #202020;
       text-transform: uppercase;
       letter-spacing: 0.3rem; }
     #skills .skills-blog .skills-group {
@@ -340,7 +340,7 @@ a {
         #skills .skills-blog .skills-group .skill-grid .skill-topic {
           margin-bottom: 1rem;
           font-size: 1.5rem;
-          color: #56a5d9;
+          color: #fcaa44;
           text-align: left;
           text-transform: uppercase;
           letter-spacing: 0.3rem; }
@@ -358,7 +358,7 @@ a {
             margin-bottom: 1rem;
             padding: 0.25rem 1rem;
             color: #f0f0f0;
-            background-color: #3268a5;
+            background-color: #202020;
             border-radius: 1rem;
             letter-spacing: 0.1rem;
             transition: color, background-color, 0.25s; }
@@ -366,5 +366,36 @@ a {
               color: #525252;
               background-color: #fcaa44;
               box-shadow: 0.1rem 0.1rem 0.5rem black; }
+
+#other {
+  display: flex;
+  justify-content: flex-start; }
+  #other .other-blog {
+    text-align: justify; }
+    #other .other-blog div {
+      margin-bottom: 1rem; }
+    #other .other-blog .other-header {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 2rem;
+      color: #202020;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem; }
+    #other .other-blog .other-text {
+      font-size: 1.5rem;
+      font-family: 'Raleway', sans-serif; }
+    #other .other-blog .other-event-text, #other .other-blog .other-gallery-media-text {
+      font-size: 1.25rem;
+      font-family: 'Raleway', sans-serif; }
+    #other .other-blog .other-gallery-list {
+      list-style: none;
+      padding: 0; }
+    #other .other-blog img {
+      border-radius: 5%;
+      width: 18vw;
+      height: 18vw; }
+    #other .other-blog video {
+      border-radius: 5%;
+      width: 32vw;
+      height: 18vw; }
 
 /*# sourceMappingURL=style.css.map */

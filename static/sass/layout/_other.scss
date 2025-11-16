@@ -1,0 +1,50 @@
+#other {
+    display: flex;
+    justify-content: flex-start;
+    
+    .other-blog {
+        
+        text-align: justify;
+
+        div {
+            margin-bottom: 1rem;
+        }
+        
+        .other-header {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: $font-xxlarge;
+            
+            color: $color-palette-dark;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+        }
+        
+        .other-text {
+            font-size: $font-large;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .other-event-text, .other-gallery-media-text {
+            font-size: $font-medium;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .other-gallery-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        img {
+            border-radius: 5%;
+            width: 18vw;
+            height: 18vw;
+        }
+
+        video {
+            border-radius: 5%;
+            width: 32vw;
+            height: 18vw;
+        }
+    }
+
+}
