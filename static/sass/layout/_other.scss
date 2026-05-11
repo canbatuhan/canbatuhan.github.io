@@ -24,9 +24,14 @@
             font-family: 'Raleway', sans-serif;
         }
 
+        .other-event, .other-gallery-media  {
+            display: flex;
+        }
+
         .other-event-text, .other-gallery-media-text {
-            font-size: $font-medium;
+            font-size: $font-large;
             font-family: 'Raleway', sans-serif;
+            align-self: center;
         }
 
         .other-gallery-list {

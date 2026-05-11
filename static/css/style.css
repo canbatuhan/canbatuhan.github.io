@@ -274,7 +274,8 @@ a {
     #publications .publications-blog .publications-grid .publications-list {
       list-style: square; }
       #publications .publications-blog .publications-grid .publications-list .publication-item {
-        font-size: 1.25rem; }
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem; }
 
 #projects {
   display: flex;
@@ -383,9 +384,12 @@ a {
     #other .other-blog .other-text {
       font-size: 1.5rem;
       font-family: 'Raleway', sans-serif; }
+    #other .other-blog .other-event, #other .other-blog .other-gallery-media {
+      display: flex; }
     #other .other-blog .other-event-text, #other .other-blog .other-gallery-media-text {
-      font-size: 1.25rem;
-      font-family: 'Raleway', sans-serif; }
+      font-size: 1.5rem;
+      font-family: 'Raleway', sans-serif;
+      align-self: center; }
     #other .other-blog .other-gallery-list {
       list-style: none;
       padding: 0; }
